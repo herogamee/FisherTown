@@ -89,6 +89,54 @@ Landing
 
 ## Current Status
 
-Concept foundation / World Bible initialized.
+Concept foundation / World Bible initialized. Fishing Lab v0.1 implemented.
 
 เริ่มจาก Prototype หนึ่งพื้นที่ในประเทศไทยก่อน แล้วใช้โครงเดียวกันขยายไป Amazon, North America, Europe, Africa, Japan, Australia, Oceanic และภูมิภาคอื่น ๆ
+
+
+## Playable Prototype — Fishing Lab v0.1
+
+Fishing Lab v0.1 is now implemented in the repository.
+
+Current loop:
+
+```
+เลือกเหยื่อ
+→ แตะค้างเพื่อเหวี่ยง
+→ ปลาในฉากตรวจเหยื่อ
+→ Bite
+→ HOOK
+→ คุมแรงตึงสาย
+→ Landing
+→ Record
+→ Catch & Release
+```
+
+Prototype content:
+- 1 Thailand freshwater-inspired spot
+- 10 real fish species in the data layer
+- 3 bait classes
+- visible fish AI
+- species-specific attraction / wariness / power / stamina
+- tension-based fight
+- Fishdex discovery + personal records
+- local auto-save
+- landscape mobile UI
+- PWA shell
+
+Run locally:
+
+```bash
+npm install
+npm run dev
+```
+
+Production build:
+
+```bash
+npm run build
+```
+
+See `docs/09-FISHING-LAB-V0.1.md` for controls, implemented features, known art limitations, and the next gates.
+
+> v0.1 fish graphics are procedural morphology placeholders for gameplay validation. Final fish art must follow the species-accurate pipeline in `docs/05-ART-DIRECTION.md`.
