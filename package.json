@@ -1,12 +1,11 @@
 {
   "name": "fishertown",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "assets": "node scripts/materialize-assets.mjs",
-    "dev": "npm run assets && vite --host 0.0.0.0",
-    "build": "npm run assets && tsc -p tsconfig.json && vite build",
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -p tsconfig.json && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
