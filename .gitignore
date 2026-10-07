@@ -3,3 +3,6 @@ dist/
 .vite/
 *.log
 .DS_Store
+
+# Rebuilt from versioned generated-art chunks.
+public/assets/generated/

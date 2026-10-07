@@ -10,6 +10,15 @@ export interface HookPoint {
   bait: BaitId;
 }
 
+const REALISTIC_TEXTURES: Record<string, string> = {
+  'channa-striata': 'fish-channa-striata',
+  'barbonymus-gonionotus': 'fish-barbonymus-gonionotus'
+};
+
+export function realisticTextureForSpecies(speciesId: string): string | null {
+  return REALISTIC_TEXTURES[speciesId] ?? null;
+}
+
 export class FishActor {
   readonly species: FishSpecies;
   readonly node: Phaser.GameObjects.Container;
@@ -31,7 +40,8 @@ export class FishActor {
   burstDirection: 1 | -1 = 1;
 
   private readonly scene: Phaser.Scene;
-  private readonly body: Phaser.GameObjects.Graphics;
+  private readonly body: Phaser.GameObjects.Graphics | null;
+  private readonly realisticImage: Phaser.GameObjects.Image | null;
   private readonly baseScale: number;
   private wanderClock = 0;
 
@@ -46,12 +56,27 @@ export class FishActor {
     this.hookedStamina = Phaser.Math.FloatBetween(0.82, 1.08) * species.stamina;
 
     this.node = scene.add.container(x, y);
-    this.body = scene.add.graphics();
-    this.node.add(this.body);
-    this.baseScale = Phaser.Math.Clamp(0.62 + this.lengthCm / 120, 0.72, 1.32);
-    this.node.setScale(this.baseScale * this.direction, this.baseScale);
-    this.node.setAlpha(0.84);
-    this.drawBody();
+    const texture = realisticTextureForSpecies(species.id);
+
+    if (texture && scene.textures.exists(texture)) {
+      this.realisticImage = scene.add.image(0, 0, texture);
+      const width = Phaser.Math.Clamp(72 + this.lengthCm * 1.25, 92, 176);
+      this.realisticImage.setDisplaySize(width, width / 3);
+      this.realisticImage.setOrigin(0.5);
+      this.body = null;
+      this.baseScale = 1;
+      this.node.add(this.realisticImage);
+    } else {
+      this.realisticImage = null;
+      this.body = scene.add.graphics();
+      this.baseScale = Phaser.Math.Clamp(0.62 + this.lengthCm / 120, 0.72, 1.32);
+      this.node.add(this.body);
+      this.drawFallbackBody();
+    }
+
+    this.applyFacing();
+    this.node.setAlpha(0.88);
+    this.node.setDepth(8 + Math.round(y / 100));
     this.pickWanderTarget();
   }
 
@@ -135,8 +160,12 @@ export class FishActor {
     this.state = 'recover';
     this.cooldown = 6;
     this.wanderClock = 0;
-    this.node.setAlpha(0.64);
+    this.node.setAlpha(0.62);
     this.direction = Math.random() < 0.5 ? -1 : 1;
+    this.applyFacing();
+  }
+
+  private applyFacing(): void {
     this.node.setScale(this.baseScale * this.direction, this.baseScale);
   }
 
@@ -156,7 +185,7 @@ export class FishActor {
     const dir: 1 | -1 = dx >= 0 ? 1 : -1;
     if (dir !== this.direction) {
       this.direction = dir;
-      this.node.setScale(this.baseScale * this.direction, this.baseScale);
+      this.applyFacing();
     }
   }
 
@@ -164,7 +193,7 @@ export class FishActor {
     this.state = 'cruise';
     this.investigateClock = 0;
     this.biteClock = 0;
-    this.node.setAlpha(0.84);
+    this.node.setAlpha(0.88);
     this.wanderClock = 0;
   }
 
@@ -180,16 +209,24 @@ export class FishActor {
     const dy = y - this.y;
     const distance = Math.max(1, Math.hypot(dx, dy));
     const dir: 1 | -1 = dx >= 0 ? 1 : -1;
+
     if (Math.abs(dx) > 5 && dir !== this.direction) {
       this.direction = dir;
-      this.node.setScale(this.baseScale * this.direction, this.baseScale);
+      this.applyFacing();
     }
+
     this.node.x += (dx / distance) * speed * dt;
     this.node.y += (dy / distance) * speed * 0.62 * dt;
+
+    if (this.realisticImage) {
+      this.realisticImage.rotation = Phaser.Math.Clamp((dy / distance) * 0.13, -0.12, 0.12);
+    }
   }
 
-  private drawBody(): void {
+  private drawFallbackBody(): void {
     const g = this.body;
+    if (!g) return;
+
     const c = this.species.bodyColor;
     const a = this.species.accentColor;
     g.clear();
@@ -199,13 +236,10 @@ export class FishActor {
       g.fillStyle(a, 0.85).fillEllipse(26, -1, 30, 22);
       g.fillStyle(a, 0.7).fillTriangle(-33, 0, -53, -15, -53, 15);
       g.fillStyle(a, 0.55).fillTriangle(-8, -10, 17, -18, 26, -9);
-      g.lineStyle(2, a, 0.8);
-      for (let x = -18; x < 26; x += 13) g.lineBetween(x, -8, x + 8, 8);
     } else if (this.species.morphology === 'catfish') {
       g.fillStyle(c, 1).fillEllipse(0, 0, 68, 28);
       g.fillStyle(a, 0.8).fillEllipse(25, 0, 30, 25);
       g.fillStyle(c, 1).fillTriangle(-31, 0, -52, -18, -52, 18);
-      g.fillStyle(a, 0.75).fillTriangle(-3, -12, 8, -27, 17, -11);
       g.lineStyle(1.4, a, 0.9);
       g.lineBetween(35, 3, 52, 12);
       g.lineBetween(35, 5, 53, 2);
@@ -215,23 +249,15 @@ export class FishActor {
       g.fillStyle(a, 0.72).fillTriangle(-24, 0, -44, -19, -44, 19);
       g.fillStyle(a, 0.58).fillTriangle(-14, -16, 12, -28, 23, -14);
       g.fillStyle(a, 0.58).fillTriangle(-12, 16, 15, 26, 22, 13);
-      g.lineStyle(1.1, a, 0.75);
-      g.lineBetween(12, 16, 22, 35);
-      g.lineBetween(18, 15, 29, 34);
     } else if (this.species.morphology === 'featherback') {
       g.fillStyle(c, 1).fillEllipse(0, 0, 76, 24);
       g.fillStyle(a, 0.72).fillTriangle(-35, 0, -55, -10, -55, 10);
-      g.lineStyle(4, a, 0.78);
-      g.lineBetween(-28, 9, 30, 9);
-      g.fillStyle(a, 0.5).fillTriangle(5, -10, 22, -21, 26, -9);
+      g.lineStyle(4, a, 0.78).lineBetween(-28, 9, 30, 9);
     } else {
       g.fillStyle(c, 1).fillEllipse(0, 0, 60, 36);
       g.fillStyle(a, 0.76).fillTriangle(-27, 0, -49, -19, -49, 19);
       g.fillStyle(a, 0.62).fillTriangle(-8, -16, 7, -27, 18, -14);
       g.fillStyle(a, 0.52).fillTriangle(-2, 15, 13, 26, 20, 12);
-      g.lineStyle(1.1, a, 0.5);
-      g.lineBetween(-10, -14, -10, 14);
-      g.lineBetween(4, -16, 4, 16);
     }
 
     g.fillStyle(0xf5f2df, 1).fillCircle(27, -5, 3.7);
