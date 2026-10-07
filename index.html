@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no" />
+    <meta name="theme-color" content="#0f5e69" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <title>FisherTown — Fishing Lab v0.1</title>
+  </head>
+  <body>
+    <main id="app">
+      <section id="game-frame" aria-label="FisherTown Fishing Lab">
+        <div id="game"></div>
+      </section>
+      <section id="rotate-hint" aria-live="polite">
+        <div class="rotate-card">
+          <div class="rotate-icon" aria-hidden="true">↻</div>
+          <strong>หมุนมือถือเป็นแนวนอน</strong>
+          <span>FisherTown ออกแบบการตกปลาให้เล่นแบบ Landscape</span>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
