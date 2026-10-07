@@ -21,3 +21,14 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Typecheck and build
         run: npm run build
+      - name: Add ready-to-play helpers
+        run: |
+          cp deploy/README-PLAY.txt dist/README-PLAY.txt
+          cp deploy/START-XAMPP.cmd dist/START-XAMPP.cmd
+      - name: Upload ready-to-play web build
+        uses: actions/upload-artifact@v4
+        with:
+          name: FisherTown-v0.1-Web
+          path: dist/
+          if-no-files-found: error
+          retention-days: 30
