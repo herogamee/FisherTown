@@ -11,25 +11,20 @@ button.type='button';
 button.textContent='⛶';
 button.title='เต็มจอ';
 button.setAttribute('aria-label','ขยายเกมเต็มจอ');
-document.body.appendChild(button);
+frame.appendChild(button);
 
 const active=()=>Boolean(document.fullscreenElement)||document.documentElement.classList.contains('fill-screen');
 const sync=()=>{button.textContent=active()?'×':'⛶';button.setAttribute('aria-label',active()?'ออกจากโหมดเต็มจอ':'ขยายเกมเต็มจอ')};
 
-button.addEventListener('click',async()=>{
-  if(document.fullscreenElement){
-    await document.exitFullscreen().catch(()=>undefined);
-    sync(); return;
-  }
-  if(document.documentElement.classList.contains('fill-screen')){
-    document.documentElement.classList.remove('fill-screen'); sync(); return;
-  }
-  try{
-    if(frame.requestFullscreen){await frame.requestFullscreen();return;}
-  }catch{}
-  document.documentElement.classList.add('fill-screen');
-  window.scrollTo(0,1);
-  sync();
+button.addEventListener('click',async(event)=>{
+ event.preventDefault();
+ event.stopPropagation();
+ if(document.fullscreenElement){await document.exitFullscreen().catch(()=>undefined);sync();return}
+ if(document.documentElement.classList.contains('fill-screen')){document.documentElement.classList.remove('fill-screen');sync();return}
+ try{if(frame.requestFullscreen){await frame.requestFullscreen();return}}catch{}
+ document.documentElement.classList.add('fill-screen');
+ window.scrollTo(0,1);
+ sync();
 });
 document.addEventListener('fullscreenchange',sync);
 
@@ -41,10 +36,14 @@ const config:Phaser.Types.Core.GameConfig={
 };
 new Phaser.Game(config);
 
-if('serviceWorker' in navigator&&import.meta.env.PROD){
+// v0.2.2: remove the old cache-first service worker. It caused stale game builds on iOS Safari.
+if('serviceWorker' in navigator){
  window.addEventListener('load',async()=>{
   const regs=await navigator.serviceWorker.getRegistrations().catch(()=>[]);
-  for(const reg of regs){await reg.update().catch(()=>undefined);}
-  navigator.serviceWorker.register('./sw.js?v=3',{updateViaCache:'none'}).catch(()=>undefined);
+  for(const reg of regs){await reg.unregister().catch(()=>undefined)}
+  if('caches' in window){
+   const keys=await caches.keys().catch(()=>[]);
+   await Promise.all(keys.filter(k=>k.startsWith('fishertown-')).map(k=>caches.delete(k)));
+  }
  });
 }
