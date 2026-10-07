@@ -1,0 +1,943 @@
+{
+  "version": 1,
+  "warning": "Starter research seed. Facts are concise editorial summaries for design. Every species must pass production verification and licensing review before shipping.",
+  "species": [
+    {
+      "id": "pangasianodon_gigas",
+      "scientific_name": "Pangasianodon gigas",
+      "common_names": {
+        "th": "ปลาบึก",
+        "en": "Mekong giant catfish"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "thailand_river_gateway"
+      ],
+      "native_range_summary": "Endemic to the Mekong basin.",
+      "habitat_tags": [
+        "river_main_channel",
+        "deep_pool"
+      ],
+      "climate_tags": [
+        "tropical"
+      ],
+      "migration": "potamodromous",
+      "feeding_guild": "herbivore_omnivore_adult",
+      "max_length_cm": 300,
+      "max_weight_kg": 350,
+      "fight_archetypes": [
+        "bulldozer",
+        "runner"
+      ],
+      "conservation_handling": "research_only",
+      "source_refs": [
+        "https://fishbase.org/summary/SpeciesSummary.php?id=6192"
+      ],
+      "research_status": "cross_checked",
+      "notes": "Use research encounter / tag / release framing; conservation and legal handling require separate production review."
+    },
+    {
+      "id": "catlocarpio_siamensis",
+      "scientific_name": "Catlocarpio siamensis",
+      "common_names": {
+        "th": "ปลากระโห้",
+        "en": "Giant barb"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "thailand_river_gateway"
+      ],
+      "native_range_summary": "Maeklong, Mekong and Chao Phraya basins.",
+      "habitat_tags": [
+        "large_river",
+        "deep_pool",
+        "floodplain",
+        "canal",
+        "swamp_juvenile"
+      ],
+      "climate_tags": [
+        "tropical"
+      ],
+      "migration": "potamodromous",
+      "feeding_guild": "herbivore_detritivore",
+      "max_length_cm": 300,
+      "max_weight_kg": 300,
+      "fight_archetypes": [
+        "bulldozer",
+        "runner"
+      ],
+      "conservation_handling": "research_only",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Catlocarpio-siamensis"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "channa_micropeltes",
+      "scientific_name": "Channa micropeltes",
+      "common_names": {
+        "th": "ปลาชะโด",
+        "en": "Indonesian snakehead"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "thailand_river_gateway"
+      ],
+      "native_range_summary": "Mekong and Chao Phraya basins, Malay Peninsula, Sumatra and Borneo.",
+      "habitat_tags": [
+        "river",
+        "lake",
+        "floodplain",
+        "vegetation",
+        "structure"
+      ],
+      "climate_tags": [
+        "tropical"
+      ],
+      "migration": "non_migratory",
+      "feeding_guild": "piscivore",
+      "max_length_cm": 130,
+      "max_weight_kg": 20,
+      "fight_archetypes": [
+        "burster",
+        "structure_seeker"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://fishbase.org/summary/Channa-micropeltes"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "lates_calcarifer",
+      "scientific_name": "Lates calcarifer",
+      "common_names": {
+        "th": "ปลากะพงขาว",
+        "en": "Barramundi"
+      },
+      "water_types": [
+        "freshwater",
+        "brackish",
+        "marine"
+      ],
+      "native_region_ids": [
+        "thailand_river_gateway",
+        "australia_tropical_north",
+        "indo_pacific_tropical"
+      ],
+      "native_range_summary": "Indo-West Pacific from Persian Gulf region east through South and Southeast Asia to southern Japan, Papua New Guinea and northern Australia.",
+      "habitat_tags": [
+        "river",
+        "estuary",
+        "lagoon",
+        "mangrove",
+        "undercut_bank",
+        "submerged_log"
+      ],
+      "climate_tags": [
+        "tropical"
+      ],
+      "migration": "catadromous",
+      "feeding_guild": "mixed_predator",
+      "max_length_cm": 200,
+      "max_weight_kg": 60,
+      "fight_archetypes": [
+        "burster",
+        "jumper",
+        "structure_seeker"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Lates-calcarifer"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "lateolabrax_japonicus",
+      "scientific_name": "Lateolabrax japonicus",
+      "common_names": {
+        "en": "Japanese seabass",
+        "ja": "スズキ"
+      },
+      "water_types": [
+        "freshwater",
+        "brackish",
+        "marine"
+      ],
+      "native_region_ids": [
+        "japan_river_coast"
+      ],
+      "native_range_summary": "Western Pacific, including Japan and waters south toward the South China Sea.",
+      "habitat_tags": [
+        "coastal_bay",
+        "estuary",
+        "river_mouth",
+        "rocky_shore"
+      ],
+      "climate_tags": [
+        "subtropical",
+        "temperate"
+      ],
+      "migration": "catadromous",
+      "feeding_guild": "piscivore",
+      "fight_archetypes": [
+        "runner",
+        "jumper"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Lateolabrax-japonicus"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "plecoglossus_altivelis",
+      "scientific_name": "Plecoglossus altivelis",
+      "common_names": {
+        "en": "Ayu",
+        "ja": "アユ"
+      },
+      "water_types": [
+        "freshwater",
+        "brackish",
+        "marine"
+      ],
+      "native_region_ids": [
+        "japan_river_coast"
+      ],
+      "native_range_summary": "East Asian coastal river systems; verify population/subspecies per content location.",
+      "habitat_tags": [
+        "clear_stream",
+        "river",
+        "estuary"
+      ],
+      "climate_tags": [
+        "temperate"
+      ],
+      "migration": "amphidromous_complex",
+      "feeding_guild": "algae_invertebrate",
+      "fight_archetypes": [
+        "spinner",
+        "runner"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Plecoglossus-altivelis"
+      ],
+      "research_status": "pending_review"
+    },
+    {
+      "id": "oncorhynchus_masou",
+      "scientific_name": "Oncorhynchus masou",
+      "common_names": {
+        "en": "Masu salmon",
+        "ja": "サクラマス"
+      },
+      "water_types": [
+        "freshwater",
+        "brackish",
+        "marine"
+      ],
+      "native_region_ids": [
+        "japan_river_coast"
+      ],
+      "native_range_summary": "Northwest Pacific and connected rivers; verify local stock range for each Japanese expedition.",
+      "habitat_tags": [
+        "cold_river",
+        "gravel_run",
+        "estuary",
+        "nearshore"
+      ],
+      "climate_tags": [
+        "temperate",
+        "cold"
+      ],
+      "migration": "anadromous_and_resident_forms",
+      "feeding_guild": "mixed_predator",
+      "fight_archetypes": [
+        "runner",
+        "jumper"
+      ],
+      "conservation_handling": "release_preferred",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Oncorhynchus-masou"
+      ],
+      "research_status": "pending_review"
+    },
+    {
+      "id": "arapaima_gigas",
+      "scientific_name": "Arapaima gigas",
+      "common_names": {
+        "th": "อะราไพม่า",
+        "en": "Arapaima"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "amazon_basin"
+      ],
+      "native_range_summary": "Amazon River basin.",
+      "habitat_tags": [
+        "floodplain_lake",
+        "slow_channel",
+        "flooded_forest"
+      ],
+      "climate_tags": [
+        "tropical"
+      ],
+      "migration": "freshwater_resident_complex",
+      "feeding_guild": "piscivore",
+      "max_length_cm": 450,
+      "max_weight_kg": 200,
+      "fight_archetypes": [
+        "bulldozer",
+        "surface_burst"
+      ],
+      "conservation_handling": "release_only",
+      "source_refs": [
+        "https://www.fishbase.org/summary/2076"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "cichla_temensis",
+      "scientific_name": "Cichla temensis",
+      "common_names": {
+        "en": "Speckled peacock bass"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "amazon_basin"
+      ],
+      "native_range_summary": "Amazon and Orinoco drainage systems; exact local range must be verified by expedition.",
+      "habitat_tags": [
+        "river",
+        "lagoon",
+        "flooded_forest",
+        "structure"
+      ],
+      "climate_tags": [
+        "tropical"
+      ],
+      "feeding_guild": "piscivore",
+      "fight_archetypes": [
+        "burster",
+        "structure_seeker",
+        "jumper"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Cichla-temensis"
+      ],
+      "research_status": "pending_review"
+    },
+    {
+      "id": "pygocentrus_nattereri",
+      "scientific_name": "Pygocentrus nattereri",
+      "common_names": {
+        "en": "Red-bellied piranha"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "amazon_basin"
+      ],
+      "native_range_summary": "South American tropical river systems; exact basin occurrence must be verified per expedition.",
+      "habitat_tags": [
+        "river",
+        "floodplain",
+        "lagoon"
+      ],
+      "climate_tags": [
+        "tropical",
+        "subtropical"
+      ],
+      "migration": "potamodromous",
+      "feeding_guild": "omnivore_predator",
+      "fight_archetypes": [
+        "burster",
+        "spinner"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://fishbase.org/summary/Pygocentrus-nattereri"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "colossoma_macropomum",
+      "scientific_name": "Colossoma macropomum",
+      "common_names": {
+        "en": "Tambaqui"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "amazon_basin"
+      ],
+      "native_range_summary": "Amazon and Orinoco basin systems; verify local occurrence.",
+      "habitat_tags": [
+        "river",
+        "floodplain",
+        "flooded_forest",
+        "lake"
+      ],
+      "climate_tags": [
+        "tropical"
+      ],
+      "feeding_guild": "omnivore_fruit_seed",
+      "fight_archetypes": [
+        "bulldozer",
+        "runner"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Colossoma-macropomum"
+      ],
+      "research_status": "pending_review"
+    },
+    {
+      "id": "micropterus_salmoides",
+      "scientific_name": "Micropterus salmoides",
+      "common_names": {
+        "en": "Largemouth bass"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "lower_mississippi_gulf"
+      ],
+      "native_range_summary": "Native to large parts of eastern and central North America; widely introduced elsewhere.",
+      "habitat_tags": [
+        "lake_littoral",
+        "weed_bed",
+        "backwater",
+        "reservoir",
+        "structure"
+      ],
+      "climate_tags": [
+        "subtropical",
+        "temperate"
+      ],
+      "feeding_guild": "piscivore",
+      "fight_archetypes": [
+        "burster",
+        "jumper",
+        "structure_seeker"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/3385"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "atractosteus_spatula",
+      "scientific_name": "Atractosteus spatula",
+      "common_names": {
+        "en": "Alligator gar"
+      },
+      "water_types": [
+        "freshwater",
+        "brackish"
+      ],
+      "native_region_ids": [
+        "lower_mississippi_gulf"
+      ],
+      "native_range_summary": "Mississippi River basin south to Gulf of Mexico and Gulf Coastal Plain toward Veracruz, Mexico.",
+      "habitat_tags": [
+        "big_river",
+        "backwater",
+        "swamp",
+        "bayou",
+        "lake"
+      ],
+      "climate_tags": [
+        "subtropical"
+      ],
+      "feeding_guild": "piscivore",
+      "max_length_cm": 305,
+      "max_weight_kg": 137,
+      "fight_archetypes": [
+        "bulldozer",
+        "runner",
+        "surface_burst"
+      ],
+      "conservation_handling": "release_preferred",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Atractosteus-spatula"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "ictalurus_punctatus",
+      "scientific_name": "Ictalurus punctatus",
+      "common_names": {
+        "en": "Channel catfish"
+      },
+      "water_types": [
+        "freshwater",
+        "brackish"
+      ],
+      "native_region_ids": [
+        "lower_mississippi_gulf"
+      ],
+      "native_range_summary": "North American river and lake systems; widely stocked outside native range.",
+      "habitat_tags": [
+        "river",
+        "reservoir",
+        "lake",
+        "deep_channel"
+      ],
+      "climate_tags": [
+        "temperate",
+        "subtropical"
+      ],
+      "feeding_guild": "omnivore_predator",
+      "fight_archetypes": [
+        "bulldozer",
+        "runner"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Ictalurus-punctatus"
+      ],
+      "research_status": "pending_review"
+    },
+    {
+      "id": "oncorhynchus_mykiss",
+      "scientific_name": "Oncorhynchus mykiss",
+      "common_names": {
+        "en": "Rainbow trout"
+      },
+      "water_types": [
+        "freshwater",
+        "brackish",
+        "marine"
+      ],
+      "native_region_ids": [
+        "north_america_pacific"
+      ],
+      "native_range_summary": "Pacific-draining waters of North America and northeastern Asia; introduced globally.",
+      "habitat_tags": [
+        "cold_river",
+        "riffle",
+        "lake",
+        "estuary"
+      ],
+      "climate_tags": [
+        "cold",
+        "temperate"
+      ],
+      "migration": "resident_and_anadromous_forms",
+      "feeding_guild": "insectivore_predator",
+      "fight_archetypes": [
+        "runner",
+        "jumper"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/SpeciesSummary.cfm?ID=239"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "salmo_salar",
+      "scientific_name": "Salmo salar",
+      "common_names": {
+        "en": "Atlantic salmon"
+      },
+      "water_types": [
+        "freshwater",
+        "brackish",
+        "marine"
+      ],
+      "native_region_ids": [
+        "europe_north_central"
+      ],
+      "native_range_summary": "North Atlantic and connected rivers in Europe and northeastern North America.",
+      "habitat_tags": [
+        "cold_river",
+        "gravel_run",
+        "estuary",
+        "pelagic_ocean"
+      ],
+      "climate_tags": [
+        "cold",
+        "temperate"
+      ],
+      "migration": "anadromous",
+      "feeding_guild": "mixed_predator",
+      "max_length_cm": 150,
+      "max_weight_kg": 46.8,
+      "fight_archetypes": [
+        "runner",
+        "jumper"
+      ],
+      "conservation_handling": "release_preferred",
+      "source_refs": [
+        "https://fishbase.org/summary/236"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "esox_lucius",
+      "scientific_name": "Esox lucius",
+      "common_names": {
+        "en": "Northern pike"
+      },
+      "water_types": [
+        "freshwater",
+        "brackish"
+      ],
+      "native_region_ids": [
+        "europe_north_central"
+      ],
+      "native_range_summary": "Broad northern hemisphere native distribution; local status must be verified by region.",
+      "habitat_tags": [
+        "lake_littoral",
+        "weed_bed",
+        "slow_river",
+        "reed_margin"
+      ],
+      "climate_tags": [
+        "cold",
+        "temperate"
+      ],
+      "feeding_guild": "piscivore",
+      "fight_archetypes": [
+        "burster",
+        "structure_seeker"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/258"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "silurus_glanis",
+      "scientific_name": "Silurus glanis",
+      "common_names": {
+        "en": "Wels catfish"
+      },
+      "water_types": [
+        "freshwater",
+        "brackish"
+      ],
+      "native_region_ids": [
+        "europe_north_central"
+      ],
+      "native_range_summary": "Native to parts of Europe and western Asia; widely introduced/translocated in Europe.",
+      "habitat_tags": [
+        "large_river",
+        "lake",
+        "deep_channel",
+        "reservoir",
+        "backwater"
+      ],
+      "climate_tags": [
+        "temperate"
+      ],
+      "feeding_guild": "mixed_predator",
+      "max_length_cm": 273,
+      "max_weight_kg": 130,
+      "fight_archetypes": [
+        "bulldozer",
+        "runner"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Silurus-glanis.html"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "perca_fluviatilis",
+      "scientific_name": "Perca fluviatilis",
+      "common_names": {
+        "en": "European perch"
+      },
+      "water_types": [
+        "freshwater",
+        "brackish"
+      ],
+      "native_region_ids": [
+        "europe_north_central"
+      ],
+      "native_range_summary": "Europe and parts of northern Asia; verify local native/introduced status.",
+      "habitat_tags": [
+        "lake_littoral",
+        "river",
+        "weed_bed",
+        "rocky_shore"
+      ],
+      "climate_tags": [
+        "temperate",
+        "cold"
+      ],
+      "feeding_guild": "mixed_predator",
+      "fight_archetypes": [
+        "burster",
+        "spinner"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Perca-fluviatilis"
+      ],
+      "research_status": "pending_review"
+    },
+    {
+      "id": "lates_niloticus",
+      "scientific_name": "Lates niloticus",
+      "common_names": {
+        "en": "Nile perch"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "africa_nile_great_lakes"
+      ],
+      "native_range_summary": "African river and lake systems; some famous populations are introduced and must be marked accordingly.",
+      "habitat_tags": [
+        "large_lake",
+        "river_channel",
+        "deep_basin",
+        "littoral"
+      ],
+      "climate_tags": [
+        "tropical"
+      ],
+      "feeding_guild": "piscivore",
+      "fight_archetypes": [
+        "bulldozer",
+        "runner"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Lates-niloticus"
+      ],
+      "research_status": "pending_review"
+    },
+    {
+      "id": "hydrocynus_vittatus",
+      "scientific_name": "Hydrocynus vittatus",
+      "common_names": {
+        "en": "Tiger fish"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "zambezi_southern_africa"
+      ],
+      "native_range_summary": "African freshwater systems including Zambezi-region waters; verify basin occurrence per expedition.",
+      "habitat_tags": [
+        "river_channel",
+        "current_edge",
+        "lake",
+        "floodplain"
+      ],
+      "climate_tags": [
+        "tropical",
+        "subtropical"
+      ],
+      "feeding_guild": "piscivore",
+      "fight_archetypes": [
+        "runner",
+        "burster",
+        "jumper"
+      ],
+      "conservation_handling": "release_preferred",
+      "source_refs": [
+        "https://www.fishbase.org/summary/SpeciesSummary.php?ID=4479"
+      ],
+      "research_status": "cross_checked"
+    },
+    {
+      "id": "maccullochella_peelii",
+      "scientific_name": "Maccullochella peelii",
+      "common_names": {
+        "en": "Murray cod"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "australia_murray_darling"
+      ],
+      "native_range_summary": "Murray-Darling Basin, Australia.",
+      "habitat_tags": [
+        "river",
+        "deep_pool",
+        "woody_structure",
+        "reservoir"
+      ],
+      "climate_tags": [
+        "temperate",
+        "subtropical"
+      ],
+      "feeding_guild": "piscivore",
+      "fight_archetypes": [
+        "bulldozer",
+        "structure_seeker"
+      ],
+      "conservation_handling": "release_preferred",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Maccullochella-peelii"
+      ],
+      "research_status": "pending_review"
+    },
+    {
+      "id": "macquaria_ambigua",
+      "scientific_name": "Macquaria ambigua",
+      "common_names": {
+        "en": "Golden perch"
+      },
+      "water_types": [
+        "freshwater"
+      ],
+      "native_region_ids": [
+        "australia_murray_darling"
+      ],
+      "native_range_summary": "Australian inland river systems including Murray-Darling; verify population by expedition.",
+      "habitat_tags": [
+        "river",
+        "reservoir",
+        "woody_structure",
+        "deep_pool"
+      ],
+      "climate_tags": [
+        "temperate",
+        "subtropical"
+      ],
+      "feeding_guild": "mixed_predator",
+      "fight_archetypes": [
+        "burster",
+        "structure_seeker"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Macquaria-ambigua"
+      ],
+      "research_status": "pending_review"
+    },
+    {
+      "id": "caranx_ignobilis",
+      "scientific_name": "Caranx ignobilis",
+      "common_names": {
+        "en": "Giant trevally"
+      },
+      "water_types": [
+        "marine",
+        "brackish"
+      ],
+      "native_region_ids": [
+        "indo_pacific_tropical"
+      ],
+      "native_range_summary": "Indo-Pacific tropical marine region; verify expedition-specific coast/reef occurrence.",
+      "habitat_tags": [
+        "reef",
+        "reef_dropoff",
+        "lagoon",
+        "coastal_current",
+        "estuary_juvenile"
+      ],
+      "climate_tags": [
+        "tropical",
+        "subtropical"
+      ],
+      "feeding_guild": "mixed_predator",
+      "fight_archetypes": [
+        "runner",
+        "bulldozer",
+        "structure_seeker"
+      ],
+      "conservation_handling": "release_preferred",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Caranx-ignobilis"
+      ],
+      "research_status": "pending_review"
+    },
+    {
+      "id": "coryphaena_hippurus",
+      "scientific_name": "Coryphaena hippurus",
+      "common_names": {
+        "en": "Mahi-mahi"
+      },
+      "water_types": [
+        "marine"
+      ],
+      "native_region_ids": [
+        "indo_pacific_tropical"
+      ],
+      "native_range_summary": "Circumglobal tropical and subtropical oceanic waters; region mapping will use FAO/ocean occurrence data.",
+      "habitat_tags": [
+        "pelagic_ocean",
+        "current_line",
+        "floating_structure"
+      ],
+      "climate_tags": [
+        "tropical",
+        "subtropical"
+      ],
+      "feeding_guild": "piscivore",
+      "fight_archetypes": [
+        "runner",
+        "jumper",
+        "direction_change"
+      ],
+      "conservation_handling": "normal",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Coryphaena-hippurus"
+      ],
+      "research_status": "pending_review"
+    },
+    {
+      "id": "thunnus_albacares",
+      "scientific_name": "Thunnus albacares",
+      "common_names": {
+        "en": "Yellowfin tuna"
+      },
+      "water_types": [
+        "marine"
+      ],
+      "native_region_ids": [
+        "indo_pacific_tropical"
+      ],
+      "native_range_summary": "Tropical and subtropical oceans worldwide; expedition-specific occurrence requires marine dataset verification.",
+      "habitat_tags": [
+        "pelagic_ocean",
+        "offshore_current"
+      ],
+      "climate_tags": [
+        "tropical",
+        "subtropical"
+      ],
+      "feeding_guild": "piscivore",
+      "fight_archetypes": [
+        "runner",
+        "diver",
+        "endurance"
+      ],
+      "conservation_handling": "release_preferred",
+      "source_refs": [
+        "https://www.fishbase.org/summary/Thunnus-albacares"
+      ],
+      "research_status": "pending_review"
+    }
+  ]
+}

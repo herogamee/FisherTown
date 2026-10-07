@@ -1,0 +1,316 @@
+{
+  "version": 1,
+  "regions": [
+    {
+      "id": "thailand_river_gateway",
+      "name": {
+        "th": "ไทย: ลุ่มน้ำเจ้าพระยา-แม่กลอง-ประตูสู่โขง",
+        "en": "Thailand River Gateway"
+      },
+      "countries": [
+        "TH"
+      ],
+      "water_systems": [
+        "Chao Phraya Basin",
+        "Mae Klong Basin",
+        "Mekong Basin sections connected to Thailand",
+        "Thai estuaries"
+      ],
+      "habitats": [
+        "river_main_channel",
+        "deep_pool",
+        "tributary",
+        "floodplain",
+        "canal_margin",
+        "estuary",
+        "mangrove"
+      ],
+      "launch_priority": 1,
+      "prototype": true
+    },
+    {
+      "id": "japan_river_coast",
+      "name": {
+        "th": "ญี่ปุ่น: แม่น้ำ ปากแม่น้ำ และชายฝั่ง",
+        "en": "Japan Rivers & Coast"
+      },
+      "countries": [
+        "JP"
+      ],
+      "water_systems": [
+        "Japanese rivers",
+        "estuaries",
+        "coastal bays"
+      ],
+      "habitats": [
+        "clear_stream",
+        "middle_river",
+        "estuary",
+        "harbor",
+        "rocky_shore",
+        "coastal_bay"
+      ],
+      "launch_priority": 2
+    },
+    {
+      "id": "amazon_basin",
+      "name": {
+        "th": "ลุ่มน้ำอเมซอน",
+        "en": "Amazon Basin"
+      },
+      "countries": [
+        "BR",
+        "PE",
+        "CO"
+      ],
+      "water_systems": [
+        "Amazon Basin"
+      ],
+      "habitats": [
+        "main_channel",
+        "blackwater_tributary",
+        "whitewater_river",
+        "floodplain_lake",
+        "flooded_forest",
+        "oxbow"
+      ],
+      "launch_priority": 2
+    },
+    {
+      "id": "lower_mississippi_gulf",
+      "name": {
+        "th": "มิสซิสซิปปีตอนล่างและแม่น้ำชายฝั่งอ่าว",
+        "en": "Lower Mississippi & Gulf Rivers"
+      },
+      "countries": [
+        "US",
+        "MX"
+      ],
+      "water_systems": [
+        "Lower Mississippi Basin",
+        "Gulf Coastal Plain rivers"
+      ],
+      "habitats": [
+        "big_river",
+        "backwater",
+        "bayou",
+        "oxbow",
+        "swamp",
+        "brackish_lower_river"
+      ],
+      "launch_priority": 2
+    },
+    {
+      "id": "north_america_pacific",
+      "name": {
+        "th": "แปซิฟิกตะวันตกเฉียงเหนือและอะแลสกา",
+        "en": "Pacific Northwest & Alaska"
+      },
+      "countries": [
+        "US",
+        "CA"
+      ],
+      "water_systems": [
+        "Pacific-draining rivers",
+        "cold lakes",
+        "estuaries"
+      ],
+      "habitats": [
+        "cold_river",
+        "riffle",
+        "gravel_run",
+        "deep_pool",
+        "lake",
+        "estuary",
+        "nearshore"
+      ],
+      "launch_priority": 3
+    },
+    {
+      "id": "europe_north_central",
+      "name": {
+        "th": "ยุโรปเหนือและยุโรปตอนกลาง",
+        "en": "Northern & Central Europe"
+      },
+      "countries": [
+        "NO",
+        "SE",
+        "FI",
+        "DE",
+        "FR",
+        "PL",
+        "CZ",
+        "AT"
+      ],
+      "water_systems": [
+        "European rivers",
+        "natural lakes",
+        "reservoirs"
+      ],
+      "habitats": [
+        "river",
+        "lake_littoral",
+        "weed_bed",
+        "reed_margin",
+        "deep_channel",
+        "reservoir"
+      ],
+      "launch_priority": 2
+    },
+    {
+      "id": "mediterranean_coast",
+      "name": {
+        "th": "เมดิเตอร์เรเนียน",
+        "en": "Mediterranean Coast"
+      },
+      "countries": [
+        "ES",
+        "FR",
+        "IT",
+        "HR",
+        "GR",
+        "TR"
+      ],
+      "water_systems": [
+        "Mediterranean Sea"
+      ],
+      "fao_area": "37",
+      "habitats": [
+        "harbor",
+        "rocky_shore",
+        "seagrass",
+        "reef",
+        "estuary",
+        "continental_shelf"
+      ],
+      "launch_priority": 4
+    },
+    {
+      "id": "africa_nile_great_lakes",
+      "name": {
+        "th": "ไนล์และเกรตเลกส์แอฟริกาตะวันออก",
+        "en": "Nile & East African Great Lakes"
+      },
+      "countries": [
+        "UG",
+        "KE",
+        "TZ",
+        "EG",
+        "SD",
+        "SS"
+      ],
+      "water_systems": [
+        "Nile system",
+        "East African Great Lakes"
+      ],
+      "habitats": [
+        "large_lake",
+        "river_channel",
+        "reed_margin",
+        "rocky_littoral",
+        "deep_basin"
+      ],
+      "launch_priority": 3
+    },
+    {
+      "id": "zambezi_southern_africa",
+      "name": {
+        "th": "แซมบีซีและแอฟริกาตอนใต้",
+        "en": "Zambezi & Southern Africa"
+      },
+      "countries": [
+        "ZM",
+        "ZW",
+        "BW",
+        "NA",
+        "MZ"
+      ],
+      "water_systems": [
+        "Zambezi Basin",
+        "Okavango system"
+      ],
+      "habitats": [
+        "river_channel",
+        "rapid_edge",
+        "floodplain",
+        "delta",
+        "lagoon"
+      ],
+      "launch_priority": 3
+    },
+    {
+      "id": "australia_murray_darling",
+      "name": {
+        "th": "ออสเตรเลีย: เมอร์เรย์-ดาร์ลิง",
+        "en": "Australia: Murray-Darling"
+      },
+      "countries": [
+        "AU"
+      ],
+      "water_systems": [
+        "Murray-Darling Basin"
+      ],
+      "habitats": [
+        "snaggy_river",
+        "billabong",
+        "reservoir",
+        "deep_pool",
+        "woody_structure"
+      ],
+      "launch_priority": 3
+    },
+    {
+      "id": "australia_tropical_north",
+      "name": {
+        "th": "ออสเตรเลียเขตร้อนตอนเหนือ",
+        "en": "Tropical North Australia"
+      },
+      "countries": [
+        "AU"
+      ],
+      "water_systems": [
+        "Northern tropical rivers",
+        "estuaries"
+      ],
+      "habitats": [
+        "tropical_river",
+        "creek",
+        "estuary",
+        "mangrove",
+        "coastal_bay"
+      ],
+      "launch_priority": 3
+    },
+    {
+      "id": "indo_pacific_tropical",
+      "name": {
+        "th": "ชายฝั่งและทะเลเขตร้อนอินโด-แปซิฟิก",
+        "en": "Indo-Pacific Tropical"
+      },
+      "countries": [
+        "TH",
+        "MY",
+        "ID",
+        "PH",
+        "AU"
+      ],
+      "water_systems": [
+        "Western Central Pacific",
+        "Eastern Indian Ocean connected coasts"
+      ],
+      "fao_areas": [
+        "57",
+        "71"
+      ],
+      "habitats": [
+        "mangrove",
+        "lagoon",
+        "coral_reef",
+        "reef_dropoff",
+        "coastal_current",
+        "pelagic_ocean"
+      ],
+      "launch_priority": 4
+    }
+  ]
+}

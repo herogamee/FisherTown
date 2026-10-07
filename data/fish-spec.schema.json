@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FisherTown Fish Species",
+  "type": "object",
+  "required": [
+    "id",
+    "scientific_name",
+    "common_names",
+    "water_types",
+    "native_region_ids",
+    "habitat_tags",
+    "research_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "scientific_name": {
+      "type": "string"
+    },
+    "genus": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "species": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "family": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "common_names": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "water_types": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "freshwater",
+          "brackish",
+          "marine"
+        ]
+      }
+    },
+    "native_region_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "introduced_region_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "native_range_summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "habitat_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "climate_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "migration": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "feeding_guild": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "max_length_cm": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "max_weight_kg": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "fight_archetypes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conservation_handling": {
+      "enum": [
+        "normal",
+        "release_preferred",
+        "release_only",
+        "photo_only",
+        "research_only"
+      ]
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "research_status": {
+      "enum": [
+        "seed",
+        "pending_review",
+        "cross_checked",
+        "production_verified"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": true
+}
