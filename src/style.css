@@ -1,0 +1,78 @@
+:root {
+  font-family: Arial, "Noto Sans Thai", sans-serif;
+  color: #eef6f2;
+  background: #061d22;
+  font-synthesis: none;
+  touch-action: manipulation;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #app {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background: #061d22;
+  overscroll-behavior: none;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+}
+
+#game-frame {
+  width: min(100%, 1600px);
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #0a2b31;
+}
+
+#game, #game canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  touch-action: none;
+}
+
+#rotate-hint { display: none; }
+
+.rotate-card {
+  width: min(88vw, 420px);
+  padding: 28px;
+  border-radius: 22px;
+  background: #0b343b;
+  border: 1px solid rgba(255,255,255,.12);
+  display: grid;
+  gap: 10px;
+  text-align: center;
+}
+
+.rotate-card strong { font-size: 22px; }
+.rotate-card span { color: #b7d1ce; line-height: 1.5; }
+.rotate-icon { font-size: 46px; }
+
+@media (orientation: portrait) and (max-width: 900px) {
+  #game-frame { display: none; }
+  #rotate-hint { display: grid; place-items: center; width: 100%; min-height: 70vh; }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  #app { padding: 0; }
+  #game-frame { width: 100%; border-radius: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+}
