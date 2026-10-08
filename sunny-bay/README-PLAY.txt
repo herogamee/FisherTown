@@ -11,4 +11,4 @@ FisherTown Sunny Bay v0.5 — interactive design prototype
 รุ่นนี้เป็น prototype แยก ไม่ใช่การแทนที่ main v0.4 โดยอัตโนมัติ
 
 Windows XAMPP3: double-click INSTALL-XAMPP3.cmd to install to C:\xampp3\htdocs\fishertown-sunnybay. This does NOT overwrite existing /fishertown v0.4.
-The approved concept art is retained in design/Approved-Sunny-Bay-Reference.png.
+The approved concept reference is preserved in the ChatGPT handoff ZIP; repository stores only the lightweight derived scenery.

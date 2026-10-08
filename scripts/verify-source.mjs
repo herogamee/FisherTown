@@ -71,3 +71,29 @@ console.log('PASS FisherTown integrity: 10 individual SVG species assets, backgr
 
 assert.ok(scene.includes('bg_thailand_sunset.webp'), 'Runtime not using optimized WebP');
 assert.ok(actor.includes('this.art.setDisplaySize('), 'Species texture art renderer regressed');
+
+const sunnyFiles = [
+  'sunny-bay/index.html', 'sunny-bay/style.css', 'sunny-bay/game.js',
+  'sunny-bay/assets/sunny-bay-scene.webp',
+  'sunny-bay/assets/sunny-logo.webp',
+  'sunny-bay/assets/silver-barb.svg',
+  'sunny-bay/assets/snakehead.svg',
+  'sunny-bay/assets/catfish.svg',
+  'sunny-bay/assets/featherback.svg'
+];
+for (const file of sunnyFiles) {
+  const fileInfo = await stat(new URL('../' + file, import.meta.url)).catch(() => null);
+  assert.ok(fileInfo && fileInfo.size >= 200, 'Sunny Bay asset missing/empty: ' + file);
+}
+const sunnyHTML = await read('sunny-bay/index.html');
+const sunnyGame = await read('sunny-bay/game.js');
+for (const name of ['cast', 'hook', 'reel', 'release', 'bottom-nav', 'modal']) {
+  assert.ok(sunnyHTML.includes('id="' + name + '"') || sunnyHTML.includes('class="' + name + '"'),
+    'Sunny Bay missing input/UI ' + name);
+}
+for (const action of ['startCast(', 'finishCast(', 'triggerBite(', 'hook(', 'land(', 'release(', 'recordCatch(']) {
+  assert.ok(sunnyGame.includes(action), 'Sunny Bay fishing gameplay regressed: ' + action);
+}
+assert.ok(index.includes('?classic=1') && index.includes('./sunny-bay/'),
+  'Default home must open Sunny Bay, preserving Classic via query');
+console.log('PASS Sunny Bay visual release: static art, playable controls, phases and Classic fallback');

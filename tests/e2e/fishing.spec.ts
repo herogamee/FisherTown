@@ -5,7 +5,7 @@ test('phone portrait camera fills a tall viewport and fish controls work', async
   const uncaught: string[] = [];
   page.on('pageerror', error => uncaught.push(error.message));
 
-  await page.goto('/');
+  await page.goto('/?classic=1');
   await expect(page.locator('#game canvas')).toBeVisible();
   await expect(page.locator('#mobile-panel')).toBeVisible();
   await expect(page.locator('#mobile-title')).toContainText('พร้อมตกปลา', { timeout: 25_000 });
@@ -36,7 +36,7 @@ test('phone portrait camera fills a tall viewport and fish controls work', async
 
 test('wide orientation keeps original 16:9 controls and can reflow to portrait', async ({ page }) => {
   await page.setViewportSize({ width: 980, height: 550 });
-  await page.goto('/');
+  await page.goto('/?classic=1');
   await expect(page.locator('#game canvas')).toBeVisible();
   await expect(page.locator('#mobile-panel')).toBeHidden();
   await expect(page.locator('#quality-select')).toBeVisible();
