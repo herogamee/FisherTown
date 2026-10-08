@@ -190,51 +190,20 @@ export class FishActor {
 
   private drawBody(): void {
     const g = this.body;
-    const c = this.species.bodyColor;
-    const a = this.species.accentColor;
     g.clear();
 
-    if (this.species.morphology === 'snakehead') {
-      g.fillStyle(c, 1).fillEllipse(0, 0, 76, 24);
-      g.fillStyle(a, 0.85).fillEllipse(26, -1, 30, 22);
-      g.fillStyle(a, 0.7).fillTriangle(-33, 0, -53, -15, -53, 15);
-      g.fillStyle(a, 0.55).fillTriangle(-8, -10, 17, -18, 26, -9);
-      g.lineStyle(2, a, 0.8);
-      for (let x = -18; x < 26; x += 13) g.lineBetween(x, -8, x + 8, 8);
-    } else if (this.species.morphology === 'catfish') {
-      g.fillStyle(c, 1).fillEllipse(0, 0, 68, 28);
-      g.fillStyle(a, 0.8).fillEllipse(25, 0, 30, 25);
-      g.fillStyle(c, 1).fillTriangle(-31, 0, -52, -18, -52, 18);
-      g.fillStyle(a, 0.75).fillTriangle(-3, -12, 8, -27, 17, -11);
-      g.lineStyle(1.4, a, 0.9);
-      g.lineBetween(35, 3, 52, 12);
-      g.lineBetween(35, 5, 53, 2);
-      g.lineBetween(35, -2, 51, -10);
-    } else if (this.species.morphology === 'gourami') {
-      g.fillStyle(c, 1).fillEllipse(0, 0, 55, 38);
-      g.fillStyle(a, 0.72).fillTriangle(-24, 0, -44, -19, -44, 19);
-      g.fillStyle(a, 0.58).fillTriangle(-14, -16, 12, -28, 23, -14);
-      g.fillStyle(a, 0.58).fillTriangle(-12, 16, 15, 26, 22, 13);
-      g.lineStyle(1.1, a, 0.75);
-      g.lineBetween(12, 16, 22, 35);
-      g.lineBetween(18, 15, 29, 34);
-    } else if (this.species.morphology === 'featherback') {
-      g.fillStyle(c, 1).fillEllipse(0, 0, 76, 24);
-      g.fillStyle(a, 0.72).fillTriangle(-35, 0, -55, -10, -55, 10);
-      g.lineStyle(4, a, 0.78);
-      g.lineBetween(-28, 9, 30, 9);
-      g.fillStyle(a, 0.5).fillTriangle(5, -10, 22, -21, 26, -9);
-    } else {
-      g.fillStyle(c, 1).fillEllipse(0, 0, 60, 36);
-      g.fillStyle(a, 0.76).fillTriangle(-27, 0, -49, -19, -49, 19);
-      g.fillStyle(a, 0.62).fillTriangle(-8, -16, 7, -27, 18, -14);
-      g.fillStyle(a, 0.52).fillTriangle(-2, 15, 13, 26, 20, 12);
-      g.lineStyle(1.1, a, 0.5);
-      g.lineBetween(-10, -14, -10, 14);
-      g.lineBetween(4, -16, 4, 16);
+    // v0.3: non-final species remain subtle underwater silhouettes instead of bright cartoon fish.
+    const length = this.species.morphology === 'snakehead' || this.species.morphology === 'featherback' ? 82 : 64;
+    const height = this.species.morphology === 'gourami' ? 30 : 22;
+    g.fillStyle(0x162f30, 0.72).fillEllipse(0, 0, length, height);
+    g.fillStyle(0x102526, 0.68).fillTriangle(-length * 0.43, 0, -length * 0.7, -height * 0.72, -length * 0.7, height * 0.72);
+
+    if (this.species.morphology === 'catfish') {
+      g.lineStyle(1.2, 0x9bb4aa, 0.34);
+      g.lineBetween(length * 0.4, 1, length * 0.62, 9);
+      g.lineBetween(length * 0.4, -1, length * 0.62, -8);
     }
 
-    g.fillStyle(0xf5f2df, 1).fillCircle(27, -5, 3.7);
-    g.fillStyle(0x161a18, 1).fillCircle(28, -5, 1.7);
-  }
-}
+    g.fillStyle(0xc7d6c8, 0.42).fillCircle(length * 0.34, -3, 2.2);
+    g.fillStyle(0x071313, 0.8).fillCircle(length * 0.35, -3, 1.1);
+  }\n}
