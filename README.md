@@ -1,12 +1,12 @@
 # FisherTown
 
-เกมตกปลาแนว `Cozy World Fishing / Fish Life Simulation` สำหรับเว็บและมือถือแนวนอน โดยใช้โลกจริงและปลาจริงเป็นแกนหลัก
+เกมตกปลาแนว `Cozy World Fishing / Fish Life Simulation` สำหรับเว็บและมือถือทั้งแนวนอนและแนวตั้ง โดยใช้โลกจริงและปลาจริงเป็นแกนหลัก
 
 > เป้าหมาย: เปิดเกมแล้วผ่อนคลาย เล่น 2–10 นาทีได้ พักเมื่อไรก็ได้ กลับมาเล่นต่อได้ทันที แต่มีโลกและการสะสมลึกพอให้เล่นต่อเนื่องเป็นเดือนหรือเป็นปี
 
 ## Product Direction
 
-- Platform หลัก: Mobile Web (Landscape)
+- Platform หลัก: Mobile Web (Landscape + portrait)
 - Engine: Phaser 4 + TypeScript
 - Rendering: 2D HD / 2.5D effects
 - Input: Touch-first, รองรับ Mouse/Keyboard
@@ -140,3 +140,16 @@ npm run build
 See `docs/09-FISHING-LAB-V0.1.md` for controls, implemented features, known art limitations, and the next gates.
 
 > v0.1 fish graphics are procedural morphology placeholders for gameplay validation. Final fish art must follow the species-accurate pipeline in `docs/05-ART-DIRECTION.md`.
+
+
+## Fishing Lab v0.3.1 — Portrait controls + species illustrations
+
+- Generated golden-hour scenery is wired into the Phaser scene; the full fishing state machine is retained after recovery from a broken partial scene commit.
+- Every one of the ten Thai freshwater species has its own transparent SVG naturalist-study illustration (`public/assets/fish/<scientific-slug>.svg`) for swimming and landing. These are an **interim illustrated art pass**, not final photorealistic, scientifically certified image assets.
+- On portrait phones, the 16:9 river simulation sits above a separate **full-height touch control panel**: bait selection, hold-to-cast, hook timing, hold-to-reel, tension meter, Fishdex count, and release button. The control panel scrolls if the screen is short. Landscape keeps the original simulation controls.
+- Fullscreen button stays visible; desktop browsers use native Fullscreen API and unsupported browsers use edge-to-edge web-app fallback. PWA does not force landscape.
+- Both CI and Pages run `npm run validate` before TypeScript compile + Vite build to catch missing assets and accidental scene truncation.
+
+Live demo: https://herogamee.github.io/FisherTown/ (updated after GitHub Pages deploy succeeds)
+
+See `docs/10-PORTRAIT-ART-RECOVERY.md` for limitations, testing and next art gates.

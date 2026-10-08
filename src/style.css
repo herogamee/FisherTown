@@ -104,3 +104,10 @@ html.fill-screen #game-frame,#game-frame:fullscreen{
 @media(prefers-reduced-motion:reduce){
  *{scroll-behavior:auto!important;transition:none!important}
 }
+/* Preserve the landscape artwork's 16:9 proportions in native fullscreen, too. */
+@media(orientation:landscape){
+ html.fill-screen #game,#game-frame:fullscreen #game{
+  width:min(100vw,calc(100dvh*16/9));
+  height:min(100dvh,calc(100vw*9/16));
+ }
+}
