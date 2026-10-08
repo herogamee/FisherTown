@@ -8,7 +8,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
   <link rel="manifest" href="./manifest.webmanifest"/>
-  <title>FisherTown — Fishing Lab v0.4</title>
+  <title>FisherTown — Sunny Bay v0.5</title>
+  <script>
+    // Keep the tested Phaser v0.4 prototype reachable without altering its save format.
+    // Sunny Bay is the default, and ?classic=1 loads the original engine.
+    if (new URLSearchParams(location.search).get('classic') !== '1') {
+      location.replace(new URL('./sunny-bay/', location.href).href);
+    }
+  </script>
 </head>
 <body>
   <main id="app">

@@ -1,5 +1,5 @@
 {
-  "name": "FisherTown Fishing Lab",
+  "name": "FisherTown — Sunny Bay",
   "short_name": "FisherTown",
   "start_url": "./",
   "display": "standalone",
@@ -7,5 +7,5 @@
   "background_color": "#071f26",
   "theme_color": "#0f5e69",
   "lang": "th",
-  "description": "Cozy freshwater fishing with landscape and portrait-friendly controls."
+  "description": "Sunny Bay tropical fishing interactive scene with Classic mode."
 }

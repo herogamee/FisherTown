@@ -1,5 +1,16 @@
 # FisherTown
 
+## Playable experience — Sunny Bay v0.5 (default)
+
+- **Play:** https://herogamee.github.io/FisherTown/ — redirects to the new Sunny Bay scene
+- **Direct Sunny Bay:** https://herogamee.github.io/FisherTown/sunny-bay/
+- **Classic v0.4:** https://herogamee.github.io/FisherTown/?classic=1
+
+Sunny Bay v0.5 implements the approved tropical fishing-screen design as a standalone HTML/CSS/JS playable skin with a directly derived visual-scene plate from the user-approved image, separately interactive menus and action buttons, touch hold-to-cast, bite/hook/reel tension, catch & release, and local Fishdex. The decorative fish in the picture plate remain static; animated representative naturalist studies and the hook/bobber are separate dynamic elements. Full rigged rod/water/fish art is a further production step, not promised by this skin.
+
+The old Phaser v0.4 engine remains intact as **Classic** on the same origin and shares the existing local Fishdex save schema. New Sunny Bay stand-alone source: `sunny-bay/`.
+
+
 เกมตกปลาแนว `Cozy World Fishing / Fish Life Simulation` สำหรับเว็บและมือถือทั้งแนวนอนและแนวตั้ง โดยใช้โลกจริงและปลาจริงเป็นแกนหลัก
 
 > เป้าหมาย: เปิดเกมแล้วผ่อนคลาย เล่น 2–10 นาทีได้ พักเมื่อไรก็ได้ กลับมาเล่นต่อได้ทันที แต่มีโลกและการสะสมลึกพอให้เล่นต่อเนื่องเป็นเดือนหรือเป็นปี

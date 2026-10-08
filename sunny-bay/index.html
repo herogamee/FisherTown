@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#0d3548">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>FisherTown — Sunny Bay</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main id="app" class="game-shell" aria-label="FisherTown Sunny Bay Fishing">
+    <div class="scenic-base" aria-hidden="true"></div>
+    <div class="sea-rays" aria-hidden="true"></div>
+    <header class="top-header">
+      <div class="logo-area"><img src="./assets/sunny-logo.webp" alt="FisherTown" class="wood-logo"><small>Small Stories · Big Catches</small></div>
+      <div class="top-right">
+        <div class="wallet" title="เหรียญสะสมจากการตกปลา"><span class="coin">★</span><strong id="money">1,250</strong></div>
+        <div class="wallet gem-wallet" title="เพชรเป็นตัวอย่าง UI ยังไม่มีระบบเติมเงินจริง"><span>💎</span><strong>25</strong></div>
+        <button id="settings" class="icon-circle" aria-label="ตั้งค่า" title="ตั้งค่า">⚙</button>
+        <button id="fullscreen" class="icon-circle" aria-label="ขยายเต็มจอ" title="ขยายเต็มจอ">⛶</button>
+      </div>
+    </header>
+    <div class="location-panel glass"><span>📍</span><div><b>Sunny Bay</b><span>อ่าวแสงจันทร์</span></div><span class="sun">☀</span></div>
+    <div class="side-menu glass" role="toolbar" aria-label="เมนูเกม">
+      <button data-panel="fishdex" aria-label="สมุดปลา"><span>📖</span><small>สมุดปลา</small></button>
+      <button data-panel="inventory" aria-label="กระเป๋า"><span>🎒</span><small>กระเป๋า</small></button>
+      <button data-panel="shop" aria-label="ร้านค้า"><span>🏪</span><small>ร้านค้า</small></button>
+    </div>
+    <div class="water-weather glass"><span class="sun">☀</span><div><strong>14:30</strong><small>28°C · น้ำใส</small></div></div>
+    <div id="water-state" class="water-state glass" aria-live="polite"><span id="state-symbol">🫧</span><div><b id="state-title">เตรียมตกปลา</b><span id="state-hint">กดค้างเหวี่ยงเบ็ด</span></div></div>
+    <div id="world-layer" class="world-layer" aria-hidden="true">
+      <div id="bobber" class="bobber hidden"><i></i><span class="bobber-body"></span></div>
+      <div id="bite-signal" class="bite-signal hidden">!</div>
+      <img id="fish-shadow-1" class="fish-shadow fish-one" src="./assets/silver-barb.svg" alt="">
+      <img id="fish-shadow-2" class="fish-shadow fish-two" src="./assets/snakehead.svg" alt="">
+    </div>
+    <div class="status-center glass" aria-live="polite"><span id="action-status">เลือกเหยื่อ แล้วเริ่มตกปลาได้เลย</span></div>
+    <div id="meter" class="meter glass hidden" role="progressbar" aria-label="กำลังเหวี่ยง / แรงตึง" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="meter-caption">แรงเหวี่ยง</span><span id="meter-label">0%</span><div class="track"><div id="meter-fill"></div></div></div>
+    <div class="fishing-deck">
+      <div class="bait-row glass"><span>เหยื่อ</span>
+        <button class="bait" data-bait="worm" aria-pressed="true">🪱 ไส้เดือน</button>
+        <button class="bait" data-bait="small-fish" aria-pressed="false">🐟 ลูกปลา</button>
+        <button class="bait" data-bait="spinner" aria-pressed="false">✨ สปินเนอร์</button>
+      </div>
+      <div class="action-row">
+        <button id="hook" class="game-action hook" disabled><span class="bigicon">🪝</span><b>HOOK!</b><small>เตรียมเบ็ด</small></button>
+        <button id="cast" class="game-action cast"><span class="bigicon">🎣</span><b id="cast-title">เหวี่ยงเบ็ด</b><small id="cast-subtitle">กดค้างแล้วปล่อย</small></button>
+        <button id="reel" class="game-action reel" disabled><span class="bigicon">⚙</span><b>ดึงสาย</b><small>กดค้าง</small></button>
+        <button id="release" class="game-action release" disabled><span class="bigicon">🐠</span><b>ปล่อยปลา</b><small>คืนธรรมชาติ</small></button>
+      </div>
+    </div>
+    <nav class="bottom-nav" aria-label="นำทาง"><button class="nav-item selected" data-panel="home"><span>⌂</span><small>หน้าหลัก</small></button><button class="nav-item" data-panel="map"><span>🗺</span><small>แผนที่</small></button><button class="nav-item" data-panel="missions"><span>🏆</span><small>ภารกิจ</small></button><button class="nav-item" data-panel="fishdex"><span>🐟</span><small>สมุดสะสม</small></button><button class="nav-item" data-panel="inventory"><span>🎒</span><small>กระเป๋า</small></button></nav>
+    <div id="toast" class="toast hidden" role="status"></div>
+    <dialog id="modal"><div class="dialog-top"><h2 id="modal-title">FisherTown</h2><button id="modal-close" class="icon-circle" aria-label="ปิด">×</button></div><div id="modal-body"></div></dialog>
+    <div class="build-tag">SUNNY BAY <span>v0.5 Prototype</span></div>
+  </main>
+  <script type="module" src="./game.js"></script>
+</body>
+</html>

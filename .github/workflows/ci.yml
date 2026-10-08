@@ -31,7 +31,7 @@ jobs:
       - name: Upload ready-to-play web build
         uses: actions/upload-artifact@v4
         with:
-          name: FisherTown-v0.4-Web
+          name: FisherTown-v0.5-Web
           path: dist/
           if-no-files-found: error
           retention-days: 30
@@ -55,7 +55,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: FisherTown-v0.4-browser-smoke
+          name: FisherTown-v0.5-browser-smoke
           path: |
             test-results/
             playwright-report/
