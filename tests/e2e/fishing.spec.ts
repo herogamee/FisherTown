@@ -14,6 +14,11 @@ test('phone portrait camera fills a tall viewport and fish controls work', async
   expect(box!.height).toBeGreaterThan(360);
   expect(box!.height / box!.width).toBeGreaterThan(1.05);
   await expect(page.locator('#mobile-cast')).toBeEnabled();
+  await expect(page.locator('#mobile-release')).toBeHidden();
+  await expect.poll(async () => page.evaluate(() =>
+    performance.getEntriesByType('resource').some(entry =>
+      entry.name.includes('bg_thailand_sunset.webp'))
+  )).toBeTruthy();
 
   await page.locator('#quality-select').selectOption('low');
   await expect(page.locator('#quality-info')).toContainText('LOW');
@@ -46,4 +51,10 @@ test('wide orientation keeps original 16:9 controls and can reflow to portrait',
     return box ? box.height / box.width : 0;
   }).toBeGreaterThan(1.05);
   await page.screenshot({ path: 'test-results/rotated-portrait.png', fullPage: true });
+  await page.setViewportSize({ width: 980, height: 550 });
+  await expect(page.locator('#mobile-panel')).toBeHidden();
+  await expect.poll(async () => {
+    const box = await page.locator('#game').boundingBox();
+    return box ? box.width / box.height : 0;
+  }).toBeGreaterThan(1.7);
 });
