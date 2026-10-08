@@ -1,0 +1,55 @@
+import { test, expect } from '@playwright/test';
+
+test('Sunny Bay portrait: fish motion, cast, bite, hook, landing and save',async ({page})=>{
+  await page.setViewportSize({width:390,height:844});
+  const errors:string[]=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('/sunny-bay/?test=1');
+  await expect(page.locator('#sea-canvas')).toBeVisible();
+  await expect(page.locator('#rod-canvas')).toBeVisible();
+  await expect(page.locator('#cast')).toBeEnabled();
+  await expect(page.locator('.scenic-base')).toHaveCSS('background-image',/sunny-bay-clean\.webp/);
+  const a=await page.evaluate(()=>((window as any).__fishertownTest).getState());
+  expect(a.fish.length).toBe(14);
+  expect(a.rod.dynamic).toBe(true);
+  await page.waitForTimeout(900);
+  const b=await page.evaluate(()=>((window as any).__fishertownTest).getState());
+  expect(b.frames).toBeGreaterThan(a.frames);
+  expect(b.fish.some((fish:any,i:number)=>fish.x!==a.fish[i].x)).toBe(true);
+  await page.locator('#cast').dispatchEvent('pointerdown',{button:0,pointerId:3,pointerType:'touch'});
+  await expect(page.locator('#state-title')).toContainText('กำลังเหวี่ยง');
+  await page.waitForTimeout(300);
+  await page.locator('#cast').dispatchEvent('pointerup',{button:0,pointerId:3,pointerType:'touch'});
+  await expect(page.locator('#state-title')).toContainText('เหยื่อลงน้ำ');
+  await page.evaluate(()=>((window as any).__fishertownTest).triggerBite());
+  await expect(page.locator('#hook')).toBeEnabled();
+  await page.locator('#hook').click();
+  expect(await page.evaluate(()=>((window as any).__fishertownTest).getState().phase)).toBe('fight');
+  await page.evaluate(()=>((window as any).__fishertownTest).land());
+  await expect(page.locator('#modal')).toBeVisible();
+  await page.locator('#modal-body .panel-button').click();
+  expect(await page.evaluate(()=>((window as any).__fishertownTest).getState().totalCatches)).toBeGreaterThan(0);
+  await page.screenshot({path:'test-results/sunny-bay-v06-portrait.png',fullPage:true});
+  await page.reload();
+  await expect(page.locator('#sea-canvas')).toBeVisible();
+  expect(await page.evaluate(()=>((window as any).__fishertownTest).getState().totalCatches)).toBeGreaterThan(0);
+  expect(errors).toEqual([]);
+});
+
+test('Sunny Bay landscape: rod and fish canvas fill world, controls available',async ({page})=>{
+  await page.setViewportSize({width:844,height:390});
+  const errors:string[]=[];
+  page.on('pageerror',e=>errors.push(e.message));
+  await page.goto('/sunny-bay/?test=1');
+  await expect(page.locator('#sea-canvas')).toBeVisible();
+  await expect(page.locator('#rod-canvas')).toBeVisible();
+  await expect(page.locator('#cast')).toBeVisible();
+  await page.waitForTimeout(550);
+  const box=await page.locator('#world-layer').boundingBox();
+  expect(box?.width).toBeGreaterThan(600);
+  const status=await page.evaluate(()=>((window as any).__fishertownTest).getState());
+  expect(status.fish.length).toBe(14);
+  expect(status.rod.dynamic).toBe(true);
+  await page.screenshot({path:'test-results/sunny-bay-v06-landscape.png',fullPage:true});
+  expect(errors).toEqual([]);
+});
