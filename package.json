@@ -8,14 +8,18 @@
     "build": "tsc -p tsconfig.json && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "validate": "node scripts/verify-source.mjs"
+    "validate": "node scripts/verify-source.mjs",
+    "predev": "node scripts/optimize-art.mjs",
+    "prebuild": "node scripts/optimize-art.mjs",
+    "postbuild": "node scripts/prune-dist.mjs"
   },
   "dependencies": {
     "phaser": "4.2.1"
   },
   "devDependencies": {
     "typescript": "7.0.2",
-    "vite": "8.3.3"
+    "vite": "8.3.3",
+    "sharp": "^0.34.3"
   },
   "engines": {
     "node": ">=22.0.0"

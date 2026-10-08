@@ -153,3 +153,8 @@ See `docs/09-FISHING-LAB-V0.1.md` for controls, implemented features, known art 
 Live demo: https://herogamee.github.io/FisherTown/ (updated after GitHub Pages deploy succeeds)
 
 See `docs/10-PORTRAIT-ART-RECOVERY.md` for limitations, testing and next art gates.
+
+
+## v0.4 art delivery
+
+`scripts/optimize-art.mjs` runs before `npm run dev` and `npm run build`: it converts the checked-in source PNG to a **1280×720 WebP at quality 83**, using `sharp`. Runtime loads the WebP, while the original full-size PNG is kept in Git for provenance and removed only from the *built dist* to save bandwidth. Species-specific SVGs are rasterized to 560×280 textures to improve retina landing-card clarity. All source image/illustration rights must still be reviewed before commercial release.

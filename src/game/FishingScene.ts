@@ -81,9 +81,9 @@ export class FishingScene extends Phaser.Scene {
   }
 
   preload(): void {
-    this.load.image('bg-thailand-sunset', 'assets/generated/bg_thailand_sunset.png');
+    this.load.image('bg-thailand-sunset', 'assets/generated/bg_thailand_sunset.webp');
     for (const species of FISH_SPECIES) {
-      this.load.svg(`fish:${species.id}`, `assets/fish/${species.id}.svg`, { width: 280, height: 140 });
+      this.load.svg(`fish:${species.id}`, `assets/fish/${species.id}.svg`, { width: 560, height: 280 });
     }
   }
 
