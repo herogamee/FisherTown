@@ -5,6 +5,21 @@ import { loadSave, persistSave, recordCatch, type FisherSave } from './save';
 
 type GamePhase = 'idle' | 'charging' | 'cast' | 'bite' | 'fight' | 'result';
 
+type CanvasItem = Phaser.GameObjects.Graphics | Phaser.GameObjects.Rectangle | Phaser.GameObjects.Text;
+
+type CatchPreview = {
+  speciesId: string;
+  nameTh: string;
+  nameEn: string;
+  scientific: string;
+  lengthCm: number;
+  weightKg: number;
+  isNew: boolean;
+  isRecord: boolean;
+};
+
+type Quality = 'auto' | 'low' | 'balanced' | 'high';
+
 type ButtonPack = {
   bg: Phaser.GameObjects.Rectangle;
   label: Phaser.GameObjects.Text;
@@ -48,6 +63,18 @@ export class FishingScene extends Phaser.Scene {
   private mobileStateClock = 0;
   private mobileTitle = '';
   private mobileHint = '';
+  private portraitView = false;
+  private portraitFocusX = 1000;
+  private canvasItems: CanvasItem[] = [];
+  private lastCatch: CatchPreview | null = null;
+  private selectedQuality: Quality = 'auto';
+  private effectiveQuality: Exclude<Quality, 'auto'> = 'balanced';
+  private fishAccumulator = 0;
+  private fpsRolling = 60;
+  private fpsClock = 0;
+  private qualityClock = 0;
+  private qualityCooldown = 0;
+  private fpsDisplay = 60;
 
   constructor() {
     super('FishingScene');
@@ -74,6 +101,7 @@ export class FishingScene extends Phaser.Scene {
     this.createResultOverlay();
     this.createPauseSafety();
     this.attachMobileControls();
+    this.attachViewportAndQuality();
 
     this.status('บึงน้ำหลากเจ้าพระยา — พร้อมตกปลา', 'เลือกเหยื่อ แล้วแตะค้าง “เหวี่ยงเบ็ด” เพื่อกำหนดระยะ');
     this.refreshHud();
@@ -83,22 +111,37 @@ export class FishingScene extends Phaser.Scene {
     const dt = Math.min(deltaMs / 1000, 0.05);
     this.waterTick += dt;
     this.animateWater();
-
     if (this.phase === 'charging') this.updateCharge(dt);
 
+    // Fish AI ticks are fixed and bounded, independent of browser paint rate.
+    // This keeps bite probabilities and movement stable under slow frames.
+    const fishStep = this.effectiveQuality === 'low' ? 1 / 24 :
+      this.effectiveQuality === 'high' ? 1 / 60 : 1 / 40;
     if (this.phase !== 'fight' && this.phase !== 'result') {
-      for (const fish of this.fish) fish.update(dt, this.hook, WORLD);
+      this.fishAccumulator = Math.min(this.fishAccumulator + dt, fishStep * 2);
+      let passes = 0;
+      while (this.fishAccumulator >= fishStep && passes < 2) {
+        for (const fish of this.fish) fish.update(fishStep, this.hook, WORLD);
+        this.fishAccumulator -= fishStep;
+        passes += 1;
+      }
+    } else {
+      this.fishAccumulator = 0;
     }
 
     if (this.phase === 'cast') this.detectBites(dt);
     if (this.phase === 'bite') this.updateBiteWindow(dt);
     if (this.phase === 'fight') this.updateFight(dt);
 
+    this.updateViewport(dt);
+    this.updatePerformance(dt, deltaMs);
     this.drawLine();
-    this.drawBars();
-    this.syncButtons();
+    if (!this.portraitView) {
+      this.drawBars();
+      this.syncButtons();
+    }
     this.mobileStateClock += dt;
-    if (this.mobileStateClock >= 0.12) {
+    if (this.mobileStateClock >= 0.14) {
       this.mobileStateClock = 0;
       this.emitMobileState();
     }
@@ -116,14 +159,15 @@ export class FishingScene extends Phaser.Scene {
     shading.fillStyle(0x021417, 0.42).fillRoundedRect(920, 16, 340, 56, 15);
 
     this.waterFx = this.add.graphics().setDepth(8);
-    this.add.text(33, 24, 'FisherTown', {
+    const labelLeft = this.add.text(33, 24, 'FisherTown', {
       fontFamily: 'Arial, sans-serif', fontSize: '29px', fontStyle: 'bold',
       color: '#fff3d9', stroke: '#123a39', strokeThickness: 5
     }).setDepth(30);
-    this.add.text(944, 31, 'Thailand Freshwater · Golden Hour', {
+    const labelRight = this.add.text(944, 31, 'Thailand Freshwater · Golden Hour', {
       fontFamily: 'Arial, sans-serif', fontSize: '15px',
       color: '#fff2dc', stroke: '#193a36', strokeThickness: 2
     }).setDepth(30);
+    this.canvasItems.push(labelLeft, labelRight);
   }
 
   private createFishPopulation(): void {
@@ -176,6 +220,9 @@ export class FishingScene extends Phaser.Scene {
     this.debugText = this.add.text(812, 92, '', {
       fontFamily: 'Arial, sans-serif', fontSize: '13px', color: '#254b50', align: 'right'
     }).setOrigin(0, 0);
+    this.canvasItems.push(panel, this.statusText, this.hintText,
+      this.catchCountText, this.discoveredText, this.chargeBar,
+      this.tensionBar, this.debugText);
   }
 
   private createControls(): void {
@@ -204,6 +251,12 @@ export class FishingScene extends Phaser.Scene {
     this.reelButton.bg.on('pointerdown', () => { if (this.phase === 'fight') this.reelHeld = true; });
     this.reelButton.bg.on('pointerup', () => { this.reelHeld = false; });
     this.reelButton.bg.on('pointerout', () => { this.reelHeld = false; });
+    for (const pack of this.baitButtons.values()) {
+      this.canvasItems.push(pack.bg, pack.label);
+    }
+    for (const pack of [this.castButton, this.hookButton, this.reelButton]) {
+      this.canvasItems.push(pack.bg, pack.label);
+    }
   }
 
   private createResultOverlay(): void {
@@ -447,26 +500,47 @@ export class FishingScene extends Phaser.Scene {
       }).setOrigin(0.5);
     this.overlay.add([shade, card, title, scientific, picture, measure, badge,
       habitat, releaseBg, releaseText, note]);
-    this.overlay.setVisible(true);
+    this.lastCatch = {
+      speciesId: species.id, nameTh: species.nameTh,
+      nameEn: species.nameEn, scientific: species.scientific,
+      lengthCm: length, weightKg: weight, isNew, isRecord
+    };
+    this.overlay.setVisible(!this.portraitView);
+    this.emitMobileState();
   }
 
   private closeCatchCard(): void {
     this.overlay.setVisible(false);
+    this.lastCatch = null;
     this.phase = 'idle';
     this.status('บันทึกแล้ว และปล่อยคืนเรียบร้อย', 'เล่นต่อได้ทันที หรือพักแล้วกลับมาใหม่ได้ — สถิติถูกเก็บไว้ในเครื่อง');
   }
 
   private animateWater(): void {
-    // Few subdued highlights, not a busy geometric ripple grid.
-    if (!this.waterFx || this.waterTick < 0.075) return;
+    // Calm highlights plus a localized bobber ripple. Adaptive detail and tick rate.
+    const interval = this.effectiveQuality === 'low' ? 0.18 :
+      this.effectiveQuality === 'high' ? 0.045 : 0.09;
+    if (!this.waterFx || this.waterTick < interval) return;
     this.waterTick = 0;
     this.waterFx.clear();
-    this.waterFx.lineStyle(1.3, 0xe7e4c4, 0.12);
-    const shift = (this.time.now * 0.01) % 138;
-    for (let y = 397; y < 624; y += 46) {
-      for (let x = -80 + shift; x < 1030; x += 138) {
-        this.waterFx.lineBetween(x, y, x + 34, y + Math.sin(x * 0.02) * 1.2);
+    const lineCount = this.effectiveQuality === 'low' ? 2 :
+      this.effectiveQuality === 'high' ? 8 : 4;
+    const spacing = this.effectiveQuality === 'high' ? 96 : 160;
+    this.waterFx.lineStyle(1.4, 0xe7e4c4, this.effectiveQuality === 'high' ? 0.18 : 0.11);
+    const shift = (this.time.now * 0.010) % spacing;
+    for (let row = 0; row < lineCount; row += 1) {
+      const y = 403 + row * (212 / Math.max(1, lineCount - 1));
+      for (let x = -80 + shift; x < 1045; x += spacing) {
+        this.waterFx.lineBetween(x, y, x + 31, y + Math.sin(x * 0.02) * 1.2);
       }
+    }
+    if (this.hook.active) {
+      const pulse = (this.time.now * 0.0011) % 1;
+      const activeBite = this.phase === 'bite';
+      const radius = 10 + pulse * (activeBite ? 32 : 17);
+      this.waterFx.lineStyle(activeBite ? 2.4 : 1.5,
+        activeBite ? 0xffe6a1 : 0xd1e3de, (activeBite ? 0.68 : 0.3) * (1 - pulse));
+      this.waterFx.strokeEllipse(this.hook.x, this.hook.y + 5, radius * 2, radius * 0.64);
     }
   }
 
@@ -564,9 +638,106 @@ export class FishingScene extends Phaser.Scene {
         discovered: this.save.discovered.length,
         speciesTotal: FISH_SPECIES.length,
         selectedBait: this.selectedBait,
-        charge: this.charge, tension: this.tension
+        charge: this.charge, tension: this.tension,
+        quality: this.selectedQuality,
+        activeQuality: this.effectiveQuality,
+        fps: this.fpsDisplay,
+        catch: this.lastCatch,
+        portrait: this.portraitView
       }
     }));
+  }
+
+  private attachViewportAndQuality(): void {
+    // Phaser RESIZE controls canvas size; camera keeps an independent 1280x720 world.
+    const apply = (): void => this.configureViewport();
+    this.scale.on(Phaser.Scale.Events.RESIZE, apply);
+    window.addEventListener('orientationchange', apply);
+    const onQuality = (event: Event): void => {
+      const selected = (event as CustomEvent<{ quality: Quality }>).detail.quality;
+      if (selected !== 'auto' && selected !== 'low' &&
+          selected !== 'balanced' && selected !== 'high') return;
+      this.selectedQuality = selected;
+      this.effectiveQuality = selected === 'auto' ? 'balanced' : selected;
+      this.qualityClock = 0;
+      this.qualityCooldown = 5;
+      this.emitMobileState();
+    };
+    window.addEventListener('fishertown:quality', onQuality);
+    try {
+      const preference = localStorage.getItem('fishertown:quality');
+      if (preference === 'low' || preference === 'balanced' || preference === 'high') {
+        this.selectedQuality = preference;
+        this.effectiveQuality = preference;
+      }
+    } catch { /* Storage denied; default Auto remains playable */ }
+    this.configureViewport();
+    this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => {
+      this.scale.off(Phaser.Scale.Events.RESIZE, apply);
+      window.removeEventListener('orientationchange', apply);
+      window.removeEventListener('fishertown:quality', onQuality);
+    });
+  }
+
+  private configureViewport(): void {
+    const width = Math.max(1, this.scale.width);
+    const height = Math.max(1, this.scale.height);
+    this.portraitView = width < height && window.matchMedia('(orientation: portrait)').matches;
+    const zoom = this.portraitView ? height / 720 : Math.min(width / 1280, height / 720);
+    const camera = this.cameras.main;
+    camera.setViewport(0, 0, width, height);
+    camera.setZoom(Math.max(0.1, zoom));
+    camera.setBackgroundColor('#082a2e');
+    for (const item of this.canvasItems) {
+      item.setVisible(!this.portraitView);
+      if (item instanceof Phaser.GameObjects.Rectangle) {
+        if (this.portraitView) item.disableInteractive();
+        else item.setInteractive({ useHandCursor: true });
+      }
+    }
+    if (this.portraitView && this.phase === 'result') this.overlay.setVisible(false);
+    if (!this.portraitView && this.phase === 'result') this.overlay.setVisible(true);
+    this.portraitFocusX = this.portraitView ? 985 : 640;
+    camera.centerOn(this.portraitFocusX, 360);
+    this.emitMobileState();
+  }
+
+  private updateViewport(dt: number): void {
+    if (!this.portraitView) return;
+    const camera = this.cameras.main;
+    const visibleWidth = camera.width / Math.max(0.1, camera.zoom);
+    let targetX = 950;
+    if (this.phase === 'cast' || this.phase === 'bite') targetX = this.hook.x + 145;
+    else if (this.phase === 'fight' && this.hookedFish) targetX = this.hookedFish.x + 125;
+    else if (this.phase === 'result') targetX = this.hook.x + 125;
+    targetX = Phaser.Math.Clamp(targetX,
+      Math.min(640, visibleWidth / 2), Math.max(640, 1280 - visibleWidth / 2));
+    const alpha = 1 - Math.exp(-dt * 3.5);
+    this.portraitFocusX = Phaser.Math.Linear(this.portraitFocusX, targetX, alpha);
+    camera.centerOn(this.portraitFocusX, 360);
+  }
+
+  private updatePerformance(dt: number, deltaMs: number): void {
+    const sample = Math.min(90, 1000 / Math.max(1, deltaMs));
+    this.fpsRolling = this.fpsRolling * 0.94 + sample * 0.06;
+    this.fpsClock += dt;
+    if (this.fpsClock >= 0.7) {
+      this.fpsClock = 0;
+      this.fpsDisplay = Math.round(this.fpsRolling);
+    }
+    this.qualityCooldown = Math.max(0, this.qualityCooldown - dt);
+    if (this.selectedQuality !== 'auto' || this.qualityCooldown > 0 ||
+        document.hidden) return;
+    this.qualityClock += dt;
+    if (this.qualityClock < 5) return;
+    this.qualityClock = 0;
+    if (this.fpsRolling < 39 && this.effectiveQuality !== 'low') {
+      this.effectiveQuality = 'low';
+      this.qualityCooldown = 8;
+    } else if (this.fpsRolling > 55 && this.effectiveQuality === 'low') {
+      this.effectiveQuality = 'balanced';
+      this.qualityCooldown = 10;
+    }
   }
 
   private status(title: string, hint: string): void {
