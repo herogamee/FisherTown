@@ -11,7 +11,8 @@
     "validate": "node scripts/verify-source.mjs",
     "predev": "node scripts/optimize-art.mjs",
     "prebuild": "node scripts/optimize-art.mjs",
-    "postbuild": "node scripts/prune-dist.mjs"
+    "postbuild": "node scripts/prune-dist.mjs",
+    "smoke": "playwright test"
   },
   "dependencies": {
     "phaser": "4.2.1"
@@ -19,7 +20,8 @@
   "devDependencies": {
     "typescript": "7.0.2",
     "vite": "8.3.3",
-    "sharp": "^0.34.3"
+    "sharp": "^0.34.3",
+    "@playwright/test": "^1.56.1"
   },
   "engines": {
     "node": ">=22.0.0"
