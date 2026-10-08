@@ -53,6 +53,19 @@ test('wide orientation keeps original 16:9 controls and can reflow to portrait',
   await page.screenshot({ path: 'test-results/rotated-portrait.png', fullPage: true });
   await page.setViewportSize({ width: 980, height: 550 });
   await expect(page.locator('#mobile-panel')).toBeHidden();
+  console.log('post-rotation layout', await page.evaluate(() => {
+    const game = document.getElementById('game')!;
+    const frame = document.getElementById('game-frame')!;
+    const canvas = game.querySelector('canvas')!;
+    const g = game.getBoundingClientRect(), f = frame.getBoundingClientRect();
+    const s = getComputedStyle(game);
+    return {
+      innerWidth, innerHeight, game: [g.width,g.height], frame:[f.width,f.height],
+      canvas:[canvas.clientWidth,canvas.clientHeight],
+      inlineStyle:game.getAttribute('style'),
+      styleHeight:s.height,styleWidth:s.width
+    };
+  }));
   await expect.poll(async () => {
     const box = await page.locator('#game').boundingBox();
     return box ? box.width / box.height : 0;
