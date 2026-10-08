@@ -89,7 +89,7 @@ Landing
 
 ## Current Status
 
-Concept foundation / World Bible initialized. Fishing Lab v0.1 implemented.
+Concept foundation / World Bible initialized. Fishing Lab v0.4 (portrait camera, quality presets and ten species illustrated art) implemented.
 
 เริ่มจาก Prototype หนึ่งพื้นที่ในประเทศไทยก่อน แล้วใช้โครงเดียวกันขยายไป Amazon, North America, Europe, Africa, Japan, Australia, Oceanic และภูมิภาคอื่น ๆ
 
