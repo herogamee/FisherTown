@@ -1,1 +1,54 @@
-<!doctype html><html lang="th"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"/><meta name="theme-color" content="#071d21"/><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><link rel="manifest" href="./manifest.webmanifest"/><title>FisherTown — Fishing Lab</title></head><body><main id="app"><section id="game-frame" aria-label="FisherTown Fishing Lab"><div id="game"></div></section></main><script type="module" src="/src/main.ts"></script></body></html>
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"/>
+  <meta name="theme-color" content="#08262b"/>
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <link rel="manifest" href="./manifest.webmanifest"/>
+  <title>FisherTown — Fishing Lab v0.3.1</title>
+</head>
+<body>
+  <main id="app">
+    <section id="game-frame" aria-label="FisherTown Fishing Lab">
+      <div id="game" aria-label="ฉากตกปลา"></div>
+      <section id="mobile-panel" aria-label="แผงควบคุมสำหรับหน้าจอแนวตั้ง">
+        <header class="mobile-summary" aria-live="polite">
+          <div class="eyebrow">FISHERTOWN <span>• THAILAND FRESHWATER</span></div>
+          <h1 id="mobile-title">บึงน้ำหลากเจ้าพระยา</h1>
+          <p id="mobile-hint">เลือกเหยื่อ แล้วกดค้างเพื่อเหวี่ยงเบ็ด</p>
+        </header>
+        <div class="mobile-stats">
+          <span id="mobile-catches">🎣 จับได้ 0 ตัว</span>
+          <span id="mobile-discovered">📖 Fishdex 0/10</span>
+        </div>
+        <div id="mobile-meter" class="mobile-meter" hidden>
+          <div class="mobile-meter-head"><span id="mobile-meter-label">กำลังเหวี่ยง</span><b id="mobile-meter-number">0%</b></div>
+          <div class="mobile-meter-track" role="progressbar" aria-label="กำลังเหวี่ยงหรือแรงตึงสาย" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="mobile-meter-value"></div></div>
+        </div>
+        <div class="mobile-bait-panel">
+          <div class="mobile-section-head">เลือกเหยื่อ</div>
+          <div class="mobile-baits" role="group" aria-label="ชนิดเหยื่อ">
+            <button type="button" data-bait="worm" aria-pressed="true"><span aria-hidden="true">🪱</span> ไส้เดือน</button>
+            <button type="button" data-bait="small-fish" aria-pressed="false"><span aria-hidden="true">🐟</span> ลูกปลา</button>
+            <button type="button" data-bait="spinner" aria-pressed="false"><span aria-hidden="true">✨</span> สปินเนอร์</button>
+          </div>
+        </div>
+        <div class="mobile-actions" aria-label="ปุ่มเล่นเกม">
+          <button id="mobile-cast" type="button" class="action-cast">🎣 กดค้างเพื่อเหวี่ยง</button>
+          <div class="mobile-secondary">
+            <button id="mobile-hook" type="button" class="action-hook" disabled>HOOK!</button>
+            <button id="mobile-reel" type="button" class="action-reel" disabled>ดึงสาย (กดค้าง)</button>
+          </div>
+          <button id="mobile-release" type="button" class="action-release" hidden>ปล่อยคืนสู่ธรรมชาติ ✓</button>
+        </div>
+        <p class="mobile-tip">กดค้างเพื่อเหวี่ยงหรือดึงสาย • ปล่อยนิ้วเพื่อลดแรงตึง</p>
+      </section>
+      <button id="fullscreen-button" type="button" aria-label="ขยายเกมเต็มจอ" title="เต็มจอ">⛶</button>
+    </section>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
