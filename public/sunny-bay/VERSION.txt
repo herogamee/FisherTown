@@ -1,0 +1,5 @@
+FISHERTOWN_VERSION=0.6.0
+EDITION=Sunny Bay Live Scene (Marine Sprite + Animated Rod)
+BUILD_DATE=2026-10-08
+BASE=FisherTown Sunny Bay v0.5 standalone
+STATUS=Release candidate; separate from v0.4 stable

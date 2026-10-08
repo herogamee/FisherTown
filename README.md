@@ -170,3 +170,11 @@ See `docs/10-PORTRAIT-ART-RECOVERY.md` for limitations, testing and next art gat
 - CI includes Chromium Playwright smoke for **portrait size, holding/releasing cast, quality selection, landscape → portrait → landscape**, with screenshots saved as an artifact. Tests run against **production Vite preview**.
 
 See `docs/11-V0.4-RELEASE-NOTES.md` for gates, remaining art work and manual iOS/Android validation.
+
+## Sunny Bay v0.6 — animated marine fishing scene
+
+[Play the separate Sunny Bay build](https://herogamee.github.io/FisherTown/sunny-bay/) (available after GitHub Pages deployment). The old v0.4 Fishing Lab remains at the root.
+
+Sunny Bay v0.6 eliminates baked fish, rod, float and line from the scenery plate. It uses **14 independent fish actors** with five transparent study sprites extracted from the approved original concept, real movement and tail articulation, lure investigation and actual distance-triggered bites. A separate Canvas renders a dynamic bent graphite fishing rod, reel, live line, splash/ripples and cast/fight motions. Every menu and button is HTML. The standalone ZIP can install to `C:\xampp3\htdocs\fishertown-sunnybay`.
+
+Note: The artwork is based on generated fictional concept art and is not a scientifically verified biological photo reference. See `public/sunny-bay/docs-art.txt`. Automated tests: `node --test public/sunny-bay/tests/scene.test.mjs` and `tests/e2e/sunny-bay.spec.ts` through Playwright.
