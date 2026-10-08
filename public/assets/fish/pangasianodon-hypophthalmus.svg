@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="280" viewBox="0 0 280 140" role="img" aria-label="pangasianodon-hypophthalmus naturalist fish illustration">
+<defs>
+  <linearGradient id="body" x1="0" y1="0" x2="0.12" y2="1">
+   <stop offset="0" stop-color="#d5ded9"/><stop offset=".40" stop-color="#8da5a8"/><stop offset="1" stop-color="#536974"/>
+  </linearGradient>
+  <linearGradient id="fins" x1="0" y1="0" x2=".5" y2="1">
+   <stop offset="0" stop-color="#879499" stop-opacity=".72"/><stop offset="1" stop-color="#4d6875" stop-opacity=".88"/>
+  </linearGradient>
+  <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#fff9dd" stop-opacity=".56"/><stop offset="1" stop-color="#fff9dd" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="scales" width="15" height="11" patternUnits="userSpaceOnUse">
+   <path d="M-2 5 Q5 13 13 5 M7 5 Q14 13 22 5" stroke="#476359" stroke-width="1" opacity=".46" fill="none"/>
+  </pattern>
+  <clipPath id="fish-cut"><path d="M49 73 C77 44 124 43 171 51 Q214 49 236 67 L246 73 Q230 88 202 91 C143 108 92 97 49 73 Z"/></clipPath>
+</defs>
+<g><path d="M58 72 C36 63 24 43 9 35 Q18 72 9 110 C29 101 39 83 58 72 Z" fill="url(#fins)" stroke="#4d6875" stroke-width="1.2" stroke-linejoin="round"/>
+ <path d="M111 51 L139 24 L157 50 Z" fill="url(#fins)" stroke="#4d6875" stroke-width="1" stroke-linejoin="round"/>
+ <path d="M131 92 Q176 121 202 91 Z" fill="url(#fins)" stroke="#4d6875" stroke-width="1" stroke-linejoin="round"/>
+ <path d="M49 73 C77 44 124 43 171 51 Q214 49 236 67 L246 73 Q230 88 202 91 C143 108 92 97 49 73 Z" fill="url(#body)" stroke="#4d6875" stroke-width="1.8" stroke-linejoin="round"/>
+ <g clip-path="url(#fish-cut)">
+  <path d="M63 57 Q144 39 212 62" fill="none" stroke="url(#gloss)" stroke-width="12" opacity=".56"/>
+  <path d="M61 83 Q144 103 218 84" fill="none" stroke="#1a2a24" stroke-width="5" opacity=".09"/>
+ </g>
+ <path d="M148 83 Q134 103 119 101 Q133 81 148 83 Z" fill="#879499" opacity=".78" stroke="#4d6875" stroke-width=".7"/>
+ <path d="M190 52 Q178 73 193 90" stroke="#4d6875" stroke-width="2.1" fill="none" opacity=".58"/>
+ <path d="M242 75 q-5 6 -12 4" fill="none" stroke="#4d6875" stroke-width="2" opacity=".73"/>
+ <path d="M240 80 Q256 103 274 104 M240 78 Q262 90 277 82 M241 72 Q262 69 274 62" fill="none" stroke="#4d6875" stroke-width="1.6" stroke-linecap="round" opacity=".78"/>
+ <ellipse cx="218" cy="63" rx="6.4" ry="6.0" fill="#e0d8bc" opacity=".8"/>
+ <ellipse cx="218.6" cy="63" rx="4.2" ry="4.5" fill="#172c2b"/>
+ <circle cx="217" cy="61" r="1.4" fill="#ffffff" opacity=".9"/>
+ <path d="M38 72 L16 46 M38 73 L16 99 M101 49 L143 26 M110 99 L151 114" stroke="#e9e3cd" stroke-width="1" opacity=".35" fill="none"/>
+</g></svg>
