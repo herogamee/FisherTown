@@ -1,0 +1,5 @@
+FISHERTOWN_VERSION=0.5.0
+EDITION=Sunny Bay Interactive Design Prototype
+BUILD_DATE=2026-10-08
+BASE=Standalone web layer; shared FisherTown local save schema v1
+STATUS=Playable test candidate (not merged into FisherTown GitHub main)
