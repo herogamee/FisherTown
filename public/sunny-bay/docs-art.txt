@@ -1,0 +1,17 @@
+FisherTown Sunny Bay v0.6 — Asset provenance
+
+The scenic background (assets/sunny-bay-clean.webp) is assembled from the
+approved FisherTown concept scenery and algorithmically generated underwater
+color, caustic rays and reefs. The static fish, float and rod were removed.
+
+The five transparent marine study sprites in assets/live-fish/*.webp are
+individually cropped from the user's approved generated concept art. These are
+illustrative game assets, not licensed field photographs or verified biological
+reference plates. Each is represented by its own species-oriented gameplay ID.
+
+The rod and reel are generated dynamically inside scene.js and are never
+present in the background plate. The lure, line, fighting rod curvature and
+reel rotation depend on player actions and game state.
+
+Before commercial species-accurate release, verify body shape, scientific names,
+local ecology, reference licenses and colors for each marine species.

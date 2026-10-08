@@ -1,0 +1,11 @@
+FisherTown v0.6 browser testing
+- Portrait 390x844: full-height game, background no static fish or rod, fish swim across frame
+- Landscape 844x390: controls remain visible / viewport fills screen
+- Tiny portrait 320x640: cast and hook buttons never disappear
+- Hold cast 0.4 sec and release: rod tip bends then whips; float and line animate
+- Fish actor moves toward float and the bite signal enables HOOK; not an arbitrary timer
+- HOOK enters fight; rod bends with tension and reel spool turns during hold
+- Repeated reel/release lands fish; dialog shows species and record; release returns idle
+- Fishdex persists after reload in localStorage
+- Verify no site reference image is loaded as gameplay background
+- Run npm test (node built-in tests) and tests/verify_assets.py
