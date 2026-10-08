@@ -237,7 +237,7 @@ requestAnimationFrame(loop);
 if(new URLSearchParams(location.search).has('test')){
  window.__fishertownTest={
   getState:()=>({phase,charge,tension,bait,totalCatches:progress.totalCatches,frames:frameCount,...scene.getDebug()}),
-  triggerBite:()=>{const fish=scene.targetFish||scene.fish.find(f=>f.state==='cruise');if(phase==='cast'&&fish){scene.targetFish=fish;fish.x=scene.bobber.x;fish.y=scene.bobber.y+.056;scene.update(.055,now());}},
+  triggerBite:()=>{const fish=scene.targetFish||scene.fish.find(f=>f.state==='cruise');if(phase==='cast'&&fish){scene.targetFish=fish;scene.castElapsed=Math.max(scene.castElapsed,2);fish.x=scene.bobber.x;fish.y=scene.bobber.y+.056;scene.update(.055,now());}},
   hook,land,release,startCast,finishCast,
   canvasFish:()=>scene.fish.map(f=>({x:f.x,y:f.y,id:f.id})),
   visual:()=>scene.getDebug()
