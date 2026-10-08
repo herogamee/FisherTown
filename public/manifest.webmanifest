@@ -3,9 +3,9 @@
   "short_name": "FisherTown",
   "start_url": "./",
   "display": "standalone",
-  "orientation": "landscape",
+  "orientation": "any",
   "background_color": "#071f26",
   "theme_color": "#0f5e69",
   "lang": "th",
-  "description": "Cozy world fishing prototype — Thailand freshwater fishing lab."
+  "description": "Cozy freshwater fishing with landscape and portrait-friendly controls."
 }

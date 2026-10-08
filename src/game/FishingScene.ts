@@ -45,6 +45,9 @@ export class FishingScene extends Phaser.Scene {
   private waterTick = 0;
   private debugText!: Phaser.GameObjects.Text;
   private lastSavedPhase: GamePhase = 'idle';
+  private mobileStateClock = 0;
+  private mobileTitle = '';
+  private mobileHint = '';
 
   constructor() {
     super('FishingScene');
@@ -52,6 +55,9 @@ export class FishingScene extends Phaser.Scene {
 
   preload(): void {
     this.load.image('bg-thailand-sunset', 'assets/generated/bg_thailand_sunset.png');
+    for (const species of FISH_SPECIES) {
+      this.load.svg(`fish:${species.id}`, `assets/fish/${species.id}.svg`, { width: 280, height: 140 });
+    }
   }
 
   create(): void {
@@ -67,6 +73,7 @@ export class FishingScene extends Phaser.Scene {
     this.createControls();
     this.createResultOverlay();
     this.createPauseSafety();
+    this.attachMobileControls();
 
     this.status('บึงน้ำหลากเจ้าพระยา — พร้อมตกปลา', 'เลือกเหยื่อ แล้วแตะค้าง “เหวี่ยงเบ็ด” เพื่อกำหนดระยะ');
     this.refreshHud();
@@ -90,6 +97,11 @@ export class FishingScene extends Phaser.Scene {
     this.drawLine();
     this.drawBars();
     this.syncButtons();
+    this.mobileStateClock += dt;
+    if (this.mobileStateClock >= 0.12) {
+      this.mobileStateClock = 0;
+      this.emitMobileState();
+    }
   }
 
   private drawEnvironment(): void {
@@ -126,21 +138,18 @@ export class FishingScene extends Phaser.Scene {
   }
 
   private createFishingGear(): void {
-    const angler = this.add.graphics();
-    angler.fillStyle(0xe5c29b, 1).fillCircle(1175, 327, 19);
-    angler.fillStyle(0x294953, 1).fillRoundedRect(1152, 347, 48, 76, 15);
-    angler.fillStyle(0x21383f, 1).fillRoundedRect(1148, 412, 24, 58, 10);
-    angler.fillRoundedRect(1182, 412, 24, 58, 10);
-    angler.lineStyle(5, 0x513b2d, 1).lineBetween(1165, 363, ROD_TIP.x, ROD_TIP.y);
-    angler.lineStyle(4, 0x513b2d, 1).lineBetween(ROD_TIP.x, ROD_TIP.y, 1004, 318);
-    angler.lineStyle(2.5, 0xd1b06d, 1).lineBetween(1004, 318, 1032, 312);
+    // The generated scenery supplies the fisherman. Do not redraw a blocky figure.
+    const rod = this.add.graphics().setDepth(6);
+    rod.lineStyle(3.4, 0x273b35, 0.92).lineBetween(ROD_TIP.x, ROD_TIP.y, 1004, 318);
+    rod.lineStyle(1.3, 0xd4c595, 0.76).lineBetween(1004, 318, 1032, 312);
 
-    this.lineGraphics = this.add.graphics();
+    this.lineGraphics = this.add.graphics().setDepth(19);
     const bobberBody = this.add.graphics();
     bobberBody.fillStyle(0xf2ede0, 1).fillCircle(0, 5, 7);
     bobberBody.fillStyle(0xcf593f, 1).fillRect(-3, -10, 6, 12);
     bobberBody.lineStyle(1, 0x173c42, 0.8).lineBetween(0, 12, 0, 24);
-    this.bobber = this.add.container(this.hook.x, this.hook.y, [bobberBody]).setVisible(false);
+    this.bobber = this.add.container(this.hook.x, this.hook.y, [bobberBody])
+      .setDepth(20).setVisible(false);
   }
 
   private createHud(): void {
@@ -388,6 +397,8 @@ export class FishingScene extends Phaser.Scene {
     this.sessionCatches += 1;
     const record = recordCatch(this.save, fish.species.id, fish.lengthCm, fish.weightKg);
     this.refreshHud();
+    this.status(`ตกได้แล้ว! ${fish.species.nameTh}`,
+      `${fish.lengthCm.toFixed(1)} ซม. · ${fish.weightKg.toFixed(2)} กก. — กด “ปล่อยคืนสู่ธรรมชาติ” เพื่อเล่นต่อ`);
     this.showCatchCard(fish.species, fish.lengthCm, fish.weightKg, record.isNewSpecies, record.isLengthRecord);
     fish.escape();
     this.hookedFish = null;
@@ -395,42 +406,47 @@ export class FishingScene extends Phaser.Scene {
 
   private showCatchCard(species: FishSpecies, length: number, weight: number, isNew: boolean, isRecord: boolean): void {
     this.overlay.removeAll(true);
-    const shade = this.add.rectangle(640, 360, 1280, 720, 0x04191d, 0.76).setInteractive();
-    const card = this.add.rectangle(640, 357, 650, 376, 0xf2efe3, 1).setStrokeStyle(4, 0x2b5c5b, 1);
-    const title = this.add.text(640, 224, species.nameTh, {
-      fontFamily: 'Arial, sans-serif', fontSize: '35px', fontStyle: 'bold', color: '#173d3e'
+    const shade = this.add.rectangle(640, 360, 1280, 720, 0x04191d, 0.81).setInteractive();
+    const card = this.add.rectangle(640, 355, 686, 488, 0xf3f0e3, 1).setStrokeStyle(3, 0x426962, 1);
+    const title = this.add.text(640, 151, species.nameTh, {
+      fontFamily: 'Arial, sans-serif', fontSize: '32px', fontStyle: 'bold', color: '#173d3e'
     }).setOrigin(0.5);
-    const scientific = this.add.text(640, 265, `${species.nameEn} · ${species.scientific}`, {
+    const scientific = this.add.text(640, 189, `${species.nameEn} · ${species.scientific}`, {
       fontFamily: 'Arial, sans-serif', fontSize: '16px', fontStyle: 'italic', color: '#526463'
     }).setOrigin(0.5);
-    const measure = this.add.text(640, 312, `${length.toFixed(1)} cm   ·   ${weight.toFixed(2)} kg`, {
-      fontFamily: 'Arial, sans-serif', fontSize: '27px', fontStyle: 'bold', color: '#245d5a'
+    const textureKey = `fish:${species.id}`;
+    const picture = this.textures.exists(textureKey)
+      ? this.add.image(640, 280, textureKey).setDisplaySize(310, 155)
+      : this.add.text(640, 280, species.nameEn, { fontFamily: 'Arial', fontSize: '20px', color: '#52716b' }).setOrigin(0.5);
+    const measure = this.add.text(640, 362, `${length.toFixed(1)} cm   ·   ${weight.toFixed(2)} kg`, {
+      fontFamily: 'Arial, sans-serif', fontSize: '24px', fontStyle: 'bold', color: '#235b55'
     }).setOrigin(0.5);
-
     const badges: string[] = [];
     if (isNew) badges.push('NEW SPECIES');
     if (isRecord) badges.push('PERSONAL RECORD');
     if (species.conservationMode === 'research-only') badges.push('RESEARCH & RELEASE');
     else if (species.conservationMode === 'release-preferred') badges.push('RELEASE PREFERRED');
-    const badge = this.add.text(640, 355, badges.join('  •  ') || 'CATCH RECORDED', {
-      fontFamily: 'Arial, sans-serif', fontSize: '15px', fontStyle: 'bold', color: '#9b6630'
+    const badge = this.add.text(640, 395, badges.join('  •  ') || 'CATCH RECORDED', {
+      fontFamily: 'Arial, sans-serif', fontSize: '13px', fontStyle: 'bold', color: '#9b6630'
     }).setOrigin(0.5);
-
-    const habitat = this.add.text(640, 401, `ถิ่นอาศัย: ${species.habitatNote}\n${species.distributionNote}`, {
-      fontFamily: 'Arial, sans-serif', fontSize: '15px', color: '#3e5655', align: 'center', wordWrap: { width: 560 }
-    }).setOrigin(0.5);
-
-    const releaseBg = this.add.rectangle(640, 486, 260, 58, 0x246c66, 1).setInteractive({ useHandCursor: true });
-    const releaseText = this.add.text(640, 486, 'ปล่อยคืนสู่ธรรมชาติ', {
-      fontFamily: 'Arial, sans-serif', fontSize: '18px', fontStyle: 'bold', color: '#f4f3e9'
+    const habitat = this.add.text(640, 437,
+      `ถิ่นอาศัย: ${species.habitatNote}\n${species.distributionNote}`, {
+        fontFamily: 'Arial, sans-serif', fontSize: '14px', color: '#3e5655',
+        align: 'center', wordWrap: { width: 590 }
+      }).setOrigin(0.5);
+    const releaseBg = this.add.rectangle(640, 513, 300, 54, 0x246c66, 1)
+      .setInteractive({ useHandCursor: true });
+    const releaseText = this.add.text(640, 513, 'ปล่อยคืนสู่ธรรมชาติ', {
+      fontFamily: 'Arial, sans-serif', fontSize: '19px', fontStyle: 'bold', color: '#f4f3e9'
     }).setOrigin(0.5);
     releaseBg.on('pointerup', () => this.closeCatchCard());
-
-    const note = this.add.text(640, 536, 'Prototype: ภาพปลาเป็น procedural morphology placeholder — asset สมจริงราย species จะเข้ามาใน art pipeline', {
-      fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#6d7772', align: 'center', wordWrap: { width: 570 }
-    }).setOrigin(0.5);
-
-    this.overlay.add([shade, card, title, scientific, measure, badge, habitat, releaseBg, releaseText, note]);
+    const note = this.add.text(640, 574,
+      'ภาพประกอบชนิดปลาเป็น naturalist study — ยังไม่ใช่ภาพอ้างอิงทางชีววิทยาที่อนุมัติขั้นสุดท้าย', {
+        fontFamily: 'Arial, sans-serif', fontSize: '12px', color: '#6d7772',
+        align: 'center', wordWrap: { width: 610 }
+      }).setOrigin(0.5);
+    this.overlay.add([shade, card, title, scientific, picture, measure, badge,
+      habitat, releaseBg, releaseText, note]);
     this.overlay.setVisible(true);
   }
 
@@ -441,18 +457,15 @@ export class FishingScene extends Phaser.Scene {
   }
 
   private animateWater(): void {
-    if (!this.waterFx || this.waterTick < 0.055) return;
+    // Few subdued highlights, not a busy geometric ripple grid.
+    if (!this.waterFx || this.waterTick < 0.075) return;
     this.waterTick = 0;
     this.waterFx.clear();
-    this.waterFx.lineStyle(2, 0xb7e1dc, 0.23);
-    const shift = (this.time.now * 0.018) % 96;
-    for (let y = 370; y < 625; y += 34) {
-      for (let x = -60 + shift; x < 1040; x += 96) {
-        this.waterFx.beginPath();
-        this.waterFx.moveTo(x, y);
-        this.waterFx.lineTo(x + 24, y + Math.sin((x + y) * 0.03) * 3);
-        this.waterFx.lineTo(x + 48, y);
-        this.waterFx.strokePath();
+    this.waterFx.lineStyle(1.3, 0xe7e4c4, 0.12);
+    const shift = (this.time.now * 0.01) % 138;
+    for (let y = 397; y < 624; y += 46) {
+      for (let x = -80 + shift; x < 1030; x += 138) {
+        this.waterFx.lineBetween(x, y, x + 34, y + Math.sin(x * 0.02) * 1.2);
       }
     }
   }
@@ -514,7 +527,51 @@ export class FishingScene extends Phaser.Scene {
     this.discoveredText.setText(`📖 Fishdex ${this.save.discovered.length}/${FISH_SPECIES.length} ชนิด   ·   เซฟอัตโนมัติ`);
   }
 
+  private attachMobileControls(): void {
+    // Native portrait controls reach the same existing fishing state machine.
+    const handler = (event: Event): void => {
+      const { action, bait } = (event as CustomEvent<{ action: string; bait?: string }>).detail;
+      if (action === 'bait' && BAITS.some(item => item.id === bait)) {
+        this.selectBait(bait as BaitId);
+      } else if (action === 'castDown') {
+        if (this.phase === 'idle') this.beginCharge();
+        else if (this.phase === 'cast' || this.phase === 'bite') this.retrieveLine();
+      } else if (action === 'castUp') {
+        this.releaseCast();
+      } else if (action === 'hook') {
+        this.tryHook();
+      } else if (action === 'reelDown') {
+        if (this.phase === 'fight') this.reelHeld = true;
+      } else if (action === 'reelUp') {
+        this.reelHeld = false;
+      } else if (action === 'release' && this.phase === 'result') {
+        this.closeCatchCard();
+      }
+      this.emitMobileState();
+    };
+    window.addEventListener('fishertown:control', handler);
+    this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => {
+      window.removeEventListener('fishertown:control', handler);
+    });
+  }
+
+  private emitMobileState(): void {
+    if (!this.save) return;
+    window.dispatchEvent(new CustomEvent('fishertown:state', {
+      detail: {
+        phase: this.phase, title: this.mobileTitle, hint: this.mobileHint,
+        totalCatches: this.save.totalCatches,
+        discovered: this.save.discovered.length,
+        speciesTotal: FISH_SPECIES.length,
+        selectedBait: this.selectedBait,
+        charge: this.charge, tension: this.tension
+      }
+    }));
+  }
+
   private status(title: string, hint: string): void {
+    this.mobileTitle = title;
+    this.mobileHint = hint;
     this.statusText.setText(title);
     this.hintText.setText(hint);
   }

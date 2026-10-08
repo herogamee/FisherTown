@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="280" viewBox="0 0 280 140" role="img" aria-label="anabas-testudineus naturalist fish illustration">
+<defs>
+  <linearGradient id="body" x1="0" y1="0" x2="0.12" y2="1">
+   <stop offset="0" stop-color="#b1aa88"/><stop offset=".40" stop-color="#788369"/><stop offset="1" stop-color="#455248"/>
+  </linearGradient>
+  <linearGradient id="fins" x1="0" y1="0" x2=".5" y2="1">
+   <stop offset="0" stop-color="#7a8164" stop-opacity=".72"/><stop offset="1" stop-color="#46564a" stop-opacity=".88"/>
+  </linearGradient>
+  <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#fff9dd" stop-opacity=".56"/><stop offset="1" stop-color="#fff9dd" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="scales" width="15" height="11" patternUnits="userSpaceOnUse">
+   <path d="M-2 5 Q5 13 13 5 M7 5 Q14 13 22 5" stroke="#476359" stroke-width="1" opacity=".46" fill="none"/>
+  </pattern>
+  <clipPath id="fish-cut"><path d="M50 71 Q67 38 125 41 Q186 42 226 66 Q237 74 225 87 Q172 105 120 104 Q67 101 50 71 Z"/></clipPath>
+</defs>
+<g><path d="M58 72 Q38 50 22 56 Q12 71 21 91 Q40 92 58 72 Z" fill="url(#fins)" stroke="#46564a" stroke-width="1.2" stroke-linejoin="round"/>
+ <path d="M64 58 L70 40 L80 51 L87 31 L98 47 L107 30 L119 44 L131 31 L143 45 L155 34 L166 52 L178 47 L197 57 Z" fill="url(#fins)" stroke="#46564a" stroke-width="1" stroke-linejoin="round"/>
+ <path d="M85 94 Q139 123 189 93 Z" fill="url(#fins)" stroke="#46564a" stroke-width="1" stroke-linejoin="round"/>
+ <path d="M50 71 Q67 38 125 41 Q186 42 226 66 Q237 74 225 87 Q172 105 120 104 Q67 101 50 71 Z" fill="url(#body)" stroke="#46564a" stroke-width="1.8" stroke-linejoin="round"/>
+ <g clip-path="url(#fish-cut)"><path d="M72 47 q 6 22 -5 46" fill="none" stroke="#283b31" stroke-width="7" opacity=".18"/><path d="M90 47 q 6 22 -5 46" fill="none" stroke="#283b31" stroke-width="4" opacity=".18"/><path d="M108 47 q 6 22 -5 46" fill="none" stroke="#283b31" stroke-width="7" opacity=".18"/><path d="M126 47 q 6 22 -5 46" fill="none" stroke="#283b31" stroke-width="4" opacity=".18"/><path d="M144 47 q 6 22 -5 46" fill="none" stroke="#283b31" stroke-width="7" opacity=".18"/><path d="M162 47 q 6 22 -5 46" fill="none" stroke="#283b31" stroke-width="4" opacity=".18"/><path d="M180 47 q 6 22 -5 46" fill="none" stroke="#283b31" stroke-width="7" opacity=".18"/><path d="M198 47 q 6 22 -5 46" fill="none" stroke="#283b31" stroke-width="4" opacity=".18"/>
+  <path d="M63 57 Q144 39 212 62" fill="none" stroke="url(#gloss)" stroke-width="12" opacity=".56"/>
+  <path d="M61 83 Q144 103 218 84" fill="none" stroke="#1a2a24" stroke-width="5" opacity=".09"/>
+ </g>
+ <path d="M148 83 Q134 103 119 101 Q133 81 148 83 Z" fill="#7a8164" opacity=".78" stroke="#46564a" stroke-width=".7"/>
+ <path d="M182 51 Q169 73 183 93" stroke="#46564a" stroke-width="2.1" fill="none" opacity=".58"/>
+ <path d="M242 75 q-5 6 -12 4" fill="none" stroke="#46564a" stroke-width="2" opacity=".73"/>
+ 
+ <ellipse cx="207" cy="66" rx="6.4" ry="6.0" fill="#e0d8bc" opacity=".8"/>
+ <ellipse cx="207.6" cy="66" rx="4.2" ry="4.5" fill="#172c2b"/>
+ <circle cx="206" cy="64" r="1.4" fill="#ffffff" opacity=".9"/>
+ <path d="M38 72 L16 46 M38 73 L16 99 M101 49 L143 26 M110 99 L151 114" stroke="#e9e3cd" stroke-width="1" opacity=".35" fill="none"/>
+</g></svg>

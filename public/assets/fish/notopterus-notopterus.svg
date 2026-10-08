@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="280" viewBox="0 0 280 140" role="img" aria-label="notopterus-notopterus naturalist fish illustration">
+<defs>
+  <linearGradient id="body" x1="0" y1="0" x2="0.12" y2="1">
+   <stop offset="0" stop-color="#ddcbaa"/><stop offset=".40" stop-color="#ada186"/><stop offset="1" stop-color="#686956"/>
+  </linearGradient>
+  <linearGradient id="fins" x1="0" y1="0" x2=".5" y2="1">
+   <stop offset="0" stop-color="#a89670" stop-opacity=".72"/><stop offset="1" stop-color="#6b6b53" stop-opacity=".88"/>
+  </linearGradient>
+  <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#fff9dd" stop-opacity=".56"/><stop offset="1" stop-color="#fff9dd" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="scales" width="15" height="11" patternUnits="userSpaceOnUse">
+   <path d="M-2 5 Q5 13 13 5 M7 5 Q14 13 22 5" stroke="#476359" stroke-width="1" opacity=".46" fill="none"/>
+  </pattern>
+  <clipPath id="fish-cut"><path d="M37 72 C60 57 120 49 167 51 C201 54 225 57 241 69 Q247 78 230 82 C180 90 102 87 37 72 Z"/></clipPath>
+</defs>
+<g><path d="M44 73 Q28 59 17 62 Q9 72 17 83 Q30 86 44 73 Z" fill="url(#fins)" stroke="#6b6b53" stroke-width="1.2" stroke-linejoin="round"/>
+ <path d="M95 53 Q104 40 119 50 Z" fill="url(#fins)" stroke="#6b6b53" stroke-width="1" stroke-linejoin="round"/>
+ <path d="M52 81 Q86 106 123 112 Q177 119 224 82 Z" fill="url(#fins)" stroke="#6b6b53" stroke-width="1" stroke-linejoin="round"/>
+ <path d="M37 72 C60 57 120 49 167 51 C201 54 225 57 241 69 Q247 78 230 82 C180 90 102 87 37 72 Z" fill="url(#body)" stroke="#6b6b53" stroke-width="1.8" stroke-linejoin="round"/>
+ <g clip-path="url(#fish-cut)"><ellipse cx="73" cy="80" rx="7" ry="2.5" fill="#514c3c" opacity=".20"/><ellipse cx="110" cy="80" rx="7" ry="2.5" fill="#514c3c" opacity=".20"/><ellipse cx="147" cy="80" rx="7" ry="2.5" fill="#514c3c" opacity=".20"/><ellipse cx="184" cy="80" rx="7" ry="2.5" fill="#514c3c" opacity=".20"/>
+  <path d="M63 57 Q144 39 212 62" fill="none" stroke="url(#gloss)" stroke-width="12" opacity=".56"/>
+  <path d="M61 83 Q144 103 218 84" fill="none" stroke="#1a2a24" stroke-width="5" opacity=".09"/>
+ </g>
+ <path d="M148 83 Q134 103 119 101 Q133 81 148 83 Z" fill="#a89670" opacity=".78" stroke="#6b6b53" stroke-width=".7"/>
+ <path d="M190 58 Q184 69 191 82" stroke="#6b6b53" stroke-width="2.1" fill="none" opacity=".58"/>
+ <path d="M242 75 q-5 6 -12 4" fill="none" stroke="#6b6b53" stroke-width="2" opacity=".73"/>
+ 
+ <ellipse cx="218" cy="64" rx="6.4" ry="6.0" fill="#e0d8bc" opacity=".8"/>
+ <ellipse cx="218.6" cy="64" rx="4.2" ry="4.5" fill="#172c2b"/>
+ <circle cx="217" cy="62" r="1.4" fill="#ffffff" opacity=".9"/>
+ <path d="M38 72 L16 46 M38 73 L16 99 M101 49 L143 26 M110 99 L151 114" stroke="#e9e3cd" stroke-width="1" opacity=".35" fill="none"/>
+</g></svg>

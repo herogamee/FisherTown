@@ -1,15 +1,15 @@
-# FisherTown Generated Art — v0.2
+# FisherTown art inventory — v0.3.1
 
-The v0.2 visual pass begins replacing the Fishing Lab placeholders with generated production-direction art.
+## Present in Git
 
-Current decoded build assets:
+- `public/assets/generated/bg_thailand_sunset.png` — generated naturalistic sunset fishing background, loaded by `FishingScene.preload`.
+- `public/assets/fish/*.svg` — ten *original hand-authored naturalist vector study* fish illustrations, one species ID per SVG. These are gameplay/landing illustrations, **not biologically approved final photography**. Replace through species reference/licensing review.
 
-- `bg_thailand_sunset.webp` — Thai golden-hour split-view fishing background.
-- `fish_snakehead.webp` — realistic **Channa striata / ปลาช่อน** gameplay + Fishdex asset.
-- `fish_silver_barb.webp` — realistic **Barbonymus gonionotus / ปลาตะเพียนขาว** gameplay + Fishdex asset.
+## Not yet present
 
-The current GitHub automation path is text-only, so the binary WebP files are versioned as base64 chunks and decoded by `scripts/materialize-assets.mjs` before Vite runs.
+- The earlier proposed WebP files `fish_snakehead.webp`, `fish_silver_barb.webp` and `bg_thailand_sunset.webp` are **not checked in**. The legacy `scripts/materialize-assets.mjs` requires absent base64 chunk folders and must **not** be part of the build pipeline.
+- Future generated/photo-grade images should be optimized for mobile, transparent where appropriate, verified for species accuracy and licensed for commercial use.
 
-Other species deliberately keep the morphology fallback until a species-specific image is reviewed. Do not recolor one fish image and call it another species.
+Never label one recolored generic fish as another real species. Keep the scientific species ID as the asset key.
 
-Art direction remains governed by `docs/05-ART-DIRECTION.md`.
+See `docs/05-ART-DIRECTION.md`.

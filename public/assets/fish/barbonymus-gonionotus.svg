@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="280" viewBox="0 0 280 140" role="img" aria-label="barbonymus-gonionotus naturalist fish illustration">
+<defs>
+  <linearGradient id="body" x1="0" y1="0" x2="0.12" y2="1">
+   <stop offset="0" stop-color="#e8e3c8"/><stop offset=".40" stop-color="#b2c1b5"/><stop offset="1" stop-color="#566e68"/>
+  </linearGradient>
+  <linearGradient id="fins" x1="0" y1="0" x2=".5" y2="1">
+   <stop offset="0" stop-color="#ad916b" stop-opacity=".72"/><stop offset="1" stop-color="#506a67" stop-opacity=".88"/>
+  </linearGradient>
+  <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#fff9dd" stop-opacity=".56"/><stop offset="1" stop-color="#fff9dd" stop-opacity="0"/>
+  </linearGradient>
+  <pattern id="scales" width="15" height="11" patternUnits="userSpaceOnUse">
+   <path d="M-2 5 Q5 13 13 5 M7 5 Q14 13 22 5" stroke="#476359" stroke-width="1" opacity=".46" fill="none"/>
+  </pattern>
+  <clipPath id="fish-cut"><path d="M46 73 C65 48 103 44 148 45 C183 45 219 59 233 73 C220 88 180 101 143 101 C100 101 65 96 46 73 Z"/></clipPath>
+</defs>
+<g><path d="M58 73 C41 65 31 45 13 39 Q22 69 12 105 C32 99 43 82 58 73 Z" fill="url(#fins)" stroke="#506a67" stroke-width="1.2" stroke-linejoin="round"/>
+ <path d="M85 52 Q110 27 146 20 Q141 37 169 51 Z" fill="url(#fins)" stroke="#506a67" stroke-width="1" stroke-linejoin="round"/>
+ <path d="M100 95 Q132 119 168 101 L171 92 Z" fill="url(#fins)" stroke="#506a67" stroke-width="1" stroke-linejoin="round"/>
+ <path d="M46 73 C65 48 103 44 148 45 C183 45 219 59 233 73 C220 88 180 101 143 101 C100 101 65 96 46 73 Z" fill="url(#body)" stroke="#506a67" stroke-width="1.8" stroke-linejoin="round"/>
+ <g clip-path="url(#fish-cut)"><path d="M46 73 C65 48 103 44 148 45 C183 45 219 59 233 73 C220 88 180 101 143 101 C100 101 65 96 46 73 Z" fill="url(#scales)" opacity="0.43"/>
+  <path d="M63 57 Q144 39 212 62" fill="none" stroke="url(#gloss)" stroke-width="12" opacity=".56"/>
+  <path d="M61 83 Q144 103 218 84" fill="none" stroke="#1a2a24" stroke-width="5" opacity=".09"/>
+ </g>
+ <path d="M148 83 Q134 103 119 101 Q133 81 148 83 Z" fill="#ad916b" opacity=".78" stroke="#506a67" stroke-width=".7"/>
+ <path d="M185 55 Q173 73 185 90" stroke="#506a67" stroke-width="2.1" fill="none" opacity=".58"/>
+ <path d="M242 75 q-5 6 -12 4" fill="none" stroke="#506a67" stroke-width="2" opacity=".73"/>
+ 
+ <ellipse cx="216" cy="67" rx="6.4" ry="6.0" fill="#e0d8bc" opacity=".8"/>
+ <ellipse cx="216.6" cy="67" rx="4.2" ry="4.5" fill="#172c2b"/>
+ <circle cx="215" cy="65" r="1.4" fill="#ffffff" opacity=".9"/>
+ <path d="M38 72 L16 46 M38 73 L16 99 M101 49 L143 26 M110 99 L151 114" stroke="#e9e3cd" stroke-width="1" opacity=".35" fill="none"/>
+</g></svg>
