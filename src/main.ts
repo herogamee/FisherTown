@@ -4,10 +4,18 @@ import { FishingScene } from './game/FishingScene';
 
 type Phase = 'idle' | 'charging' | 'cast' | 'bite' | 'fight' | 'result';
 type Action = 'castDown' | 'castUp' | 'hook' | 'reelDown' | 'reelUp' | 'release' | 'bait';
+type CatchPreview = {
+  speciesId: string; nameTh: string; nameEn: string; scientific: string;
+  lengthCm: number; weightKg: number; isNew: boolean; isRecord: boolean;
+};
+type Quality = 'auto' | 'low' | 'balanced' | 'high';
+
 type FishState = {
  phase: Phase; title: string; hint: string;
  totalCatches: number; discovered: number; speciesTotal: number;
  selectedBait: string; charge: number; tension: number;
+ quality: Quality; activeQuality: Exclude<Quality, 'auto'>;
+ fps: number; catch: CatchPreview | null; portrait: boolean;
 };
 function element<T extends HTMLElement>(id: string): T {
  const found = document.getElementById(id);
@@ -111,13 +119,64 @@ const meterLabel = element<HTMLElement>('mobile-meter-label');
 const meterNumber = element<HTMLElement>('mobile-meter-number');
 const meterTrack = document.querySelector<HTMLElement>('.mobile-meter-track');
 const meterFill = element<HTMLElement>('mobile-meter-value');
+const catchCard = element<HTMLElement>('mobile-catch');
+const catchSpecies = element<HTMLElement>('mobile-catch-species');
+const catchScience = element<HTMLElement>('mobile-catch-scientific');
+const catchMeasures = element<HTMLElement>('mobile-catch-measures');
+const catchBadges = element<HTMLElement>('mobile-catch-badges');
+const catchFish = element<HTMLImageElement>('mobile-catch-art');
+const qualitySelect = element<HTMLSelectElement>('quality-select');
+const qualityInfo = element<HTMLElement>('quality-info');
+const gameHost = element<HTMLElement>('game');
+const mobilePanel = element<HTMLElement>('mobile-panel');
+let previousPhase: Phase = 'idle';
+
+try {
+ const stored = localStorage.getItem('fishertown:quality');
+ if (stored === 'low' || stored === 'balanced' || stored === 'high') qualitySelect.value = stored;
+} catch { /* Private mode can deny storage */ }
+
+qualitySelect.addEventListener('change', () => {
+ const quality = qualitySelect.value as Quality;
+ try {
+  if (quality === 'auto') localStorage.removeItem('fishertown:quality');
+  else localStorage.setItem('fishertown:quality', quality);
+ } catch { /* Gameplay never depends on localStorage permissions */ }
+ window.dispatchEvent(new CustomEvent('fishertown:quality', { detail: { quality } }));
+});
 
 window.addEventListener('fishertown:state', (event: Event) => {
  const state = (event as CustomEvent<FishState>).detail;
- title.textContent = state.title;
- hint.textContent = state.hint;
- catches.textContent = '🎣 สะสม ' + state.totalCatches + ' ตัว';
- discovered.textContent = '📖 Fishdex ' + state.discovered + '/' + state.speciesTotal;
+ mobilePanel.dataset.phase = state.phase;
+ if (state.phase === 'result' && previousPhase !== 'result') {
+   mobilePanel.scrollTo({ top: 0, behavior: 'instant' });
+ }
+ previousPhase = state.phase;
+ if (title.textContent !== state.title) title.textContent = state.title;
+ if (hint.textContent !== state.hint) hint.textContent = state.hint;
+ const total = '🎣 สะสม ' + state.totalCatches + ' ตัว';
+ if (catches.textContent !== total) catches.textContent = total;
+ const dex = '📖 Fishdex ' + state.discovered + '/' + state.speciesTotal;
+ if (discovered.textContent !== dex) discovered.textContent = dex;
+ if (qualitySelect.value !== state.quality) qualitySelect.value = state.quality;
+ qualityInfo.textContent = state.fps + ' FPS · ' + state.activeQuality.toUpperCase();
+ catchCard.hidden = !state.catch;
+ if (state.catch) {
+  const fish = state.catch;
+  if (catchCard.dataset.species !== fish.speciesId) {
+   catchCard.dataset.species = fish.speciesId;
+   catchFish.src = import.meta.env.BASE_URL + 'assets/fish/' + fish.speciesId + '.svg';
+   catchFish.alt = 'ภาพประกอบ ' + fish.nameTh;
+   catchSpecies.textContent = fish.nameTh;
+   catchScience.textContent = fish.nameEn + ' · ' + fish.scientific;
+  }
+  catchMeasures.textContent = fish.lengthCm.toFixed(1) + ' ซม.  ·  ' +
+    fish.weightKg.toFixed(2) + ' กก.';
+  catchBadges.textContent = (fish.isNew ? 'ชนิดปลาใหม่ · ' : '') +
+    (fish.isRecord ? 'ทำลายสถิติ! · ' : '') + 'ปล่อยคืนสู่ธรรมชาติ';
+ } else {
+  delete catchCard.dataset.species;
+ }
  const charging = state.phase === 'charging', fighting = state.phase === 'fight';
  meter.hidden = !charging && !fighting;
  if (charging || fighting) {
@@ -141,14 +200,23 @@ window.addEventListener('fishertown:state', (event: Event) => {
  });
 });
 
+// The CSS game viewport determines the real canvas dimensions in both orientations.
+const rect = gameHost.getBoundingClientRect();
 const config: Phaser.Types.Core.GameConfig = {
- type: Phaser.AUTO, parent: 'game', width: 1280, height: 720,
- backgroundColor: '#071d21', scene: [FishingScene],
+ type: Phaser.AUTO, parent: 'game',
+ width: Math.max(1, Math.round(rect.width)),
+ height: Math.max(1, Math.round(rect.height)),
+ backgroundColor: '#082a2e', scene: [FishingScene],
  render: { antialias: true, pixelArt: false, roundPixels: false },
- scale: { mode: Phaser.Scale.FIT, autoCenter: Phaser.Scale.CENTER_BOTH, width: 1280, height: 720 },
+ scale: { mode: Phaser.Scale.RESIZE, autoCenter: Phaser.Scale.NO_CENTER },
  input: { activePointers: 3 }
 };
-new Phaser.Game(config);
+const game = new Phaser.Game(config);
+// React to actual DOM sizes, including mobile URL-bar collapse and iOS orientation.
+if (typeof ResizeObserver !== 'undefined') {
+ const observer = new ResizeObserver(() => { game.scale.refresh(); });
+ observer.observe(gameHost);
+}
 
 // Old cache-first worker caused older builds to persist on mobile. Remove legacy
 // registrations and game-specific caches rather than registering a new worker.

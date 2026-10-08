@@ -89,7 +89,7 @@ Landing
 
 ## Current Status
 
-Concept foundation / World Bible initialized. Fishing Lab v0.1 implemented.
+Concept foundation / World Bible initialized. Fishing Lab v0.4 (portrait camera, quality presets and ten species illustrated art) implemented.
 
 เริ่มจาก Prototype หนึ่งพื้นที่ในประเทศไทยก่อน แล้วใช้โครงเดียวกันขยายไป Amazon, North America, Europe, Africa, Japan, Australia, Oceanic และภูมิภาคอื่น ๆ
 
@@ -153,3 +153,20 @@ See `docs/09-FISHING-LAB-V0.1.md` for controls, implemented features, known art 
 Live demo: https://herogamee.github.io/FisherTown/ (updated after GitHub Pages deploy succeeds)
 
 See `docs/10-PORTRAIT-ART-RECOVERY.md` for limitations, testing and next art gates.
+
+
+## v0.4 art delivery
+
+`scripts/optimize-art.mjs` runs before `npm run dev` and `npm run build`: it converts the checked-in source PNG to a **1280×720 WebP at quality 83**, using `sharp`. Runtime loads the WebP, while the original full-size PNG is kept in Git for provenance and removed only from the *built dist* to save bandwidth. Species-specific SVGs are rasterized to 560×280 textures to improve retina landing-card clarity. All source image/illustration rights must still be reviewed before commercial release.
+
+
+## v0.4 — adaptive portrait fishing and runtime QA
+
+- The Phaser canvas itself becomes tall in portrait via `Phaser.Scale.RESIZE`, while an explicit camera keeps a **1280×720 world** and pans horizontally to follow the lure/fight. No image stretching or landscape-only orientation requirement.
+- Original landscape HUD and controls are preserved and hidden only in portrait. A native HTML catch card appears for portrait so text and release controls do not get cropped by the narrow camera.
+- Four quality modes: Auto, Low, Balanced and High. Fish AI uses a bounded fixed time step; water highlights redraw at a quality-dependent cadence. Quality persists via localStorage where supported.
+- The checked-in 2.8MB sunset PNG is compressed to a 1280×720 WebP before dev/build. CI observed a 238,116-byte WebP (about 91% smaller). Dist keeps the optimized image only, original stays in Git.
+- Ten fish naturalist SVGs have additional texture/lighting and remain **interim illustrations**, not photoreal final species art.
+- CI includes Chromium Playwright smoke for **portrait size, holding/releasing cast, quality selection, landscape → portrait → landscape**, with screenshots saved as an artifact. Tests run against **production Vite preview**.
+
+See `docs/11-V0.4-RELEASE-NOTES.md` for gates, remaining art work and manual iOS/Android validation.

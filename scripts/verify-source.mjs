@@ -12,13 +12,20 @@ const [scene, actor, fishData, index, css, main, manifestRaw] = await Promise.al
   'public/manifest.webmanifest'
 ].map(read));
 
+const expectedUI = ['mobile-catch', 'mobile-catch-art', 'mobile-catch-species',
+  'mobile-catch-measures', 'quality-select', 'quality-info'];
+for (const id of expectedUI) assert.ok(index.includes('id="' + id + '"'), 'Missing new UI #' + id);
+assert.ok(main.includes('Phaser.Scale.RESIZE'), 'Game canvas still locked to 16:9');
+assert.ok(css.includes('55dvh'), 'Portrait world is still only a letterboxed thumbnail');
+
 const requiredScene = [
   'preload(): void', 'private createFishPopulation(',
   'private createFishingGear(', 'private createControls(',
   'private detectBites(', 'private tryHook(', 'private updateFight(',
   'private completeCatch(', 'private showCatchCard(',
   'private closeCatchCard(', 'private attachMobileControls(',
-  'private emitMobileState(', 'this.load.svg(', "bg-thailand-sunset"
+  'private emitMobileState(', 'private configureViewport(', 'private updatePerformance(',
+  'private updateViewport(', 'this.load.svg(', "bg-thailand-sunset"
 ];
 assert.ok(scene.length > 21000, 'FishingScene appears truncated');
 for (const token of requiredScene) {
@@ -61,3 +68,6 @@ assert.ok(main.includes("hold(cast, 'castDown', 'castUp')") &&
 assert.equal(JSON.parse(manifestRaw).orientation, 'any', 'PWA would force landscape');
 
 console.log('PASS FisherTown integrity: 10 individual SVG species assets, background, full fishing loop, portrait controls, fullscreen, PWA orientation.');
+
+assert.ok(scene.includes('bg_thailand_sunset.webp'), 'Runtime not using optimized WebP');
+assert.ok(actor.includes('this.art.setDisplaySize('), 'Species texture art renderer regressed');

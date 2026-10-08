@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
   <link rel="manifest" href="./manifest.webmanifest"/>
-  <title>FisherTown — Fishing Lab v0.3.1</title>
+  <title>FisherTown — Fishing Lab v0.4</title>
 </head>
 <body>
   <main id="app">
@@ -28,6 +28,15 @@
           <div class="mobile-meter-head"><span id="mobile-meter-label">กำลังเหวี่ยง</span><b id="mobile-meter-number">0%</b></div>
           <div class="mobile-meter-track" role="progressbar" aria-label="กำลังเหวี่ยงหรือแรงตึงสาย" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="mobile-meter-value"></div></div>
         </div>
+        <section id="mobile-catch" class="mobile-catch" hidden aria-label="สรุปการตกปลา">
+          <div class="catch-topline">🎉 CATCH RECORD</div>
+          <img id="mobile-catch-art" alt="" width="280" height="140"/>
+          <h2 id="mobile-catch-species">ปลา</h2>
+          <p id="mobile-catch-scientific"></p>
+          <strong id="mobile-catch-measures"></strong>
+          <p id="mobile-catch-badges"></p>
+          <button id="mobile-release" type="button" class="action-release" hidden>ปล่อยคืนสู่ธรรมชาติ ✓</button>
+        </section>
         <div class="mobile-bait-panel">
           <div class="mobile-section-head">เลือกเหยื่อ</div>
           <div class="mobile-baits" role="group" aria-label="ชนิดเหยื่อ">
@@ -42,10 +51,19 @@
             <button id="mobile-hook" type="button" class="action-hook" disabled>HOOK!</button>
             <button id="mobile-reel" type="button" class="action-reel" disabled>ดึงสาย (กดค้าง)</button>
           </div>
-          <button id="mobile-release" type="button" class="action-release" hidden>ปล่อยคืนสู่ธรรมชาติ ✓</button>
         </div>
         <p class="mobile-tip">กดค้างเพื่อเหวี่ยงหรือดึงสาย • ปล่อยนิ้วเพื่อลดแรงตึง</p>
       </section>
+      <label id="quality-picker" for="quality-select" title="ปรับคุณภาพภาพ / FPS">
+        <span>ภาพ</span>
+        <select id="quality-select" aria-label="คุณภาพภาพ">
+          <option value="auto">อัตโนมัติ</option>
+          <option value="low">ประหยัด</option>
+          <option value="balanced">สมดุล</option>
+          <option value="high">สูง</option>
+        </select>
+        <small id="quality-info" aria-live="off">AUTO</small>
+      </label>
       <button id="fullscreen-button" type="button" aria-label="ขยายเกมเต็มจอ" title="เต็มจอ">⛶</button>
     </section>
   </main>
