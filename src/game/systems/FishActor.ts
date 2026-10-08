@@ -32,6 +32,7 @@ export class FishActor {
 
   private readonly scene: Phaser.Scene;
   private readonly body: Phaser.GameObjects.Graphics;
+  private readonly art: Phaser.GameObjects.Image | null;
   private readonly baseScale: number;
   private wanderClock = 0;
 
@@ -50,8 +51,19 @@ export class FishActor {
     this.node.add(this.body);
     this.baseScale = Phaser.Math.Clamp(0.62 + this.lengthCm / 120, 0.72, 1.32);
     this.node.setScale(this.baseScale * this.direction, this.baseScale);
-    this.node.setAlpha(0.84);
-    this.drawBody();
+    this.node.setAlpha(0.90);
+
+    // Prefer one unique illustration per species. Keep the morphology fallback for loading failures.
+    const textureKey = `fish:${species.id}`;
+    this.art = scene.textures.exists(textureKey) ? scene.add.image(0, 0, textureKey) : null;
+    if (this.art) {
+      const longBody = species.morphology === 'snakehead' || species.morphology === 'featherback';
+      this.art.setDisplaySize(longBody ? 118 : 106, species.morphology === 'gourami' ? 62 : 54);
+      this.node.add(this.art);
+      this.body.setVisible(false);
+    } else {
+      this.drawBody();
+    }
     this.pickWanderTarget();
   }
 
@@ -186,6 +198,7 @@ export class FishActor {
     }
     this.node.x += (dx / distance) * speed * dt;
     this.node.y += (dy / distance) * speed * 0.62 * dt;
+    this.node.rotation = Math.sin(this.scene.time.now * 0.011 + this.lengthCm) * 0.018;
   }
 
   private drawBody(): void {
