@@ -14,12 +14,31 @@
    <path d="M-2 5 Q5 13 13 5 M7 5 Q14 13 22 5" stroke="#476359" stroke-width="1" opacity=".46" fill="none"/>
   </pattern>
   <clipPath id="fish-cut"><path d="M46 73 C67 37 101 24 145 30 C194 35 220 52 236 73 C226 95 183 114 140 114 C93 116 61 103 46 73 Z"/></clipPath>
+  <radialGradient id="subsurface" cx="53%" cy="28%" r="78%">
+   <stop offset="0" stop-color="#fff4ce" stop-opacity=".27"/>
+   <stop offset=".48" stop-color="#f1dbab" stop-opacity=".06"/>
+   <stop offset="1" stop-color="#10252a" stop-opacity=".22"/>
+  </radialGradient>
+  <linearGradient id="belly-light" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#f3eed7" stop-opacity="0"/>
+   <stop offset=".70" stop-color="#f5edcf" stop-opacity=".09"/>
+   <stop offset="1" stop-color="#ede3c8" stop-opacity=".32"/>
+  </linearGradient>
+  <pattern id="microdetail" width="11" height="13" patternUnits="userSpaceOnUse" patternTransform="rotate(5)">
+   <path d="M0 6 Q5 11 11 6" fill="none" stroke="#162e29" stroke-width=".4" opacity=".21"/>
+   <circle cx="7" cy="4" r=".55" fill="#f5e9c4" opacity=".33"/>
+   <circle cx="2" cy="10" r=".32" fill="#162e29" opacity=".25"/>
+  </pattern>
 </defs>
 <g><path d="M58 73 C38 63 29 42 12 34 Q22 73 12 112 C32 109 44 86 58 73 Z" fill="url(#fins)" stroke="#677b6e" stroke-width="1.2" stroke-linejoin="round"/>
  <path d="M92 36 Q105 9 139 12 Q144 32 171 38 Z" fill="url(#fins)" stroke="#677b6e" stroke-width="1" stroke-linejoin="round"/>
  <path d="M101 106 Q131 128 177 110 L176 100 Z" fill="url(#fins)" stroke="#677b6e" stroke-width="1" stroke-linejoin="round"/>
  <path d="M46 73 C67 37 101 24 145 30 C194 35 220 52 236 73 C226 95 183 114 140 114 C93 116 61 103 46 73 Z" fill="url(#body)" stroke="#677b6e" stroke-width="1.8" stroke-linejoin="round"/>
- <g clip-path="url(#fish-cut)"><path d="M46 73 C67 37 101 24 145 30 C194 35 220 52 236 73 C226 95 183 114 140 114 C93 116 61 103 46 73 Z" fill="url(#scales)" opacity="0.46"/><path d="M62 70 Q137 42 226 73" fill="none" stroke="#f4e5be" stroke-width="2" opacity=".28"/>
+ <g clip-path="url(#fish-cut)"><rect x="38" y="28" width="215" height="94" fill="url(#subsurface)"/>
+  <rect x="38" y="43" width="215" height="70" fill="url(#belly-light)"/>
+  <rect x="48" y="44" width="183" height="65" fill="url(#microdetail)" opacity=".66"/>
+  <path d="M60 81 Q127 92 214 81" fill="none" stroke="#162a28" stroke-width="1.25" opacity=".24"/>
+  <path d="M46 73 C67 37 101 24 145 30 C194 35 220 52 236 73 C226 95 183 114 140 114 C93 116 61 103 46 73 Z" fill="url(#scales)" opacity="0.46"/><path d="M62 70 Q137 42 226 73" fill="none" stroke="#f4e5be" stroke-width="2" opacity=".28"/>
   <path d="M63 57 Q144 39 212 62" fill="none" stroke="url(#gloss)" stroke-width="12" opacity=".56"/>
   <path d="M61 83 Q144 103 218 84" fill="none" stroke="#1a2a24" stroke-width="5" opacity=".09"/>
  </g>
@@ -31,4 +50,18 @@
  <ellipse cx="214.6" cy="62" rx="4.2" ry="4.5" fill="#172c2b"/>
  <circle cx="213" cy="60" r="1.4" fill="#ffffff" opacity=".9"/>
  <path d="M38 72 L16 46 M38 73 L16 99 M101 49 L143 26 M110 99 L151 114" stroke="#e9e3cd" stroke-width="1" opacity=".35" fill="none"/>
+<g class="fin-light-rays"><path d="M49 72 Q30 58 19 44" fill="none" stroke="#f8e9c5" stroke-width=".75" opacity=".25"/>
+<path d="M49 72 Q30 64 17 55" fill="none" stroke="#f8e9c5" stroke-width=".75" opacity=".25"/>
+<path d="M49 72 Q30 69 16 65" fill="none" stroke="#f8e9c5" stroke-width=".75" opacity=".25"/>
+<path d="M49 72 Q30 74 15 76" fill="none" stroke="#f8e9c5" stroke-width=".75" opacity=".25"/>
+<path d="M49 72 Q30 79 16 86" fill="none" stroke="#f8e9c5" stroke-width=".75" opacity=".25"/>
+<path d="M49 72 Q30 85 17 97" fill="none" stroke="#f8e9c5" stroke-width=".75" opacity=".25"/>
+<path d="M49 72 Q30 90 19 107" fill="none" stroke="#f8e9c5" stroke-width=".75" opacity=".25"/><path d="M141 88 Q143 91 131 91" stroke="#f9ecc9" stroke-width=".65" opacity=".20" fill="none"/>
+<path d="M141 88 Q145 93 133 92" stroke="#f9ecc9" stroke-width=".65" opacity=".20" fill="none"/>
+<path d="M141 88 Q147 95 135 93" stroke="#f9ecc9" stroke-width=".65" opacity=".20" fill="none"/>
+<path d="M141 88 Q149 97 137 94" stroke="#f9ecc9" stroke-width=".65" opacity=".20" fill="none"/>
+<path d="M141 88 Q151 99 139 95" stroke="#f9ecc9" stroke-width=".65" opacity=".20" fill="none"/>
+<path d="M141 88 Q153 101 141 96" stroke="#f9ecc9" stroke-width=".65" opacity=".20" fill="none"/></g>
+ 
+ <path d="M65 70 Q150 56 221 72" fill="none" stroke="#f7efd4" stroke-width="1.2" opacity=".12"/>
 </g></svg>
