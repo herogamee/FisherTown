@@ -157,3 +157,18 @@ html.fill-screen #game-frame,#game-frame:fullscreen{
  #quality-picker{top:6px;right:58px;height:38px;font-size:11px}
  #quality-info{display:none}
 }
+
+@media(orientation:portrait){
+ #mobile-panel[data-phase="result"] .mobile-bait-panel,
+ #mobile-panel[data-phase="result"] .mobile-actions,
+ #mobile-panel[data-phase="result"] .mobile-tip{display:none}
+ .mobile-catch .action-release{
+  display:block;width:100%;min-height:54px;margin-top:12px;
+  border:0;border-radius:11px;background:#257d6a;color:#fffdf2;
+  font-size:16px;font-weight:800;touch-action:manipulation;
+ }
+ .mobile-catch .action-release[hidden]{display:none!important}
+ #mobile-panel[data-phase="bite"] .action-hook:not(:disabled){
+  box-shadow:0 0 0 2px #f5cd73,inset 0 -4px rgba(66,26,8,.22);
+ }
+}

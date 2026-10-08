@@ -128,6 +128,8 @@ const catchFish = element<HTMLImageElement>('mobile-catch-art');
 const qualitySelect = element<HTMLSelectElement>('quality-select');
 const qualityInfo = element<HTMLElement>('quality-info');
 const gameHost = element<HTMLElement>('game');
+const mobilePanel = element<HTMLElement>('mobile-panel');
+let previousPhase: Phase = 'idle';
 
 try {
  const stored = localStorage.getItem('fishertown:quality');
@@ -145,6 +147,11 @@ qualitySelect.addEventListener('change', () => {
 
 window.addEventListener('fishertown:state', (event: Event) => {
  const state = (event as CustomEvent<FishState>).detail;
+ mobilePanel.dataset.phase = state.phase;
+ if (state.phase === 'result' && previousPhase !== 'result') {
+   mobilePanel.scrollTo({ top: 0, behavior: 'instant' });
+ }
+ previousPhase = state.phase;
  if (title.textContent !== state.title) title.textContent = state.title;
  if (hint.textContent !== state.hint) hint.textContent = state.hint;
  const total = '🎣 สะสม ' + state.totalCatches + ' ตัว';
