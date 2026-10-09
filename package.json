@@ -12,7 +12,9 @@
     "predev": "node scripts/optimize-art.mjs",
     "prebuild": "node scripts/optimize-art.mjs",
     "postbuild": "node scripts/prune-dist.mjs",
-    "smoke": "playwright test"
+    "smoke": "playwright test",
+    "atlas:check": "node scripts/build-fish-atlas.mjs --check",
+    "atlas:build": "node scripts/build-fish-atlas.mjs --write"
   },
   "dependencies": {
     "phaser": "4.2.1"
