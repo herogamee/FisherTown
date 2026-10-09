@@ -184,3 +184,62 @@ html.fill-screen #game-frame,#game-frame:fullscreen{
  }
  #game canvas{width:100%!important;height:100%!important}
 }
+
+/* Fishdex: Thai common names lead. Scientific names stay visible for learning. */
+.fishdex-open{position:absolute;z-index:1002;top:12px;right:315px;min-height:43px;padding:0 14px;border:1px solid #b2d4c6;border-radius:11px;background:rgba(4,32,35,.89);color:#fff7e8;font-weight:700;cursor:pointer}
+.fishdex-mobile-open{display:none}
+.fishdex-modal[hidden],.fishdex-more[hidden]{display:none!important}
+.fishdex-modal{position:absolute;inset:0;z-index:4000;display:grid;place-items:center;padding:12px;background:rgba(1,14,19,.78);backdrop-filter:blur(8px)}
+.fishdex-window{display:flex;flex-direction:column;gap:11px;width:min(950px,100%);max-height:100%;padding:16px 17px;overflow:hidden;border:1px solid rgba(219,232,204,.4);border-radius:17px;background:linear-gradient(155deg,#1d4c4e,#0b2d36 70%);box-shadow:0 18px 65px #00151a;color:#f5f6e9}
+.fishdex-header{display:flex;justify-content:space-between;align-items:center;gap:10px;flex:0 0 auto}
+.fishdex-header h2{font-size:clamp(17px,2.7vw,25px);line-height:1.2;margin:4px 0 0;color:#fff5d9}
+.fishdex-kicker{color:#eed4a2;font-size:11px;letter-spacing:1.3px;font-weight:800}
+.fishdex-close{border:1px solid #86a7a5;border-radius:10px;min-width:42px;min-height:42px;color:white;background:#17424a;cursor:pointer;font-size:22px}
+.fishdex-tabs{display:flex;flex-wrap:wrap;gap:8px;flex:0 0 auto}
+.fishdex-tabs button{border:1px solid #67918b;background:#133f44;color:#d9e9dc;border-radius:10px;padding:10px 13px;min-height:42px;font-weight:700;cursor:pointer}
+.fishdex-tabs button[aria-pressed="true"]{background:#287e76;border-color:#c3e7d0;color:#fff}
+.fishdex-notice{margin:0;padding:7px 10px;border-left:3px solid #e4c685;color:#d6e6e4;font-size:12px;line-height:1.5;background:#09292f}
+.fishdex-search-label{font-size:12px;color:#cddedb}
+.fishdex-search{display:block;border:1px solid #95babb;background:#08282e;color:#f7ffef;border-radius:10px;min-height:45px;padding:8px 12px;font-size:15px;font-family:inherit;width:100%;outline-offset:2px}
+.fishdex-results{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;min-height:0;flex:1 1 auto}
+.fishdex-list-wrap,.fishdex-detail{min-height:0;overflow-y:auto;border:1px solid rgba(190,218,207,.22);border-radius:12px;background:rgba(2,25,30,.35);scrollbar-width:thin}
+.fishdex-list-wrap{padding:8px}
+.fishdex-count{margin:0 0 6px;color:#c5d9d5;font-size:12px}
+.fishdex-list{display:grid;gap:5px}
+.fishdex-item{position:relative;display:flex;flex-direction:column;text-align:left;width:100%;gap:3px;min-height:54px;padding:8px 78px 8px 10px;border:1px solid transparent;border-radius:9px;background:#17454a;color:#eff2e5;cursor:pointer;word-break:break-word}
+.fishdex-item strong{font-size:16px}
+.fishdex-item small{font-size:12px;color:#b4d1c9;font-style:italic}
+.fishdex-item[aria-pressed="true"]{background:#276d66;border-color:#c2ead7}
+.fishdex-popular{position:absolute;right:8px;top:10px;background:#4b6742;color:#f9f2d1;border-radius:8px;padding:3px 5px;font-size:11px}
+.fishdex-more{border:1px solid #88bdb5;background:#1d6260;color:#fff;padding:9px;border-radius:9px;margin-top:8px;width:100%;cursor:pointer}
+.fishdex-detail{padding:16px;line-height:1.55}
+.fishdex-detail h3{font-size:clamp(23px,3.3vw,32px);margin:0;color:#f9f2d9}
+.fishdex-latin{display:block;font-size:17px;margin:5px 0 8px;color:#c6ddd3}
+.fishdex-english{color:#d4e0d9;font-size:14px}
+.fishdex-status{display:inline-block;padding:6px 9px;background:#266a61;color:#ecffec;border-radius:8px;font-size:12px;font-weight:700}
+.fishdex-status.fishdex-pending{background:#65552e;color:#fff2c6}
+.fishdex-label{margin:14px 0 5px;color:#ecd3a2;font-size:13px;font-weight:700}
+.fishdex-body,.fishdex-alias,.fishdex-record{margin:7px 0;font-size:14px}
+.fishdex-small-note{font-size:12px;color:#c8d7ce;line-height:1.5}
+.fishdex-links{display:flex;flex-wrap:wrap;gap:7px}
+.fishdex-links a{color:#f8e0a8;text-decoration:underline;font-size:13px;overflow-wrap:anywhere}
+.fishdex-fish-image{width:min(100%,320px);height:125px;object-fit:contain;display:block;margin:12px auto}
+.fishdex-placeholder{color:#abc8c6}
+@media(orientation:portrait){
+ .fishdex-open{display:none}
+ .fishdex-mobile-open{display:block;border:1px solid #86beb2;border-radius:10px;padding:9px 12px;min-height:45px;background:#1d6560;color:#fff4dd;font-weight:700;cursor:pointer}
+ .fishdex-modal{padding:0}
+ .fishdex-window{width:100%;height:100%;max-height:100%;border:0;border-radius:0;padding:max(13px,env(safe-area-inset-top)) 13px max(13px,env(safe-area-inset-bottom))}
+ .fishdex-results{display:flex;flex-direction:column-reverse;gap:9px;overflow:hidden}
+ .fishdex-detail{flex:1 1 54%;max-height:56%;min-height:140px;padding:13px}
+ .fishdex-list-wrap{flex:1 1 46%;min-height:120px}
+ .fishdex-tabs button{font-size:12px;padding:8px 10px}
+ .fishdex-header h2{font-size:18px}
+ .fishdex-latin{font-size:15px}
+}
+@media(orientation:landscape) and (max-height:500px){
+ .fishdex-window{padding:8px 12px;gap:5px}
+ .fishdex-header h2{font-size:17px}
+ .fishdex-search{min-height:35px}
+ .fishdex-tabs button{min-height:34px;padding:4px 10px}
+}
