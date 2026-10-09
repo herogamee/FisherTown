@@ -183,3 +183,10 @@ Research branch includes **269** region-listed name pairs, **62** notable Thai f
 - `npm run atlas:check` — verification and reproducible index consistency
 
 See [ONEP freshwater checklist](https://chm-thai.onep.go.th/?p=1573) for the 2017 national reference (858 species, not a repository import count).
+
+## Thai-first Fishdex (v0.4.1)
+
+The game uses familiar Thai names as headings (e.g. ปลานิล and ปลาช่อน) while keeping English/scientific names in its Fishdex.
+The research-only Thailand directory of 299 candidate names and the 10 existing playable fish have separate tabs.
+Run npm run atlas:build to regenerate the Thai name index from curated evidence and npm run atlas:check to validate it.
+See docs/12-THAI-COMMON-NAMES-FISHDEX.md for naming and safety rules.

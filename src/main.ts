@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import './style.css';
 import { FishingScene } from './game/FishingScene';
+import { mountFishdex } from './atlas/fishdex';
 
 type Phase = 'idle' | 'charging' | 'cast' | 'bite' | 'fight' | 'result';
 type Action = 'castDown' | 'castUp' | 'hook' | 'reelDown' | 'reelUp' | 'release' | 'bait';
@@ -212,6 +213,19 @@ const config: Phaser.Types.Core.GameConfig = {
  input: { activePointers: 3 }
 };
 const game = new Phaser.Game(config);
+let pausedByFishdex = false;
+mountFishdex({
+ onOpen() {
+  if (game.scene.isActive('FishingScene')) {
+   game.scene.pause('FishingScene');
+   pausedByFishdex = true;
+  }
+ },
+ onClose() {
+  if (pausedByFishdex) game.scene.resume('FishingScene');
+  pausedByFishdex = false;
+ }
+});
 // React to actual DOM sizes, including mobile URL-bar collapse and iOS orientation.
 if (typeof ResizeObserver !== 'undefined') {
  const observer = new ResizeObserver(() => { game.scale.refresh(); });

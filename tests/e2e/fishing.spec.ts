@@ -71,3 +71,40 @@ test('wide orientation keeps original 16:9 controls and can reflow to portrait',
     return box ? box.width / box.height : 0;
   }).toBeGreaterThan(1.7);
 });
+
+
+test('Thai Fishdex searchable by familiar names, scientific names and local aliases', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.goto('/');
+  await expect(page.locator('#mobile-title')).toContainText('พร้อมตกปลา', { timeout: 25_000 });
+  await page.locator('#fishdex-open-mobile').click();
+  await expect(page.locator('#fishdex-modal')).toBeVisible();
+  await expect(page.locator('#fishdex-count')).toContainText('299 รายการ', { timeout: 10_000 });
+
+  await page.locator('#fishdex-search').fill('ปลานิล');
+  await expect(page.locator('.fishdex-item[data-id="oreochromis_niloticus"]')).toBeVisible();
+  await expect(page.locator('#fishdex-detail')).toContainText('Oreochromis niloticus');
+  await expect(page.locator('#fishdex-detail')).toContainText('ยังไม่ใช่ปลาที่จับได้ในเกม');
+
+  await page.locator('#fishdex-search').fill('ปลาหลิม');
+  await expect(page.locator('.fishdex-item[data-id="channa_striata"]')).toBeVisible();
+  await expect(page.locator('#fishdex-detail')).toContainText('Channa striata');
+
+  await page.locator('#fishdex-search').fill('Oreochromis');
+  await expect(page.locator('.fishdex-item[data-id="oreochromis_niloticus"]')).toBeVisible();
+  await page.locator('[data-fishdex-tab="playable"]').click();
+  await expect(page.locator('#fishdex-count')).toContainText('10 รายการ');
+  await page.locator('#fishdex-search').fill('ปลาช่อน');
+  await expect(page.locator('.fishdex-item[data-id="channa-striata"]')).toBeVisible();
+  await expect(page.locator('#fishdex-detail')).toContainText('Channa striata');
+  await page.locator('#fishdex-search').fill('ปลานิล');
+  await expect(page.locator('#fishdex-count')).toContainText('0 รายการ');
+
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#fishdex-modal')).toBeHidden();
+  await expect(page.locator('#mobile-cast')).toBeEnabled();
+  await expect(page.locator('#mobile-discovered')).toContainText('0/10');
+  expect(errors).toEqual([]);
+});

@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
   <link rel="manifest" href="./manifest.webmanifest"/>
-  <title>FisherTown — Fishing Lab v0.4</title>
+  <title>FisherTown — Fishing Lab v0.4.1</title>
 </head>
 <body>
   <main id="app">
@@ -20,6 +20,7 @@
           <h1 id="mobile-title">บึงน้ำหลากเจ้าพระยา</h1>
           <p id="mobile-hint">เลือกเหยื่อ แล้วกดค้างเพื่อเหวี่ยงเบ็ด</p>
         </header>
+        <button id="fishdex-open-mobile" class="fishdex-mobile-open" type="button" aria-haspopup="dialog" aria-controls="fishdex-modal">📖 เปิดสมุดปลาและสารานุกรมปลาไทย</button>
         <div class="mobile-stats">
           <span id="mobile-catches">🎣 จับได้ 0 ตัว</span>
           <span id="mobile-discovered">📖 Fishdex 0/10</span>
@@ -64,6 +65,30 @@
         </select>
         <small id="quality-info" aria-live="off">AUTO</small>
       </label>
+      <button id="fishdex-open" class="fishdex-open" type="button" aria-haspopup="dialog" aria-controls="fishdex-modal">📖 สมุดปลา</button>
+      <section id="fishdex-modal" class="fishdex-modal" role="dialog" aria-modal="true" aria-labelledby="fishdex-title" hidden>
+        <div class="fishdex-window">
+          <header class="fishdex-header">
+            <div><span class="fishdex-kicker">FISHERTOWN • FIELD GUIDE</span><h2 id="fishdex-title">สมุดปลาและสารานุกรมปลาไทย</h2></div>
+            <button id="fishdex-close" class="fishdex-close" type="button" aria-label="ปิดสมุดปลา">✕</button>
+          </header>
+          <div class="fishdex-tabs" role="group" aria-label="เลือกหมวดสมุดปลา">
+            <button type="button" data-fishdex-tab="thailand" aria-pressed="true">ปลาไทยที่กำลังวิจัย (299)</button>
+            <button type="button" data-fishdex-tab="playable" aria-pressed="false">ปลาในเกม (10)</button>
+          </div>
+          <p id="fishdex-notice" class="fishdex-notice">ชื่อไทยแสดงก่อน ชื่อวิทยาศาสตร์ใช้แยกชนิดปลา</p>
+          <label class="fishdex-search-label" for="fishdex-search">ค้นหาจากชื่อไทย ชื่ออื่น ชื่ออังกฤษ หรือชื่อวิทยาศาสตร์</label>
+          <input id="fishdex-search" class="fishdex-search" type="search" placeholder="เช่น ปลานิล, ปลาช่อน, Oreochromis" autocomplete="off"/>
+          <div class="fishdex-results">
+            <div class="fishdex-list-wrap">
+              <p id="fishdex-count" class="fishdex-count" aria-live="polite"></p>
+              <div id="fishdex-list" class="fishdex-list" role="list"></div>
+              <button id="fishdex-more" type="button" class="fishdex-more" hidden>แสดงเพิ่มเติม</button>
+            </div>
+            <article id="fishdex-detail" class="fishdex-detail" aria-live="polite"><p>เลือกปลาเพื่อดูรายละเอียด</p></article>
+          </div>
+        </div>
+      </section>
       <button id="fullscreen-button" type="button" aria-label="ขยายเกมเต็มจอ" title="เต็มจอ">⛶</button>
     </section>
   </main>

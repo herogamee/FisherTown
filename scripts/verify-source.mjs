@@ -71,3 +71,29 @@ console.log('PASS FisherTown integrity: 10 individual SVG species assets, backgr
 
 assert.ok(scene.includes('bg_thailand_sunset.webp'), 'Runtime not using optimized WebP');
 assert.ok(actor.includes('this.art.setDisplaySize('), 'Species texture art renderer regressed');
+
+
+// Fishdex must use Thai names without conflating scientific identities.
+const guide = JSON.parse(await read('public/data/fish-atlas/thailand-name-index.json'));
+assert.equal(guide.research_only, true);
+assert.equal(guide.counts.records, 299);
+assert.equal(guide.counts.gameplay_ready, 0);
+assert.equal(new Set(guide.entries.map(e => e.scientific_name.toLowerCase())).size, guide.entries.length);
+assert.ok(guide.entries.every(e =>
+  e.display_name_th.length && /[\u0e00-\u0e7f]/.test(e.display_name_th) &&
+  e.scientific_name.length > 3 && e.gameplay_ready === false &&
+  e.evidence_urls.length >= 1
+));
+const byLatin = new Map(guide.entries.map(e => [e.scientific_name, e]));
+assert.equal(byLatin.get('Oreochromis niloticus')?.display_name_th, 'ปลานิล');
+assert.equal(byLatin.get('Channa striata')?.display_name_th, 'ปลาช่อน');
+assert.ok(byLatin.get('Channa striata')?.verified_aliases_th.includes('ปลาหลิม'));
+assert.ok(!byLatin.get('Oreochromis niloticus')?.searchable_names_th.includes('ปลาทับทิม'),
+  'Commercial strain is not automatically an exact taxonomic synonym');
+for (const id of ['fishdex-modal', 'fishdex-open', 'fishdex-open-mobile', 'fishdex-search',
+  'fishdex-list', 'fishdex-detail', 'fishdex-close', 'fishdex-count'])
+  assert.ok(index.includes('id="' + id + '"'), 'Fishdex HTML missing #' + id);
+const fishdexUi = await read('src/atlas/fishdex.ts');
+assert.ok(fishdexUi.includes('display_name_th') && fishdexUi.includes('scientific_name'));
+assert.ok(fishdexUi.includes('research_only') && fishdexUi.includes('gameplay_ready'));
+console.log('PASS Fishdex: 299 Thai names, scientific identity, aliases and no automatic spawning');
