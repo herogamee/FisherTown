@@ -170,3 +170,16 @@ See `docs/10-PORTRAIT-ART-RECOVERY.md` for limitations, testing and next art gat
 - CI includes Chromium Playwright smoke for **portrait size, holding/releasing cast, quality selection, landscape → portrait → landscape**, with screenshots saved as an artifact. Tests run against **production Vite preview**.
 
 See `docs/11-V0.4-RELEASE-NOTES.md` for gates, remaining art work and manual iOS/Android validation.
+
+
+## Thailand Fish Atlas (research catalog, 2026-10-09)
+
+Research branch includes **269** region-listed name pairs, **62** notable Thai fish profile references and **299** unique nominal name keys after exact-name deduplication (potential synonyms unresolved). This is a curated **non-playable** research catalog, not a definitive accepted-species checklist. Existing gameplay and the worldwide seed remain unchanged.
+
+- `data/fish-atlas/thailand/catalog-index.json` — unified candidate names with provenance, not playable
+- `data/fish-atlas/thailand/songkhla-regional-candidates.json` — ONEP area source leads
+- `data/fish-atlas/thailand/priority-taxa.json` — Thai popular, ornamental, rare/conservation-interest picks
+- `research/FISH-ATLAS-SOURCE-AUDIT.md` — authority, bibliography, quality/licensing gates and global roadmap
+- `npm run atlas:check` — verification and reproducible index consistency
+
+See [ONEP freshwater checklist](https://chm-thai.onep.go.th/?p=1573) for the 2017 national reference (858 species, not a repository import count).

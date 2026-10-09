@@ -1,0 +1,1269 @@
+{
+  "version": "2026.10-thailand-r1",
+  "dataset_type": "priority_profiles_for_manual_review",
+  "as_of": "2026-10-09",
+  "count": 62,
+  "release_allowed": false,
+  "notice": "Evidence links are leads, not blanket validation of every field. No fish in this file may spawn or be considered legally catchable without taxonomy, habitat, conservation, local origin and rights review.",
+  "profiles": [
+    {
+      "id": "barbonymus_gonionotus",
+      "scientific_name": "Barbonymus gonionotus",
+      "thai_name": "ปลาตะเพียนขาว",
+      "interest_tags": [
+        "food",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/4725",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "scientific_and_thai_name_checked_against_taxon_or_paper_page",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "hampala_macrolepidota",
+      "scientific_name": "Hampala macrolepidota",
+      "thai_name": "ปลากระสูบขีด",
+      "interest_tags": [
+        "sport",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/19248",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "channa_striata",
+      "scientific_name": "Channa striata",
+      "thai_name": "ปลาช่อน",
+      "interest_tags": [
+        "food",
+        "sport",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/8545",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "scientific_and_thai_name_checked_against_taxon_or_paper_page",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "channa_micropeltes",
+      "scientific_name": "Channa micropeltes",
+      "thai_name": "ปลาชะโด",
+      "interest_tags": [
+        "sport",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Channa%20micropeltes",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "pangasianodon_hypophthalmus",
+      "scientific_name": "Pangasianodon hypophthalmus",
+      "thai_name": "ปลาสวาย",
+      "interest_tags": [
+        "food",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/29577",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "pangasianodon_gigas",
+      "scientific_name": "Pangasianodon gigas",
+      "thai_name": "ปลาบึก",
+      "interest_tags": [
+        "conservation",
+        "iconic"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Pangasianodon%20gigas",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false
+    },
+    {
+      "id": "clarias_macrocephalus",
+      "scientific_name": "Clarias macrocephalus",
+      "thai_name": "ปลาดุกอุย",
+      "interest_tags": [
+        "food",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/9561",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "scientific_and_thai_name_checked_against_taxon_or_paper_page",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "anabas_testudineus",
+      "scientific_name": "Anabas testudineus",
+      "thai_name": "ปลาหมอไทย",
+      "interest_tags": [
+        "food",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/2193",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "betta_splendens",
+      "scientific_name": "Betta splendens",
+      "thai_name": "ปลากัด",
+      "interest_tags": [
+        "ornamental",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Betta%20splendens",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "scientific_and_thai_name_checked_against_taxon_or_paper_page",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "betta_smaragdina",
+      "scientific_name": "Betta smaragdina",
+      "thai_name": "ปลากัดเขียวอีสาน",
+      "interest_tags": [
+        "ornamental",
+        "conservation"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/5144",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "research_only",
+      "in_game": false
+    },
+    {
+      "id": "betta_mahachaiensis",
+      "scientific_name": "Betta mahachaiensis",
+      "thai_name": "ปลากัดมหาชัย",
+      "interest_tags": [
+        "ornamental",
+        "conservation"
+      ],
+      "water_types_to_review": [
+        "brackish"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/5137",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "scientific_and_thai_name_checked_against_taxon_or_paper_page",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false,
+      "primary_literature": [
+        {
+          "title": "Kowasupat et al. (2012), Zootaxa 3522(1):49–60",
+          "doi": "10.11646/zootaxa.3522.1.3",
+          "url": "https://www.mapress.com/zt/article/view/zootaxa.3522.1.3",
+          "scope": "scientific identity and a Samut Sakhon brackish-water site; copyright of original paper/photos not transferred"
+        }
+      ]
+    },
+    {
+      "id": "betta_imbellis",
+      "scientific_name": "Betta imbellis",
+      "thai_name": "ปลากัดภาคใต้",
+      "interest_tags": [
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/minisite/lagoon/taxons/detail/67",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "trichopodus_pectoralis",
+      "scientific_name": "Trichopodus pectoralis",
+      "thai_name": "ปลาสลิด",
+      "interest_tags": [
+        "food",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/41194",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false,
+      "taxonomy_note": "Older regional list uses Trichogaster pectoralis; resolve alias separately"
+    },
+    {
+      "id": "trichopodus_trichopterus",
+      "scientific_name": "Trichopodus trichopterus",
+      "thai_name": "ปลากระดี่หม้อ",
+      "interest_tags": [
+        "ornamental",
+        "food"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/41266",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false,
+      "taxonomy_note": "Regional list uses Trichogaster trichopterus; review synonym"
+    },
+    {
+      "id": "osphronemus_goramy",
+      "scientific_name": "Osphronemus goramy",
+      "thai_name": "ปลาแรด",
+      "interest_tags": [
+        "food",
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/29154",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "chitala_ornata",
+      "scientific_name": "Chitala ornata",
+      "thai_name": "ปลากราย",
+      "interest_tags": [
+        "food",
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/8917",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "notopterus_notopterus",
+      "scientific_name": "Notopterus notopterus",
+      "thai_name": "ปลาสลาด",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/28010",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "osteochilus_vittatus",
+      "scientific_name": "Osteochilus vittatus",
+      "thai_name": "ปลาสร้อยนกเขา",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Osteochilus%20vittatus",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false,
+      "taxonomy_note": "Regional list has Osteochilus hasseltii; do not auto-merge without catalog authority"
+    },
+    {
+      "id": "cyclocheilichthys_apogon",
+      "scientific_name": "Cyclocheilichthys apogon",
+      "thai_name": "ปลาตาแดง",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/11805",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "monopterus_albus",
+      "scientific_name": "Monopterus albus",
+      "thai_name": "ปลาไหลนา",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/26554",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false,
+      "taxonomy_note": "Swamp eel species-complex caveat"
+    },
+    {
+      "id": "hemibagrus_nemurus",
+      "scientific_name": "Hemibagrus nemurus",
+      "thai_name": "ปลากดเหลือง",
+      "interest_tags": [
+        "food",
+        "sport"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/19658",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "kryptopterus_bicirrhis",
+      "scientific_name": "Kryptopterus bicirrhis",
+      "thai_name": "ปลาก้างพระร่วง",
+      "interest_tags": [
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/22321",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "mastacembelus_armatus",
+      "scientific_name": "Mastacembelus armatus",
+      "thai_name": "ปลากระทิง",
+      "interest_tags": [
+        "ornamental",
+        "food"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/25372",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "macrognathus_siamensis",
+      "scientific_name": "Macrognathus siamensis",
+      "thai_name": "ปลาหลดจุด",
+      "interest_tags": [
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/minisite/hkk/taxons/detail/21951",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "phalacronotus_bleekeri",
+      "scientific_name": "Phalacronotus bleekeri",
+      "thai_name": "ปลาแดง",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/31371",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "trigonostigma_heteromorpha",
+      "scientific_name": "Trigonostigma heteromorpha",
+      "thai_name": "ปลาซิวข้างขวาน",
+      "interest_tags": [
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/41451",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "ambastaia_sidthimunki",
+      "scientific_name": "Ambastaia sidthimunki",
+      "thai_name": "ปลาหมูอารีย์",
+      "interest_tags": [
+        "conservation",
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Ambastaia%20sidthimunki",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "scientific_and_thai_name_checked_against_taxon_or_paper_page",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false,
+      "taxonomy_note": "National assessments on TH-BIF are year-specific; photo-only editorial handling"
+    },
+    {
+      "id": "datnioides_pulcher",
+      "scientific_name": "Datnioides pulcher",
+      "thai_name": "ปลาเสือตอลายใหญ่",
+      "interest_tags": [
+        "conservation",
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Datnioides%20pulcher",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false
+    },
+    {
+      "id": "catlocarpio_siamensis",
+      "scientific_name": "Catlocarpio siamensis",
+      "thai_name": "ปลากระโห้",
+      "interest_tags": [
+        "conservation",
+        "iconic"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/7885",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "scientific_and_thai_name_checked_against_taxon_or_paper_page",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false
+    },
+    {
+      "id": "scleropages_formosus",
+      "scientific_name": "Scleropages formosus",
+      "thai_name": "ปลาตะพัด",
+      "interest_tags": [
+        "conservation",
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/37028",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "scientific_and_thai_name_checked_against_taxon_or_paper_page",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false
+    },
+    {
+      "id": "wallago_attu",
+      "scientific_name": "Wallago attu",
+      "thai_name": "ปลาเค้าขาว",
+      "interest_tags": [
+        "food",
+        "sport"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/42680",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "urogymnus_polylepis",
+      "scientific_name": "Urogymnus polylepis",
+      "thai_name": "กระเบนเจ้าพระยา",
+      "interest_tags": [
+        "conservation",
+        "iconic"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/42080",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "scientific_and_thai_name_checked_against_taxon_or_paper_page",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false
+    },
+    {
+      "id": "pristis_pristis",
+      "scientific_name": "Pristis pristis",
+      "thai_name": "ปลาฉนากฟันใหญ่",
+      "interest_tags": [
+        "conservation",
+        "marine"
+      ],
+      "water_types_to_review": [
+        "freshwater",
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/33744",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "scientific_and_thai_name_checked_against_taxon_or_paper_page",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false
+    },
+    {
+      "id": "lates_calcarifer",
+      "scientific_name": "Lates calcarifer",
+      "thai_name": "ปลากะพงขาว",
+      "interest_tags": [
+        "food",
+        "sport",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater",
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/22739",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "epinephelus_coioides",
+      "scientific_name": "Epinephelus coioides",
+      "thai_name": "ปลากะรังปากแม่น้ำ",
+      "interest_tags": [
+        "food",
+        "sport"
+      ],
+      "water_types_to_review": [
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/15420",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "lutjanus_argentimaculatus",
+      "scientific_name": "Lutjanus argentimaculatus",
+      "thai_name": "ปลากะพงแดง",
+      "interest_tags": [
+        "food",
+        "sport",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/24337",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "lutjanus_johnii",
+      "scientific_name": "Lutjanus johnii",
+      "thai_name": "ปลากะพงทอง",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/24354",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "scomberomorus_commerson",
+      "scientific_name": "Scomberomorus commerson",
+      "thai_name": "ปลาอินทรีบั้ง",
+      "interest_tags": [
+        "food",
+        "sport",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/37100",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "rastrelliger_brachysoma",
+      "scientific_name": "Rastrelliger brachysoma",
+      "thai_name": "ปลาทู",
+      "interest_tags": [
+        "food",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/minisite/lagoon/taxons/detail/647",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "rastrelliger_kanagurta",
+      "scientific_name": "Rastrelliger kanagurta",
+      "thai_name": "ปลาลัง",
+      "interest_tags": [
+        "food",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/35275",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "atule_mate",
+      "scientific_name": "Atule mate",
+      "thai_name": "ปลาสีกุนกบ",
+      "interest_tags": [
+        "food",
+        "sport"
+      ],
+      "water_types_to_review": [
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/4367",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "caranx_ignobilis",
+      "scientific_name": "Caranx ignobilis",
+      "thai_name": "ปลากะมงพร้าว",
+      "interest_tags": [
+        "sport",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/7517",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "selar_crumenophthalmus",
+      "scientific_name": "Selar crumenophthalmus",
+      "thai_name": "ปลาสีกุนทองตาโต",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/minisite/lagoon/taxons/detail/371",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "eleutheronema_tetradactylum",
+      "scientific_name": "Eleutheronema tetradactylum",
+      "thai_name": "ปลากุเรา",
+      "interest_tags": [
+        "food",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/15048",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "mugil_cephalus",
+      "scientific_name": "Mugil cephalus",
+      "thai_name": "ปลากระบอกเทา",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/26719",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false,
+      "taxonomy_note": "Marine mullet cryptic species-complex caveat"
+    },
+    {
+      "id": "scatophagus_argus",
+      "scientific_name": "Scatophagus argus",
+      "thai_name": "ปลาตะกรับ",
+      "interest_tags": [
+        "food",
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Scatophagus%20argus",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "oxyeleotris_marmorata",
+      "scientific_name": "Oxyeleotris marmorata",
+      "thai_name": "ปลาบู่ทราย",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "freshwater",
+        "brackish"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Oxyeleotris%20marmorata",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "oreochromis_niloticus",
+      "scientific_name": "Oreochromis niloticus",
+      "thai_name": "ปลานิล",
+      "interest_tags": [
+        "food",
+        "aquaculture",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/28938",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "introduced_to_thailand_needs_confirmation",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false,
+      "origin_check_source_url": "https://www4.fisheries.go.th/dof/news_local/1220/64290"
+    },
+    {
+      "id": "siganus_canaliculatus",
+      "scientific_name": "Siganus canaliculatus",
+      "thai_name": "ปลาสลิดหินจุดขาว",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Siganus%20canaliculatus",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "toxotes_chatareus",
+      "scientific_name": "Toxotes chatareus",
+      "thai_name": "ปลาเสือพ่นน้ำ",
+      "interest_tags": [
+        "ornamental",
+        "popular"
+      ],
+      "water_types_to_review": [
+        "freshwater",
+        "brackish"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Toxotes%20chatareus",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "chanos_chanos",
+      "scientific_name": "Chanos chanos",
+      "thai_name": "ปลานวลจันทร์ทะเล",
+      "interest_tags": [
+        "food",
+        "aquaculture"
+      ],
+      "water_types_to_review": [
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Chanos%20chanos",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "selaroides_leptolepis",
+      "scientific_name": "Selaroides leptolepis",
+      "thai_name": "ปลาข้างเหลือง",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Selaroides%20leptolepis",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "aetobatus_ocellatus",
+      "scientific_name": "Aetobatus ocellatus",
+      "thai_name": "กระเบนนก",
+      "interest_tags": [
+        "conservation",
+        "marine"
+      ],
+      "water_types_to_review": [
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/detail/982",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false
+    },
+    {
+      "id": "rhincodon_typus",
+      "scientific_name": "Rhincodon typus",
+      "thai_name": "ฉลามวาฬ",
+      "interest_tags": [
+        "conservation",
+        "marine",
+        "iconic"
+      ],
+      "water_types_to_review": [
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Rhincodon%20typus",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "scientific_and_thai_name_checked_against_taxon_or_paper_page",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false
+    },
+    {
+      "id": "sphyrna_lewini",
+      "scientific_name": "Sphyrna lewini",
+      "thai_name": "ฉลามหัวค้อน",
+      "interest_tags": [
+        "conservation",
+        "marine"
+      ],
+      "water_types_to_review": [
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Sphyrna%20lewini",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false
+    },
+    {
+      "id": "carcharhinus_leucas",
+      "scientific_name": "Carcharhinus leucas",
+      "thai_name": "ฉลามหัวบาตร",
+      "interest_tags": [
+        "conservation",
+        "marine"
+      ],
+      "water_types_to_review": [
+        "freshwater",
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Carcharhinus%20leucas",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "photo_only_pending_legal_review",
+      "in_game": false
+    },
+    {
+      "id": "trichopsis_vittata",
+      "scientific_name": "Trichopsis vittata",
+      "thai_name": "ปลากริม",
+      "interest_tags": [
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Trichopsis%20vittata",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "tetraodon_leiurus",
+      "scientific_name": "Tetraodon leiurus",
+      "thai_name": "ปลาปักเป้าน้ำจืด",
+      "interest_tags": [
+        "ornamental"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Tetraodon%20leiurus",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "tenualosa_toli",
+      "scientific_name": "Tenualosa toli",
+      "thai_name": "ปลาตะลุมพุก",
+      "interest_tags": [
+        "food",
+        "conservation"
+      ],
+      "water_types_to_review": [
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Tenualosa%20toli",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "research_only",
+      "in_game": false
+    },
+    {
+      "id": "plotosus_canius",
+      "scientific_name": "Plotosus canius",
+      "thai_name": "ปลาดุกทะเล",
+      "interest_tags": [
+        "food"
+      ],
+      "water_types_to_review": [
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Plotosus%20canius",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "megalops_cyprinoides",
+      "scientific_name": "Megalops cyprinoides",
+      "thai_name": "ปลาตาเหลือกสั้น",
+      "interest_tags": [
+        "sport"
+      ],
+      "water_types_to_review": [
+        "brackish",
+        "marine"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Megalops%20cyprinoides",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    },
+    {
+      "id": "ctenopharyngodon_idella",
+      "scientific_name": "Ctenopharyngodon idella",
+      "thai_name": "ปลากินหญ้า",
+      "interest_tags": [
+        "aquaculture"
+      ],
+      "water_types_to_review": [
+        "freshwater"
+      ],
+      "taxon_page_url": "https://thbif.onep.go.th/taxons/taxon_detail/Ctenopharyngodon%20idella",
+      "source_id": "THBIF-SPECIES-PAGES",
+      "priority": "high",
+      "review_status": "taxon_profile_reference_needs_final_crosscheck",
+      "origin_status": "not_assessed",
+      "legal_conservation_status": "not_assessed",
+      "gameplay_handling": "not_assessed",
+      "in_game": false
+    }
+  ]
+}

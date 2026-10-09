@@ -1,0 +1,20 @@
+{
+  "source_id": "THBIF-SONGKHLA-ONEPAGE",
+  "publisher": "ONEP Thailand Biodiversity Information Facility (TH-BIF)",
+  "source_title": "ข้อมูลสรุปพื้นที่: ลุ่มน้ำทะเลสาบสงขลา (regional species registry)",
+  "url": "https://thbif.onep.go.th/minisite/lagoon/onepage",
+  "accessed_at": "2026-10-09",
+  "scope": "Songkhla Lake basin and connected waters; do not infer all species occur throughout Thailand",
+  "license_review": "source rights not yet cleared for commercial reuse",
+  "usable_fields": [
+    "scientific_name_as_listed",
+    "manually_transcribed_thai_name_candidate",
+    "regional_list_entry"
+  ],
+  "excluded": [
+    "images",
+    "paragraph_descriptions",
+    "conservation_status_without_date"
+  ],
+  "quality_caveats": "Original source includes old synonyms, genus-only records and inconsistent identifications; scientific names are not treated as currently accepted without independent taxon check. Thai names in this curated subset may have punctuation/spelling normalized by editors; not a verbatim reproduction."
+}

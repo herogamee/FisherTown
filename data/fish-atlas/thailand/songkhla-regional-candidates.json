@@ -1,0 +1,2701 @@
+{
+  "atlas_version": "2026.10-thailand-r1",
+  "generated_at": "2026-10-09",
+  "dataset_type": "reference_only_regional_list",
+  "not_for_gameplay": true,
+  "record_count": 269,
+  "warning": "Research transcriptions only; not a modern taxonomic authority or blanket commercial reuse permission. Presence in an area summary is not proof of native status, catchability, population, habitat, current conservation rank or occurrence elsewhere. Thai labels may be editorially normalized for punctuation/spelling; verify against the original page before publication.",
+  "source_id": "THBIF-SONGKHLA-ONEPAGE",
+  "species": [
+    {
+      "scientific_name_as_listed": "Parambassis siamensis",
+      "canonical_candidate": "Parambassis siamensis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแป้นแก้ว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Aplocheilus panchax",
+      "canonical_candidate": "Aplocheilus panchax",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหัวตะกั่ว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Hemibagrus filamentus",
+      "canonical_candidate": "Hemibagrus filamentus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากดเหลือง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Mystus singaringan",
+      "canonical_candidate": "Mystus singaringan",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแขยงใบข้าว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Mystus armiger",
+      "canonical_candidate": "Mystus armiger",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแขยงนวล",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Pseudomystus siamensis",
+      "canonical_candidate": "Pseudomystus siamensis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแขยงหิน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Xenentodon cancila",
+      "canonical_candidate": "Xenentodon cancila",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระทุงเหวเมือง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Channa striata",
+      "canonical_candidate": "Channa striata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาช่อน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Channa lucius",
+      "canonical_candidate": "Channa lucius",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากะสง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Channa micropeltes",
+      "canonical_candidate": "Channa micropeltes",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาชะโด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Oreochromis niloticus niloticus",
+      "canonical_candidate": "Oreochromis niloticus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลานิล",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Oreochromis mossambicus",
+      "canonical_candidate": "Oreochromis mossambicus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหมอเทศ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Clarias macrocephalus",
+      "canonical_candidate": "Clarias macrocephalus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดุกอุย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Clarias nieuhofii",
+      "canonical_candidate": "Clarias nieuhofii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดุกลำพัน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Clarias batrachus",
+      "canonical_candidate": "Clarias batrachus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดุกด้าน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Clarias meladerma",
+      "canonical_candidate": "Clarias meladerma",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดัก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Lepidocephalichthys berdmorei",
+      "canonical_candidate": "Lepidocephalichthys berdmorei",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาช่อนทราย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Acantopsis choirorhynchos",
+      "canonical_candidate": "Acantopsis choirorhynchos",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลารากกล้วย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Puntius leiacanthus",
+      "canonical_candidate": "Puntius leiacanthus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตะเพียนทราย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Trigonostigma heteromorpha",
+      "canonical_candidate": "Trigonostigma heteromorpha",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาซิวข้างขวาน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Rasbora trilineata",
+      "canonical_candidate": "Rasbora trilineata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาซิวหางกรรไกร",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Rasbora sumatrana",
+      "canonical_candidate": "Rasbora sumatrana",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาซิวสุมาตรา",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Rasbora aurotaenia",
+      "canonical_candidate": "Rasbora aurotaenia",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาซิวควาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Rasbora paviana",
+      "canonical_candidate": "Rasbora paviana",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาซิวควายแถบดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Rasbora borapetensis",
+      "canonical_candidate": "Rasbora borapetensis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาซิวหางแดง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Rasbora argyrotaenia",
+      "canonical_candidate": "Rasbora argyrotaenia",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาซิวควาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Barbonymus altus",
+      "canonical_candidate": "Barbonymus altus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตะเพียนทอง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Puntius orphoides",
+      "canonical_candidate": "Puntius orphoides",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแก้มช้ำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Barbonymus gonionotus",
+      "canonical_candidate": "Barbonymus gonionotus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตะเพียนขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Puntioplites bulu",
+      "canonical_candidate": "Puntioplites bulu",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตุ่ม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Parachela siamensis",
+      "canonical_candidate": "Parachela siamensis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแปป",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Parachela oxygastroides",
+      "canonical_candidate": "Parachela oxygastroides",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแปป",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Parachela maculicauda",
+      "canonical_candidate": "Parachela maculicauda",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแปปหางดอก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Oxygaster anomalura",
+      "canonical_candidate": "Oxygaster anomalura",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแปปขาวหางดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Osteochilus melanopleurus",
+      "canonical_candidate": "Osteochilus melanopleurus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาพรมหัวเหม็น",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Osteochilus hasseltii",
+      "canonical_candidate": "Osteochilus hasseltii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสร้อยนกเขา",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Labiobarbus siamensis",
+      "canonical_candidate": "Labiobarbus siamensis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสร้อยลูกกล้วย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Labeo rohita",
+      "canonical_candidate": "Labeo rohita",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลายี่สกเทศ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Hypophthalmichthys molitrix",
+      "canonical_candidate": "Hypophthalmichthys molitrix",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาลิ่น",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Puntius partipentazona",
+      "canonical_candidate": "Puntius partipentazona",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาเสือข้างลาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cyclocheilichthys heteronema",
+      "canonical_candidate": "Cyclocheilichthys heteronema",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากะทิ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Barbonymus schwanenfeldii",
+      "canonical_candidate": "Barbonymus schwanenfeldii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระแห",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Ctenopharyngodon idella",
+      "canonical_candidate": "Ctenopharyngodon idella",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากินหญ้า",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cyclocheilichthys apogon",
+      "canonical_candidate": "Cyclocheilichthys apogon",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตาแดง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Hampala macrolepidota",
+      "canonical_candidate": "Hampala macrolepidota",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระสูบขีด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Esomus metallicus",
+      "canonical_candidate": "Esomus metallicus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาซิวหนวดยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cyprinus carpio carpio",
+      "canonical_candidate": "Cyprinus carpio",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาไน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Oxyeleotris marmorata",
+      "canonical_candidate": "Oxyeleotris marmorata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่จาก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Setipinna melanochir",
+      "canonical_candidate": "Setipinna melanochir",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแมวหูดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Brachygobius xanthomelas",
+      "canonical_candidate": "Brachygobius xanthomelas",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่เสือเล็ก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Dermogenys pusilla",
+      "canonical_candidate": "Dermogenys pusilla",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาเข็มหม้อ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Hyporhamphus quoyi",
+      "canonical_candidate": "Hyporhamphus quoyi",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระทุงเหวปากแดง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Nuchequula gerreoides",
+      "canonical_candidate": "Nuchequula gerreoides",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแป้นจมูกสั้น",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Leiognathus brevirostris",
+      "canonical_candidate": "Leiognathus brevirostris",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแป้นเล็ก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Mastacembelus erythrotaenia",
+      "canonical_candidate": "Mastacembelus erythrotaenia",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระทิงไฟ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Macrognathus circumcinctus",
+      "canonical_candidate": "Macrognathus circumcinctus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหลดลาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Mastacembelus armatus",
+      "canonical_candidate": "Mastacembelus armatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระทิงดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Nandus nebulosus",
+      "canonical_candidate": "Nandus nebulosus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดุมซี",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Notopterus notopterus",
+      "canonical_candidate": "Notopterus notopterus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสลาด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Trichogaster pectoralis",
+      "canonical_candidate": "Trichogaster pectoralis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสลิด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Betta splendens",
+      "canonical_candidate": "Betta splendens",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากัดไทย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Betta taeniata",
+      "canonical_candidate": "Betta taeniata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากัดป่า",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Trichogaster trichopterus",
+      "canonical_candidate": "Trichogaster trichopterus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระดี่หม้อ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Trichopsis vittata",
+      "canonical_candidate": "Trichopsis vittata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากริม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Betta imbellis",
+      "canonical_candidate": "Betta imbellis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากัดภาคใต้",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Monopterus albus",
+      "canonical_candidate": "Monopterus albus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาไหลนา",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Tetraodon leiurus",
+      "canonical_candidate": "Tetraodon leiurus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาปักเป้าน้ำจืด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Toxotes chatareus",
+      "canonical_candidate": "Toxotes chatareus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาเสือพ่นน้ำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Pristolepis fasciata",
+      "canonical_candidate": "Pristolepis fasciata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหมอช้างเหยียบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Ambassis kopsii",
+      "canonical_candidate": "Ambassis kopsii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาขี้จีนครีบดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Anabas testudineus",
+      "canonical_candidate": "Anabas testudineus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหมอไทย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Arius maculatus",
+      "canonical_candidate": "Arius maculatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากดหัวโม่ง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Nemapteryx caelata",
+      "canonical_candidate": "Nemapteryx caelata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากดหัวแข็ง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Hypoatherina valenciennei",
+      "canonical_candidate": "Hypoatherina valenciennei",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาข้างเงินตาเล็ก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Corica soborna",
+      "canonical_candidate": "Corica soborna",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลามะลิ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Gonialosa modesta",
+      "canonical_candidate": "Gonialosa modesta",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาโคก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Opisthopterus tardoore",
+      "canonical_candidate": "Opisthopterus tardoore",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาอีปุดหัวเล็ก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Hilsa kelee",
+      "canonical_candidate": "Hilsa kelee",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตะลุมพุกจุด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Tenualosa toli",
+      "canonical_candidate": "Tenualosa toli",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตะลุมพุก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Pangio anguillaris",
+      "canonical_candidate": "Pangio anguillaris",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสายทอง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cirrhinus chinensis",
+      "canonical_candidate": "Cirrhinus chinensis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแกง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Datnioides polota",
+      "canonical_candidate": "Datnioides polota",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากะพงหิน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Thryssa hamiltonii",
+      "canonical_candidate": "Thryssa hamiltonii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแมว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Gobiopterus chuno",
+      "canonical_candidate": "Gobiopterus chuno",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่ใส",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Hemiramphus far",
+      "canonical_candidate": "Hemiramphus far",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตับเต่า",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Lates calcarifer",
+      "canonical_candidate": "Lates calcarifer",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากะพงขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Leiognathus equulus",
+      "canonical_candidate": "Leiognathus equulus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแป้นใหญ่",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Mastacembelus favus",
+      "canonical_candidate": "Mastacembelus favus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระทิงลาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Valamugil cunnesius",
+      "canonical_candidate": "Valamugil cunnesius",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระบอกขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Liza tade",
+      "canonical_candidate": "Liza tade",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระบอกหัวสิว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Pangasianodon hypophthalmus",
+      "canonical_candidate": "Pangasianodon hypophthalmus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสวาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Pangasianodon gigas",
+      "canonical_candidate": "Pangasianodon gigas",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบึก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Neostethus bicornis",
+      "canonical_candidate": "Neostethus bicornis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่ใส",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Plotosus canius",
+      "canonical_candidate": "Plotosus canius",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดุกทะเล",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Pellona ditchela",
+      "canonical_candidate": "Pellona ditchela",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตาเหลือก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Scatophagus argus",
+      "canonical_candidate": "Scatophagus argus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตะกรับ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Epinephelus coioides",
+      "canonical_candidate": "Epinephelus coioides",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากะรังปากแม่น้ำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Ompok krattensis",
+      "canonical_candidate": "Ompok krattensis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาเนื้ออ่อน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Macrotrema caligans",
+      "canonical_candidate": "Macrotrema caligans",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาไหลน้ำกร่อย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Ophisternon bengalense",
+      "canonical_candidate": "Ophisternon bengalense",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาไหลเบงกอล",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Doryichthys martensii",
+      "canonical_candidate": "Doryichthys martensii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาจิ้มฟันจระเข้เล็ก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Doryichthys boaja",
+      "canonical_candidate": "Doryichthys boaja",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาจิ้มฟันจระเข้ใหญ่",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Auriglobus nefastus",
+      "canonical_candidate": "Auriglobus nefastus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาปักเป้าน้ำจืดหลังเขียว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Tetraodon palembangensis",
+      "canonical_candidate": "Tetraodon palembangensis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาปักเป้าลายร่างแห",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Ambassis macracanthus",
+      "canonical_candidate": "Ambassis macracanthus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาขี้จีน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Ambassis gymnocephalus",
+      "canonical_candidate": "Ambassis gymnocephalus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาขี้จีนยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Arius venosus",
+      "canonical_candidate": "Arius venosus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากดเหลือง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Batrachocephalus mino",
+      "canonical_candidate": "Batrachocephalus mino",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากดหัวกบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Hexanematichthys sagor",
+      "canonical_candidate": "Hexanematichthys sagor",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากดขี้ลิง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Osteogeneiosus militaris",
+      "canonical_candidate": "Osteogeneiosus militaris",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากดหัวอ่อน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cryptarius truncatus",
+      "canonical_candidate": "Cryptarius truncatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากดคันหลาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Batrachomoeus trispinosus",
+      "canonical_candidate": "Batrachomoeus trispinosus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาอุบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Allenbatrachus grunniens",
+      "canonical_candidate": "Allenbatrachus grunniens",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาอุบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Strongylura leiura",
+      "canonical_candidate": "Strongylura leiura",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระทุงเหวหูดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Strongylura strongylura",
+      "canonical_candidate": "Strongylura strongylura",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระทุงควาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Ablennes hians",
+      "canonical_candidate": "Ablennes hians",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระทุงเหวข้างแบน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Tylosurus crocodilus crocodilus",
+      "canonical_candidate": "Tylosurus crocodilus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระทุงเหวทะเล",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Bregmaceros mcclellandi",
+      "canonical_candidate": "Bregmaceros mcclellandi",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากุเราแคระ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Carangoides hedlandensis",
+      "canonical_candidate": "Carangoides hedlandensis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสีกุนครีบยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Selaroides leptolepis",
+      "canonical_candidate": "Selaroides leptolepis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาข้างเหลือง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Carangoides chrysophrys",
+      "canonical_candidate": "Carangoides chrysophrys",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสีกุนป้อม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Atule mate",
+      "canonical_candidate": "Atule mate",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสีกุนกบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Escualosa thoracata",
+      "canonical_candidate": "Escualosa thoracata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากะตักขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Anodontostoma chacunda",
+      "canonical_candidate": "Anodontostoma chacunda",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาโคก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Nematalosa galatheae",
+      "canonical_candidate": "Nematalosa galatheae",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาโคกกระโดง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cynoglossus puncticeps",
+      "canonical_candidate": "Cynoglossus puncticeps",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลายอดม่วงแถบประ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cynoglossus cynoglossus",
+      "canonical_candidate": "Cynoglossus cynoglossus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลายอดม่วงเบงกอล",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Diplocheilichthys pleurotaenia",
+      "canonical_candidate": "Diplocheilichthys pleurotaenia",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสร้อยข้างแถบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Butis koilomatodon",
+      "canonical_candidate": "Butis koilomatodon",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่เกล็ดแข็ง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Butis gymnopomus",
+      "canonical_candidate": "Butis gymnopomus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่เกล็ดแข็งเขียว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Butis butis",
+      "canonical_candidate": "Butis butis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่เกล็ดแข็งหางแดง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Coilia dussumieri",
+      "canonical_candidate": "Coilia dussumieri",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหางไก่จุดทอง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Thryssa kammalensis",
+      "canonical_candidate": "Thryssa kammalensis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแมวหัวแหลม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cypselurus oligolepis",
+      "canonical_candidate": "Cypselurus oligolepis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลานกกระจอก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Gerres oblongus",
+      "canonical_candidate": "Gerres oblongus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดอกหมากป้อม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Gerres limbatus",
+      "canonical_candidate": "Gerres limbatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดอกหมากก้นเหลือง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Gerres filamentosus",
+      "canonical_candidate": "Gerres filamentosus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดอกหมากกระโดง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Istigobius campbelli",
+      "canonical_candidate": "Istigobius campbelli",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่ขาวหางยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Trypauchen vagina",
+      "canonical_candidate": "Trypauchen vagina",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากล้วย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Taenioides nigrimarginatus",
+      "canonical_candidate": "Taenioides nigrimarginatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาเขือคางยื่นครีบดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Redigobius chrysosoma",
+      "canonical_candidate": "Redigobius chrysosoma",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่แก้มดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Pseudapocryptes lanceolatus",
+      "canonical_candidate": "Pseudapocryptes lanceolatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาท่องเที่ยวเกล็ดเล็ก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Periophthalmus argentilineatus",
+      "canonical_candidate": "Periophthalmus argentilineatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตีนครีบประขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Myersina filifer",
+      "canonical_candidate": "Myersina filifer",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่สิงห์ครีบยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Glossogobius bicirrhosus",
+      "canonical_candidate": "Glossogobius bicirrhosus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่ทองหนวดสั้น",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Glossogobius aureus",
+      "canonical_candidate": "Glossogobius aureus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่ทอง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Acentrogobius caninus",
+      "canonical_candidate": "Acentrogobius caninus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่จุดเขียวใหญ่",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Parapocryptes serperaster",
+      "canonical_candidate": "Parapocryptes serperaster",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาท่องเที่ยวเกล็ดใหญ่",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Zenarchopterus dispar",
+      "canonical_candidate": "Zenarchopterus dispar",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระทุงเหวหางตัด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Rhynchorhamphus naga",
+      "canonical_candidate": "Rhynchorhamphus naga",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระทุงเหวปากยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Secutor megalolepis",
+      "canonical_candidate": "Secutor megalolepis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแป้นป้อม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Leiognathus fasciatus",
+      "canonical_candidate": "Leiognathus fasciatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแป้นแถบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Eubleekeria splendens",
+      "canonical_candidate": "Eubleekeria splendens",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแป้นกระสวย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Megalops cyprinoides",
+      "canonical_candidate": "Megalops cyprinoides",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตาเหลือกสั้น",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Liza subviridis",
+      "canonical_candidate": "Liza subviridis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระบอกดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Platycephalus indicus",
+      "canonical_candidate": "Platycephalus indicus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหางควายหางแถบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Nibea soldado",
+      "canonical_candidate": "Nibea soldado",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาจวดเทา",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Siganus javus",
+      "canonical_candidate": "Siganus javus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสลิดหินลายขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Siganus canaliculatus",
+      "canonical_candidate": "Siganus canaliculatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสลิดหินจุดขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Brachirus orientalis",
+      "canonical_candidate": "Brachirus orientalis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาลิ้นควายขนดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Sundasalanx praecox",
+      "canonical_candidate": "Sundasalanx praecox",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหัวแบน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Saurida undosquamis",
+      "canonical_candidate": "Saurida undosquamis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาปากคมหางจุด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Trachinocephalus myops",
+      "canonical_candidate": "Trachinocephalus myops",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาปากคมหน้าสั้น",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Terapon theraps",
+      "canonical_candidate": "Terapon theraps",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาข้างลายเกล็ดใหญ่",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Terapon puta",
+      "canonical_candidate": "Terapon puta",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาข้างลายเกล็ดเล็ก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Takifugu oblongus",
+      "canonical_candidate": "Takifugu oblongus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาปักเป้าลายพาดกลอน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Triacanthus biaculeatus",
+      "canonical_candidate": "Triacanthus biaculeatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาวัวจมูกสัน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Histrio histrio",
+      "canonical_candidate": "Histrio histrio",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากบเหลือง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Albula vulpes",
+      "canonical_candidate": "Albula vulpes",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระบอกยล",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Apogon multitaeniatus",
+      "canonical_candidate": "Apogon multitaeniatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาอมไข่แดง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Apogon hyalosoma",
+      "canonical_candidate": "Apogon hyalosoma",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาอมไข่น้ำตาลอ่อน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Apogon endekataenia",
+      "canonical_candidate": "Apogon endekataenia",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาอมไข่แถบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Apogon fasciatus",
+      "canonical_candidate": "Apogon fasciatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาอมไข่",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Netuma thalassina",
+      "canonical_candidate": "Netuma thalassina",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากดริวกิว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Plicofollis nella",
+      "canonical_candidate": "Plicofollis nella",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Atherinomorus duodecimalis",
+      "canonical_candidate": "Atherinomorus duodecimalis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาข้างเงินตาโต",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Canthidermis maculata",
+      "canonical_candidate": "Canthidermis maculata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาวัวดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Abalistes stellatus",
+      "canonical_candidate": "Abalistes stellatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาวัวจุดขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Parablennius lodosus",
+      "canonical_candidate": "Parablennius lodosus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระบี่อิโด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Petroscirtes mitratus",
+      "canonical_candidate": "Petroscirtes mitratus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระบี่ลาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Meiacanthus grammistes",
+      "canonical_candidate": "Meiacanthus grammistes",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระบี่แถบดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Istiblennius dussumieri",
+      "canonical_candidate": "Istiblennius dussumieri",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากระบี่ลาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Pseudorhombus arsius",
+      "canonical_candidate": "Pseudorhombus arsius",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาลิ้นควาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Caesio cuning",
+      "canonical_candidate": "Caesio cuning",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาเหลืองปล้องหม้อ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Synchiropus ocellatus",
+      "canonical_candidate": "Synchiropus ocellatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลามังกรน้อยหางแถบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Repomucenus huguenini",
+      "canonical_candidate": "Repomucenus huguenini",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลามังกรน้อยแถบขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Callionymus planus",
+      "canonical_candidate": "Callionymus planus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลามังกรน้อยจุดขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Callionymus sagitta",
+      "canonical_candidate": "Callionymus sagitta",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลามังกรน้อยหัวแหลม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Dactylopus dactylopus",
+      "canonical_candidate": "Dactylopus dactylopus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลามังกรน้อยลาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Megalaspis cordyla",
+      "canonical_candidate": "Megalaspis cordyla",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหางแข็ง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Carangoides armatus",
+      "canonical_candidate": "Carangoides armatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาจุยจินขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Atropus atropos",
+      "canonical_candidate": "Atropus atropos",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตะโกรงขาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Carangoides praeustus",
+      "canonical_candidate": "Carangoides praeustus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสีกุนเล็กครีบดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Caranx sexfasciatus",
+      "canonical_candidate": "Caranx sexfasciatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหางกิ่วหม้อ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Elagatis bipinnulata",
+      "canonical_candidate": "Elagatis bipinnulata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาเหลืองโพรง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Alepes vari",
+      "canonical_candidate": "Alepes vari",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสีกุนหางเหยี่ยว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Gnathanodon speciosus",
+      "canonical_candidate": "Gnathanodon speciosus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตะกลองเหลือง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Parastromateus niger",
+      "canonical_candidate": "Parastromateus niger",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาจะละเม็ดดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Alectis ciliaris",
+      "canonical_candidate": "Alectis ciliaris",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาผมนางลาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Selar boops",
+      "canonical_candidate": "Selar boops",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสีกุนทอง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Seriolina nigrofasciata",
+      "canonical_candidate": "Seriolina nigrofasciata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสำลี",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Trachinotus blochii",
+      "canonical_candidate": "Trachinotus blochii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาเนื้ออ่อน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Alectis indicus",
+      "canonical_candidate": "Alectis indicus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาผมนางหน้าตัด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Ulua mentalis",
+      "canonical_candidate": "Ulua mentalis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาจุยจินเหงือกยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Trachinotus baillonii",
+      "canonical_candidate": "Trachinotus baillonii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาเนื้ออ่อนจุดดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Selar crumenophthalmus",
+      "canonical_candidate": "Selar crumenophthalmus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสีกุนทองตาโต",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Scomberoides commersonnianus",
+      "canonical_candidate": "Scomberoides commersonnianus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสละเกล็ดเหลี่ยม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Uraspis helvola",
+      "canonical_candidate": "Uraspis helvola",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาจุยจินบั้ง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Alepes melanoptera",
+      "canonical_candidate": "Alepes melanoptera",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสีกุนกระโดงดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Alepes kleinii",
+      "canonical_candidate": "Alepes kleinii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสีกุนเขียว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Carcharhinus amblyrhynchos",
+      "canonical_candidate": "Carcharhinus amblyrhynchos",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ฉลามจ้าวมัน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Carcharhinus sorrah",
+      "canonical_candidate": "Carcharhinus sorrah",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ฉลามหูดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Acanthocepola abbreviata",
+      "canonical_candidate": "Acanthocepola abbreviata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแถบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Chaetodon wiebeli",
+      "canonical_candidate": "Chaetodon wiebeli",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาผีเสื้อลายทแยง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Chelmon rostratus",
+      "canonical_candidate": "Chelmon rostratus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาผีเสื้อปากยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Chaetodon octofasciatus",
+      "canonical_candidate": "Chaetodon octofasciatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาผีเสื้อแปดแถบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Heniochus acuminatus",
+      "canonical_candidate": "Heniochus acuminatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาโนรี",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Champsodon capensis",
+      "canonical_candidate": "Champsodon capensis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาสากยี่เทา",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Chanos chanos",
+      "canonical_candidate": "Chanos chanos",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลานวลจันทร์ทะเล",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Chirocentrus dorab",
+      "canonical_candidate": "Chirocentrus dorab",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดาบลาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Chirocentrus nudus",
+      "canonical_candidate": "Chirocentrus nudus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดาบลาวสั้น",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Sardinella albella",
+      "canonical_candidate": "Sardinella albella",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหลังเขียว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Sardinella gibbosa",
+      "canonical_candidate": "Sardinella gibbosa",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหลังเขียว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Dussumieria elopsoides",
+      "canonical_candidate": "Dussumieria elopsoides",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาอกแล",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Amblygaster leiogaster",
+      "canonical_candidate": "Amblygaster leiogaster",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหลังเขียวท้องกลม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cynoglossus macrolepidotus",
+      "canonical_candidate": "Cynoglossus macrolepidotus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลายอดม่วงเกล็ดใหญ่",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cynoglossus bilineatus",
+      "canonical_candidate": "Cynoglossus bilineatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลายอดม่วงลายสี่เส้น",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cynoglossus lingua",
+      "canonical_candidate": "Cynoglossus lingua",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลายอดม่วงยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cynoglossus monopus",
+      "canonical_candidate": "Cynoglossus monopus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลายอดม่วงหางดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Cynoglossus semifasciatus",
+      "canonical_candidate": "Cynoglossus semifasciatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลายอดม่วงลายประ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Paraplagusia bilineata",
+      "canonical_candidate": "Paraplagusia bilineata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลายอดม่วงปากหยักทอง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Paraplagusia blochii",
+      "canonical_candidate": "Paraplagusia blochii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลายอดม่วงปากหยักประ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Pastinachus sephen",
+      "canonical_candidate": "Pastinachus sephen",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "กระเบนธง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Dasyatis zugei",
+      "canonical_candidate": "Dasyatis zugei",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "กระเบนหัวแหลม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Himantura imbricata",
+      "canonical_candidate": "Himantura imbricata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "กระเบนตุ๊กตา",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Himantura bleekeri",
+      "canonical_candidate": "Himantura bleekeri",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "กระเบนบัว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Taeniura lymma",
+      "canonical_candidate": "Taeniura lymma",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "กระเบนทอง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Temera hardwickii",
+      "canonical_candidate": "Temera hardwickii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "กระเบนไฟฟ้าหลังเรียบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Diodon holocanthus",
+      "canonical_candidate": "Diodon holocanthus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาปักเป้าหนามทุเรียนยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Diodon liturosus",
+      "canonical_candidate": "Diodon liturosus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาปักเป้าหนามหลังแถบ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Drepane longimana",
+      "canonical_candidate": "Drepane longimana",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาใบโพธิ์",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Drepane punctata",
+      "canonical_candidate": "Drepane punctata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาใบโพธิ์จุด",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Echeneis naucrates",
+      "canonical_candidate": "Echeneis naucrates",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาเหาฉลาม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Ophiocara porocephala",
+      "canonical_candidate": "Ophiocara porocephala",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่หัวมัน",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Elops machnata",
+      "canonical_candidate": "Elops machnata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตาเหลือกยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Stolephorus dubiosus",
+      "canonical_candidate": "Stolephorus dubiosus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาไส้ตันไทย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Thryssa setirostris",
+      "canonical_candidate": "Thryssa setirostris",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลางา",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Stolephorus indicus",
+      "canonical_candidate": "Stolephorus indicus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาไส้ตันใหญ่",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Setipinna taty",
+      "canonical_candidate": "Setipinna taty",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแมว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Stolephorus waitei",
+      "canonical_candidate": "Stolephorus waitei",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาไส้ตันปากดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Stolephorus commersonnii",
+      "canonical_candidate": "Stolephorus commersonnii",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลากะตักควาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Thryssa dussumieri",
+      "canonical_candidate": "Thryssa dussumieri",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแมว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Thryssa mystax",
+      "canonical_candidate": "Thryssa mystax",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาแมวหัวแหลม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Platax teira",
+      "canonical_candidate": "Platax teira",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาหูช้าง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Gerres erythrourus",
+      "canonical_candidate": "Gerres erythrourus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดอกหมากครีบสั้น",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Gerres oyena",
+      "canonical_candidate": "Gerres oyena",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดอกหมากยาว",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Gerres subfasciatus",
+      "canonical_candidate": "Gerres subfasciatus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาดอกหมากหน้าสั้น",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Stigmatogobius sadanundio",
+      "canonical_candidate": "Stigmatogobius sadanundio",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่จุดดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Taenioides cirratus",
+      "canonical_candidate": "Taenioides cirratus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาเขือคางยื่น",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Pseudogobius javanicus",
+      "canonical_candidate": "Pseudogobius javanicus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่ชวา",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Priolepis nuchifasciata",
+      "canonical_candidate": "Priolepis nuchifasciata",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่แดงแถบฟ้า",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Periophthalmus gracilis",
+      "canonical_candidate": "Periophthalmus gracilis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาตีนครีบดำ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Parioglossus philippinus",
+      "canonical_candidate": "Parioglossus philippinus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่แคระ",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Oxyurichthys microlepis",
+      "canonical_candidate": "Oxyurichthys microlepis",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่เขือเกล็ดเล็ก",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Oplopomus caninoides",
+      "canonical_candidate": "Oplopomus caninoides",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่แก้มหนาม",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Glossogobius circumspectus",
+      "canonical_candidate": "Glossogobius circumspectus",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่ทองแก้มลาย",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Gobiopsis macrostoma",
+      "canonical_candidate": "Gobiopsis macrostoma",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่ปากกว้าง",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Acentrogobius chlorostigmatoides",
+      "canonical_candidate": "Acentrogobius chlorostigmatoides",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่จุดฟ้า",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    },
+    {
+      "scientific_name_as_listed": "Mahidolia mystacina",
+      "canonical_candidate": "Mahidolia mystacina",
+      "taxonomy_review_required": true,
+      "source_id": "THBIF-SONGKHLA-ONEPAGE",
+      "regional_record_scope": "songkhla_lake_basin",
+      "in_game": false,
+      "thai_name_transcribed": "ปลาบู่มหิดล",
+      "transcription_exactness": "manual_curated_label_not_guaranteed_verbatim"
+    }
+  ]
+}

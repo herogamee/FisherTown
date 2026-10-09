@@ -1,0 +1,9 @@
+{
+  "id": "THBIF-SPECIES-PAGES",
+  "name": "ONEP Thailand Biodiversity Information Facility — individual taxon pages",
+  "publisher": "Office of Natural Resources and Environmental Policy and Planning",
+  "base_url": "https://thbif.onep.go.th/taxons/",
+  "accessed_at": "2026-10-09",
+  "license_status": "individual page/facts for research; bulk data or image reuse not licensed by this entry",
+  "validation_note": "Cross-check page heading, full scientific name and Thai names; some THBIF pages have mismatches. Do not copy protected text/images."
+}

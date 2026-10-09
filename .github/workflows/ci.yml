@@ -19,6 +19,9 @@ jobs:
           node-version: 22
       - name: Install dependencies
         run: npm install --no-audit --no-fund
+      - name: Validate Thailand fish atlas provenance and index
+        run: npm run atlas:check
+
       - name: Source integrity and asset checks
         run: npm run validate
 
