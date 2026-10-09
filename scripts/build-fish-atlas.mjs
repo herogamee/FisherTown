@@ -19,8 +19,9 @@ const registry = new Map();
 
 for (const [i, entry] of candidates.species.entries()) {
   assert.ok(regex.test(entry.scientific_name_as_listed), 'Bad source taxon name at row ' + i);
-  assert.ok(entry.thai_name_as_listed.length > 0 && /[\u0e00-\u0e7f]/.test(entry.thai_name_as_listed));
+  assert.ok(entry.thai_name_transcribed.length > 0 && /[\u0e00-\u0e7f]/.test(entry.thai_name_transcribed));
   assert.equal(entry.source_id, scopedSources[0]);
+  assert.equal(entry.transcription_exactness, 'manual_curated_label_not_guaranteed_verbatim');
   assert.equal(entry.in_game, false, 'Unreviewed regional fish leaked to game');
   assert.equal(entry.taxonomy_review_required, true);
   const candidate = entry.canonical_candidate;
@@ -30,8 +31,8 @@ for (const [i, entry] of candidates.species.entries()) {
   registry.set(candidate.toLowerCase(), {
     id: candidate.toLowerCase().replace(/\s+/g, '_'),
     scientific_name_candidate: candidate,
-    thai_name_for_review: entry.thai_name_as_listed,
-    thai_names_as_reported: [entry.thai_name_as_listed],
+    thai_name_for_review: entry.thai_name_transcribed,
+    thai_names_for_review: [entry.thai_name_transcribed],
     source_ids: [scopedSources[0]],
     regional_reports: [{
       region: 'songkhla_lake_basin',
@@ -66,7 +67,7 @@ for (const p of priority.profiles) {
       id: p.id,
       scientific_name_candidate: p.scientific_name,
       thai_name_for_review: p.thai_name,
-      thai_names_as_reported: [p.thai_name],
+      thai_names_for_review: [p.thai_name],
       source_ids: [],
       regional_reports: [],
       priority: false,
@@ -83,8 +84,8 @@ for (const p of priority.profiles) {
   }
   record.priority = true;
   record.thai_name_for_review = p.thai_name;
-  if (!record.thai_names_as_reported.includes(p.thai_name)) {
-    record.thai_names_as_reported.push(p.thai_name);
+  if (!record.thai_names_for_review.includes(p.thai_name)) {
+    record.thai_names_for_review.push(p.thai_name);
   }
   if (!record.source_ids.includes(p.source_id)) record.source_ids.push(p.source_id);
   record.taxon_page_url = p.taxon_page_url;
@@ -122,7 +123,7 @@ const atlas = {
     unresolved_possible_synonym_pairs: aliases.length,
     gameplay_ready: species.filter(s => s.gameplay_ready).length
   },
-  warning: '299 nominal combinations are NOT 299 taxonomically accepted species; synonyms may need merging. Names, habitats, native status, conservation and licenses need independent review before use.',
+  warning: '299 nominal combinations are NOT 299 taxonomically accepted species; synonyms may need merging. Names, habitats, native status, conservation and licenses need independent review before use. Thai labels are manual transcriptions and can contain editorial spelling normalization.',
   possible_synonym_pairs: aliases,
   records: species
 };

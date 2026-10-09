@@ -42,3 +42,5 @@
 
 ## World expansion (phase order)
 Thailand first; next Southeast Asia and South China Sea, then Indo-Pacific, Japan, Amazon/Orinoco, North America, Europe, Africa and Australia. Source priority: government fisheries agencies, voucher-backed museum publications, peer-reviewed species descriptions, GBIF dataset-specific CC0/CC-BY occurrence where permitted, OBIS marine occurrences, WoRMS taxonomy, FAO fishing areas for geographic grouping (not species occurrences). Never infer country from range-wide common names.
+
+**Transcription audit note:** Source-listed Thai labels are hand-transcribed and sometimes spelling/punctuation-normalized (such as พ่นน้ำ/พ้นน้ำ, names for gobies). They are NOT promised to be exact quotes from the source. The source holds priority when any label differs.
