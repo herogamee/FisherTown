@@ -1,0 +1,160 @@
+{
+  "version": "2026.10-th-names-r1",
+  "as_of": "2026-10-09",
+  "policy": "Thai public-facing names are labels, not unique species identifiers. Use scientific binomial for stable identity. Never treat broad group terms, commercial strains, or source-only names as confirmed taxonomic synonyms.",
+  "records": [
+    {
+      "scientific_name": "Oreochromis niloticus",
+      "display_name_th": "ปลานิล",
+      "english_name": "Nile tilapia",
+      "verified_aliases_th": [
+        "นิล"
+      ],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/detail/28938",
+        "https://www4.fisheries.go.th/dof/news_local/1220/64290"
+      ],
+      "note": "Introduced species in Thailand. The commercial/red-tilapia name ปลาทับทิม is not automatically an exact one-to-one scientific synonym."
+    },
+    {
+      "scientific_name": "Channa striata",
+      "display_name_th": "ปลาช่อน",
+      "english_name": "Striped snakehead",
+      "verified_aliases_th": [
+        "ช่อน",
+        "ซ่อน",
+        "ปลาซ่อน",
+        "ปลาเช็ง",
+        "ปลาค้อ",
+        "ปลาหลิม"
+      ],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/detail/8545",
+        "https://www4.fisheries.go.th/local/file_document/20230828112416_1_file.pdf"
+      ],
+      "note": "ชื่อปลาค้อและปลาหลิมเป็นชื่อท้องถิ่นตามเอกสารกรมประมง ไม่ใช่ชนิดปลาใหม่"
+    },
+    {
+      "scientific_name": "Betta splendens",
+      "display_name_th": "ปลากัด",
+      "english_name": "Siamese fighting fish",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/taxon_detail/Betta%20splendens"
+      ],
+      "note": "ชื่อปลากัดอาจถูกใช้กับหลายชนิดเมื่อพูดทั่วไป จึงต้องเก็บชื่อวิทยาศาสตร์กำกับเสมอ"
+    },
+    {
+      "scientific_name": "Clarias macrocephalus",
+      "display_name_th": "ปลาดุกอุย",
+      "english_name": "Bighead catfish",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/detail/9561"
+      ],
+      "note": "คำกว้าง ปลาดุก ไม่ใช่ชื่อชนิดเฉพาะ; ผลค้นหาคำนี้อาจมีปลาดุกหลายชนิด"
+    },
+    {
+      "scientific_name": "Channa micropeltes",
+      "display_name_th": "ปลาชะโด",
+      "english_name": "Giant snakehead",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/taxon_detail/Channa%20micropeltes"
+      ]
+    },
+    {
+      "scientific_name": "Barbonymus gonionotus",
+      "display_name_th": "ปลาตะเพียนขาว",
+      "english_name": "Silver barb",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/detail/4725"
+      ]
+    },
+    {
+      "scientific_name": "Pangasianodon hypophthalmus",
+      "display_name_th": "ปลาสวาย",
+      "english_name": "Striped catfish",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/detail/29577"
+      ]
+    },
+    {
+      "scientific_name": "Pangasianodon gigas",
+      "display_name_th": "ปลาบึก",
+      "english_name": "Mekong giant catfish",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/taxon_detail/Pangasianodon%20gigas"
+      ]
+    },
+    {
+      "scientific_name": "Catlocarpio siamensis",
+      "display_name_th": "ปลากระโห้",
+      "english_name": "Giant barb",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/detail/7885"
+      ]
+    },
+    {
+      "scientific_name": "Lates calcarifer",
+      "display_name_th": "ปลากะพงขาว",
+      "english_name": "Barramundi",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/detail/22739"
+      ]
+    },
+    {
+      "scientific_name": "Trichopodus pectoralis",
+      "display_name_th": "ปลาสลิด",
+      "english_name": "Snakeskin gourami",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/detail/41194"
+      ]
+    },
+    {
+      "scientific_name": "Rastrelliger brachysoma",
+      "display_name_th": "ปลาทู",
+      "english_name": "Short mackerel",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/minisite/lagoon/taxons/detail/647"
+      ]
+    },
+    {
+      "scientific_name": "Rastrelliger kanagurta",
+      "display_name_th": "ปลาลัง",
+      "english_name": "Indian mackerel",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/detail/35275"
+      ],
+      "note": "ปลาลังไม่ใช่ชื่อพ้องของปลาทู"
+    },
+    {
+      "scientific_name": "Wallago attu",
+      "display_name_th": "ปลาเค้าขาว",
+      "english_name": "Wallago catfish",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/detail/42680"
+      ],
+      "note": "เกมต้นแบบอาจใช้ชื่อกว้าง ปลาเค้า; ในสารานุกรมใช้ชื่อชนิดเฉพาะตามแหล่งอ้างอิง"
+    },
+    {
+      "scientific_name": "Rhincodon typus",
+      "display_name_th": "ฉลามวาฬ",
+      "english_name": "Whale shark",
+      "verified_aliases_th": [],
+      "evidence_urls": [
+        "https://thbif.onep.go.th/taxons/taxon_detail/Rhincodon%20typus"
+      ],
+      "note": "ข้อมูลเพื่อการศึกษาเท่านั้น ไม่อนุญาตให้เกิดเป็นปลาตกเล่นจากทะเบียนนี้"
+    }
+  ]
+}

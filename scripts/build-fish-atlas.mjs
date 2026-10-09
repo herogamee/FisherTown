@@ -8,6 +8,7 @@ const json = (path) => JSON.parse(readFileSync(location(path), 'utf8'));
 const candidates = json('data/fish-atlas/thailand/songkhla-regional-candidates.json');
 const priority = json('data/fish-atlas/thailand/priority-taxa.json');
 const currentSeed = json('data/fish-seed.json');
+const naming = json('data/fish-atlas/thailand/common-name-curation.json');
 const scopedSources = ['THBIF-SONGKHLA-ONEPAGE', 'THBIF-SPECIES-PAGES'];
 const regex = /^[A-Z][A-Za-z]+ [a-z][a-zA-Z-]+(?: [a-z][a-zA-Z-]+)?$/;
 
@@ -131,12 +132,76 @@ const atlas = {
 assert.ok(currentSeed.species.length >= 20, 'Existing world seed was altered/truncated');
 assert.equal(atlas.counts.gameplay_ready, 0);
 assert.ok(species.every(x => x.gameplay_ready === false && x.native_status_verified === false && x.image_rights_verified === false));
+// Export a lightweight, non-playable Thai-first directory for the in-game Fishdex.
+// The scientific name remains the species identity. Vernacular labels can overlap.
+const byName = new Map(naming.records.map(x => [x.scientific_name.toLowerCase(), x]));
+assert.equal(byName.size, naming.records.length, 'Duplicate curated scientific names');
+const bySeed = new Map(currentSeed.species.map(x => [x.scientific_name.toLowerCase(), x]));
+for (const candidate of naming.records) {
+  assert.ok(species.some(x => x.scientific_name_candidate.toLowerCase() === candidate.scientific_name.toLowerCase()),
+    'Curated name is not in Thailand atlas: ' + candidate.scientific_name);
+  assert.ok(candidate.evidence_urls.length > 0 && candidate.evidence_urls.every(x => x.startsWith('https://')),
+    'Curated display names need source references');
+}
+const fishNameEntries = species.map(record => {
+  const curated = byName.get(record.scientific_name_candidate.toLowerCase());
+  assert.ok(!curated || curated.display_name_th === record.thai_name_for_review,
+    'Name curation cannot silently rename a source species: ' + record.scientific_name_candidate);
+  const verified = (curated?.verified_aliases_th ?? []).filter(x => x !== record.thai_name_for_review);
+  const reported = record.thai_names_for_review.filter(x => x !== record.thai_name_for_review && !verified.includes(x));
+  const links = [
+    ...(record.taxon_page_url ? [record.taxon_page_url] :
+      record.regional_reports?.length ? ['https://thbif.onep.go.th/minisite/lagoon/onepage'] : []),
+    ...(curated?.evidence_urls ?? [])
+  ];
+  return {
+    id: record.id,
+    display_name_th: record.thai_name_for_review,
+    scientific_name: record.scientific_name_candidate,
+    common_name_en: curated?.english_name ??
+      bySeed.get(record.scientific_name_candidate.toLowerCase())?.common_names?.en ?? null,
+    verified_aliases_th: verified,
+    reported_aliases_th_pending_review: reported,
+    searchable_names_th: [...new Set([record.thai_name_for_review, ...verified, ...reported])],
+    priority: record.priority,
+    popular: record.interest_tags.includes('popular'),
+    interest_tags: record.interest_tags,
+    name_evidence_status: record.identity_review === 'scientific_and_thai_name_checked_against_taxon_or_paper_page' ?
+      'name_pair_crosschecked_in_research' : 'source_label_pending_final_review',
+    source_ids: record.source_ids,
+    evidence_urls: [...new Set(links)],
+    origin_status: record.origin_status ?? 'not_assessed',
+    possible_synonym_review_with: record.possible_synonym_review_with ?? null,
+    gameplay_ready: false,
+    review_note: curated?.note ?? null
+  };
+});
+const fishNames = {
+  version: '2026.10-th-names-r1',
+  generated_at: '2026-10-09',
+  region: 'Thailand',
+  research_only: true,
+  notice_th: 'ทะเบียนปลาไทยสำหรับการศึกษา บางชื่อและชนิดยังอยู่ระหว่างตรวจสอบ ไม่ได้หมายความว่าพบปลานี้ในฉากหรืออนุญาตให้ตกได้',
+  counts: {
+    records: fishNameEntries.length,
+    gameplay_ready: 0,
+    curated_common_name_examples: naming.records.length
+  },
+  entries: fishNameEntries
+};
+assert.equal(fishNames.counts.records, species.length);
+assert.ok(fishNames.entries.every(x => x.gameplay_ready === false && x.display_name_th.length));
+const namesOut = location('public/data/fish-atlas/thailand-name-index.json');
+
 const out = location('data/fish-atlas/thailand/catalog-index.json');
 if (process.argv.includes('--write')) {
   writeFileSync(out, JSON.stringify(atlas, null, 2) + '\n');
+  writeFileSync(namesOut, JSON.stringify(fishNames, null, 2) + '\n');
   console.log('WROTE fish atlas index', atlas.counts);
 } else {
   assert.deepEqual(json('data/fish-atlas/thailand/catalog-index.json'), atlas,
     'Index stale: run node scripts/build-fish-atlas.mjs --write and commit result');
+  assert.deepEqual(json('public/data/fish-atlas/thailand-name-index.json'), fishNames,
+    'Thai common-name index stale: run npm run atlas:build');
   console.log('PASS fish atlas source counts, taxonomic safeguards and merged index', atlas.counts);
 }
